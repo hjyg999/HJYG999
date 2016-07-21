@@ -168,7 +168,7 @@ public class HomeInvestFragment extends Fragment implements OnClickListener {
 
 				if (!isLoading) {
 					isLoading = true;
-					mActivity.getWebManager().GetWebserviceHomeAPI(false);
+//					mActivity.getWebManager().GetWebserviceHomeAPI(false);
 				}
 			}
 		}, 503);

@@ -136,7 +136,7 @@ public class HeaderView extends RelativeLayout {
 				bitmaps = (Bitmap[]) msg.obj;
 				if (bitmaps != null && bitmaps.length == 2) {
 					img_top_left.setImageBitmap(bitmaps[0]);
-					img_top_right.setImageBitmap(bitmaps[1]);
+//					img_top_right.setImageBitmap(bitmaps[1]);
 					
 				}
 				break;

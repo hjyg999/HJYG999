@@ -243,7 +243,7 @@ public class RefreshableScrollView extends LinearLayout {
 		int i = lp.topMargin;
 		// reFreshTimeLayout.setVisibility(View.GONE);
 //		refreshIndicatorView.setVisibility(View.GONE);
-		bar.setVisibility(View.VISIBLE);
+		bar.setVisibility(View.GONE);
 //		progress_cter.setVisibility(View.VISIBLE);
 		timeTextView.setVisibility(View.VISIBLE);
 		downTextView.setVisibility(View.VISIBLE);

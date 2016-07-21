@@ -257,13 +257,12 @@
         <ImageView
             android:id="@+id/img_ec"
             style="@style/Both_Wrap_style"
-            android:visibility="visible"
-            android:src="@drawable/happysmallwriting_home"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_marginBottom="@dimen/marg_40px"
             android:layout_marginRight="@dimen/marg_30px"
-             />
+            android:src="@drawable/happysmallwriting_home"
+            android:visibility="visible" />
 
         <include
             style="@style/Both_Match_style"
