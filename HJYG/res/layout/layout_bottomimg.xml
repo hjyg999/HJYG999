@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/bottom_img"
+        style="@style/Both_Wrap_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marg_70px" />
+
+</LinearLayout>

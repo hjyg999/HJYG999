@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.md.hjyg.locker.lock.PatternView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:patternview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/patternView"
+    style="@style/Both_Wrap_style" >
+
+    <!-- patternview:maxSize="@dimen/patternview_max_size" -->
+
+</com.md.hjyg.locker.lock.PatternView>

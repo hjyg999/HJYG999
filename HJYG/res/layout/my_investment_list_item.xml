@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/Match_Wrap_style" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            style="@style/Match_Wrap_style"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_loan_name"
+                style="@style/Both_Wrap_style"
+                android:textColor="@color/gray_s"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_receipt_date"
+                style="@style/Both_Wrap_style"
+                android:layout_below="@+id/tv_loan_name"
+                android:text="@string/collection_date"
+                android:textSize="14sp" 
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/tv_receipt_date_value"
+                style="@style/Both_Wrap_style"
+                android:layout_below="@+id/tv_loan_name"
+                android:layout_toRightOf="@+id/tv_receipt_date"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_next_loan_title"
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/invest_rarrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rl_1"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            style="@style/Match_Wrap_style"
+            android:layout_below="@+id/rl_1"
+            android:layout_marginTop="1dp"
+            android:background="@color/white" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:background="@color/line"
+                android:orientation="horizontal"
+                android:weightSum="2.5" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/white"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_my_invetment_list_rate"
+                        style="@style/Both_Wrap_style"
+                        android:paddingLeft="5dp"
+                        android:text="@string/rate"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_my_invetment_list_rate_count"
+                        style="@style/Both_Wrap_style"
+                        android:layout_below="@+id/tv_my_invetment_list_rate"
+                        android:paddingLeft="5dp"
+                        android:text=""
+                        android:textColor="@color/red" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_my_investment_list_project_duration"
+                        style="@style/Both_Wrap_style"
+                        android:paddingLeft="5dp"
+                        android:text="@string/project_duration"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_my_investment_list_project_duration_value"
+                        style="@style/Both_Wrap_style"
+                        android:layout_below="@+id/tv_my_investment_list_project_duration"
+                        android:paddingLeft="5dp"
+                        android:text=""
+                        android:textColor="@color/red" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_my_investment_list_invest_amount"
+                        style="@style/Both_Wrap_style"
+                        android:paddingLeft="5dp"
+                        android:text="@string/my_principalinterest_amount"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_my_investment_list_invest_amount_value"
+                        style="@style/Both_Wrap_style"
+                        android:layout_below="@+id/tv_my_investment_list_invest_amount"
+                        android:paddingLeft="5dp"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

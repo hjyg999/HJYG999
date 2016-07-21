@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/load_more_footer"
+    style="@style/Match_Wrap_style"
+    android:background="@color/bg_list" >
+
+    <!-- <View
+        android:id="@+id/top_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray_line"
+        android:visibility="visible" /> -->
+
+    <RelativeLayout
+        style="@style/Match_Wrap_style" >
+
+        <RelativeLayout
+            style="@style/Match_Wrap_style"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/load_more_lab_view"
+                style="@style/Both_Wrap_style"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/load_more_progressBar"
+                android:padding="3dp"
+                android:text="加载中..."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray" />
+
+            <ProgressBar
+                android:id="@+id/load_more_progressBar"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/costum_progress_bar"
+                android:padding="3dp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/load_more_img"
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/jxw_ku_142x180"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/load_more_text"
+                style="@style/Both_Wrap_style"
+                android:paddingTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="暂无数据!"
+                android:paddingBottom="10dp"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!--
+    <TextView
+        android:id="@+id/load_more_lab_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/load_more_progressBar"
+        android:padding="3dp"
+        android:text="加载更多"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/dark_slate_gray" />
+
+    <ProgressBar
+        android:id="@+id/load_more_progressBar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_line"
+        android:layout_marginLeft="123dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/costum_progress_bar"
+        android:padding="3dp"
+        android:visibility="visible" />
+    -->
+
+</RelativeLayout>

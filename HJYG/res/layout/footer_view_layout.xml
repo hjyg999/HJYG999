@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    style="@style/Both_Match_style"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/lin_invest"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_invest"
+            style="@style/Both_Wrap_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_gift"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_gift"
+            style="@style/Both_Wrap_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_account"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_account"
+            style="@style/Both_Wrap_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_more"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_more"
+            style="@style/Both_Wrap_style" />
+    </LinearLayout>
+
+</LinearLayout>

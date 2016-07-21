@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.md.hjyg.utility.LoadMoreListView
+        android:id="@+id/mListView"
+        style="@style/Match_Wrap_style"
+        android:dividerHeight="-1dp"
+        android:listSelector="@drawable/bg_white_selector"
+        android:scrollbars="none" />
+
+</LinearLayout>

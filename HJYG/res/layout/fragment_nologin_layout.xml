@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@drawable/home_nologin_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.44"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo_w" />
+
+            <TextView
+                android:id="@+id/tv_tologin"
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_30pt"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/marg_30px"
+            android:layout_marginRight="@dimen/marg_30px"
+            android:layout_marginTop="@dimen/marg_20px"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                style="@style/Both_Match_style"
+                android:alpha="0.2"
+                android:background="@drawable/bg_ra_white_m"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Both_Match_style"
+                android:layout_margin="@dimen/marg_20px"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="平台累计总成交金额"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_30pt" />
+
+                <LinearLayout
+                    android:id="@+id/line_amount"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="@dimen/marg_10px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="@dimen/marg_60px"
+                        android:layout_height="@dimen/marg_96px"
+                        android:background="@drawable/sz_bg"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/marg_60px" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:gravity="center"
+                        android:text="亿"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_44pt" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/img_maney"
+                            style="@style/wrap_match_style"
+                            android:src="@drawable/home_nologin_maney" />
+
+                        <LinearLayout
+                            style="@style/wrap_match_style"
+                            android:layout_marginLeft="@dimen/marg_16px"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="已发放收益"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size_24pt" />
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tv_putoutmoney"
+                                    style="@style/Both_Wrap_style"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/size_28pt" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/img_time"
+                            style="@style/wrap_match_style"
+                            android:src="@drawable/home_nologin_time" />
+
+                        <LinearLayout
+                            style="@style/wrap_match_style"
+                            android:layout_marginLeft="@dimen/marg_16px"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="平台营运时间"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size_24pt" />
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tv_yxtime"
+                                    style="@style/Both_Wrap_style"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/size_28pt" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_endDate"
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/marg_60px"
+            android:layout_marginTop="@dimen/marg_10px"
+            android:alpha="0.7"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_24pt" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.56" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/marg_30px"
+            android:paddingRight="@dimen/marg_60px"
+            android:paddingTop="@dimen/marg_16px" >
+
+            <ImageView
+                android:id="@+id/img_laba"
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/laba_white" />
+
+            <TextSwitcher
+                android:id="@+id/mTextSwitcher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marg_20px"
+                android:layout_weight="1" />
+          
+            <TextSwitcher
+                android:id="@+id/mTextSwitcher_r"
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Both_Match_style"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.31"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_xtrate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/marg_30px" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.24"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_bkrate"
+                    style="@style/Match_Wrap_style"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/marg_30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.45"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/tv_toregister"
+                        style="@style/Both_Wrap_style"
+                        android:background="@drawable/selector_bg_mra_whitlestrok_whitlesolid"
+                        android:paddingBottom="@dimen/marg_20px"
+                        android:paddingLeft="@dimen/marg_60px"
+                        android:paddingRight="@dimen/marg_60px"
+                        android:paddingTop="@dimen/marg_20px"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_36pt" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_tpy"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginTop="@dimen/marg_20px"
+                    android:drawablePadding="@dimen/marg_5px"
+                    android:layout_marginBottom="@dimen/marg_30px"
+                    android:drawableLeft="@drawable/cpic2"
+                    android:gravity="center_vertical"
+                    android:text="账户资金交易安全由太平洋保险承保"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_28pt" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

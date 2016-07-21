@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style" >
+
+    <com.md.hjyg.layoutEntities.RefreshableView
+        android:id="@+id/refreshable_view"
+        style="@style/Both_Match_style" >
+
+        <com.md.hjyg.utility.LoadMoreListView
+            android:id="@+id/mLoadMoreListView"
+            style="@style/Both_Match_style"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1dp"
+            android:background="@color/white"
+            android:listSelector="@drawable/bg_selector" 
+            />
+    </com.md.hjyg.layoutEntities.RefreshableView>
+
+</LinearLayout>

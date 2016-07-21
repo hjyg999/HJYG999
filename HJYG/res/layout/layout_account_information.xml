@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <ScrollView
+        style="@style/relativeLayoutWeight"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:background="@color/bg_list"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/img_edit"
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/home_item_bg_selector"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout
+                    android:id="@+id/img"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp" >
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/description"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/circle_head_bg_whit" />
+
+                    <com.md.hjyg.layoutEntities.CircularImage
+                        android:id="@+id/head_img"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_account_user_name_value"
+                        style="@style/Both_Wrap_style"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/Both_Wrap_style"
+                        android:paddingLeft="2dp"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/img_bank_account_mgmt_edit"
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/home_item_bg_selector"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:text="@string/bank_account_management"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/homescreen_border"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/tel_ver"
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mobile_authentication_d"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_mobile_authentication_value"
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tel_ver"
+                    android:text=""
+                    android:textColor="@color/gray_s"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_mobile_isverify"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/img_edit_password"
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/home_item_bg_selector"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:text="@string/login_password_info"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/password_img"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/arrow_right" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/password_img"
+                    android:text="@string/changer"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edit_dealword"
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/home_item_bg_selector"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:visibility="visible" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:text="@string/deal_password"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/dealword_img"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/arrow_right" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/dealword_img"
+                    android:text="@string/changer"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gesture_lock_edited"
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/home_item_bg_selector"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:text="@string/gesture_passdword"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/gesture_lock_img"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/arrow_right" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/gesture_lock_img"
+                    android:text="@string/changer"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/gesture_lock_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/homescreen_border"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:text="@string/onordff_gesture_passdword"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <ToggleButton
+                    android:id="@+id/gesture_lock_on_off"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/gesture_setting"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_selector_red"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/safelogout"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

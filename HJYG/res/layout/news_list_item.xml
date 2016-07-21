@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style">
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_news"
+            style="@style/Both_Wrap_style"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:id="@+id/tv_news_title"
+            android:textSize="14sp"
+            android:textColor="#A5A5A5"
+            android:layout_marginBottom="8dp"
+            android:text="Dear:****your investment [letter Red Book Credit 2014121501]loan payment in advance"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

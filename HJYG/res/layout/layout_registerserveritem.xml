@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <WebView
+        android:id="@+id/serveritem_details_webview"
+        style="@style/relativeLayoutWeight" />
+
+</LinearLayout>

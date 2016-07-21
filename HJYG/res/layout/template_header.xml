@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="5dp" >
+
+        <RelativeLayout
+            style="@style/Match_Wrap_style"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:id="@+id/lay_back_investment"
+                android:layout_width="wrap_content"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:paddingLeft="5dp" >
+
+                <ImageView
+                    android:id="@+id/btn_back_select_city"
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/btn_header_back"
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center"
+                    android:paddingLeft="1dp"
+                    android:text=" 返回"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Both_Wrap_style"
+                android:layout_centerInParent="true"
+                android:maxLength="19"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/img_logo"
+                style="@style/Both_Wrap_style"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/img_right"
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Both_Wrap_style"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/header_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/red" >
+        </View>
+    </LinearLayout>
+
+</LinearLayout>

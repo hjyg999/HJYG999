@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lin_top"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/gb_record_bg"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:text="我的金豆"
+                        android:textColor="@color/glod"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <TextView
+                        android:id="@+id/tv_mybean"
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginTop="@dimen/marg_10px"
+                        android:text="5,869"
+                        android:textColor="@color/glod"
+                        android:textSize="@dimen/size_56pt" />
+
+                    <TextView
+                        android:id="@+id/tv_rule"
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginTop="@dimen/marg_10px"
+                        android:background="@drawable/bg_mra_glodq_selector"
+                        android:paddingBottom="@dimen/marg_2px"
+                        android:paddingLeft="@dimen/marg_26px"
+                        android:paddingRight="@dimen/marg_26px"
+                        android:paddingTop="@dimen/marg_2px"
+                        android:text="金豆规则"
+                        android:textColor="@color/glod"
+                        android:textSize="@dimen/size_28pt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_tab0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="全部"
+                    android:textColor="@color/red_BF1424"
+                    android:textSize="@dimen/size_28pt" />
+
+                <View
+                    android:id="@+id/v_tab0"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/red_BF1424"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="收入"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size_28pt" />
+
+                <View
+                    android:id="@+id/v_tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/red_BF1424"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="支出"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size_28pt" />
+
+                <View
+                    android:id="@+id/v_tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/red_BF1424"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/marg_10px"
+            android:background="@color/gray_e9" />
+
+        <FrameLayout
+            android:id="@+id/id_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

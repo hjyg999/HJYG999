@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:background="@drawable/homescreen_border"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:text="奖励年月"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_hit_self"
+                style="@style/Both_Wrap_style"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/tv_hit_frenid"
+                style="@style/Both_Wrap_style"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:layout_marginTop="-1dp" >
+
+        <com.md.hjyg.utility.LoadMoreListView
+            android:id="@+id/mListView"
+            style="@style/Both_Match_style"
+            android:divider="@color/bg_list"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

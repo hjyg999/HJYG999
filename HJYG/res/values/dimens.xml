@@ -1,0 +1,56 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="gold_mianSize">14sp</dimen>
+    <dimen name="home_marginLeft_20">20dp</dimen>
+    <dimen name="home_marginLeft_5">5dp</dimen>
+    <dimen name="home_marginLeft_8">8dp</dimen>
+    <dimen name="home_width_10">10dp</dimen>
+    <dimen name="lottery_size">12sp</dimen>
+    <dimen name="lottery_sy">8sp</dimen>
+    <dimen name="home_width_35">35dp</dimen>
+    <dimen name="home_TextSize_18">18sp</dimen>
+    <dimen name="home_TextSize_10">10sp</dimen>
+    <dimen name="rec_ra">5dp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_21">21sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    
+    <dimen name="marg_130px">65dp</dimen>
+    <dimen name="marg_110px">55dp</dimen>
+    <dimen name="marg_80px">40dp</dimen>
+    <dimen name="marg_50px">25dp</dimen>
+    <dimen name="marg_70px">35dp</dimen>
+    <dimen name="marg_96px">48dp</dimen>
+    <dimen name="marg_60px">30dp</dimen>
+    <dimen name="marg_46px">23dp</dimen>
+    <dimen name="marg_42px">21dp</dimen>
+    <dimen name="marg_40px">20dp</dimen>
+    <dimen name="marg_35px">17.5dp</dimen>
+    <dimen name="marg_32px">16dp</dimen>
+    <dimen name="marg_30px">15dp</dimen>
+    <dimen name="marg_28px">14dp</dimen>
+    <dimen name="marg_26px">13dp</dimen>
+    <dimen name="marg_22px">11dp</dimen>
+    <dimen name="marg_20px">10dp</dimen>
+    <dimen name="marg_16px">8dp</dimen>
+    <dimen name="marg_10px">5dp</dimen>
+    <dimen name="marg_8px">4dp</dimen>
+    <dimen name="marg_5px">2.5dp</dimen>
+    <dimen name="marg_2px">1dp</dimen>
+    
+    <dimen name="size_120pt">60sp</dimen>
+    <dimen name="size_56pt">28sp</dimen>
+    <dimen name="size_60pt">30sp</dimen>
+    <dimen name="size_44pt">22sp</dimen>
+    <dimen name="size_36pt">18sp</dimen>
+    <dimen name="size_32pt">16sp</dimen>
+    <dimen name="size_30pt">15sp</dimen>
+    <dimen name="size_28pt">14sp</dimen>
+    <dimen name="size_26pt">13sp</dimen>
+    <dimen name="size_24pt">12sp</dimen>
+    <dimen name="size_22pt">11sp</dimen>
+    <dimen name="size_20pt">10sp</dimen>
+</resources>

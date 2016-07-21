@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/red_E23924"
+    android:orientation="vertical" >
+
+    <com.md.hjyg.layoutEntities.HeaderView
+        android:id="@+id/mheadView"
+        style="@style/headerWeight" />
+
+    <ScrollView
+        style="@style/relativeLayoutWeight"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/marg_30px" >
+
+            <ImageView
+                android:id="@+id/img_top"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marg_30px"
+                android:src="@drawable/happysmallwriting_bg" />
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marg_50px"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:text="投稿"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_28pt"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="right"
+                        android:src="@drawable/happysmallwriting_write_arrow"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/marg_2px"
+                        android:text="7.15-9.18\n100字微作文 "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_20pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_32pt"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="right"
+                        android:src="@drawable/happysmallwriting_write_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:text="首周冠军"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_28pt"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="right"
+                        android:src="@drawable/happysmallwriting_write_arrow"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/marg_2px"
+                        android:text="8.01-8.07\n1000元现金奖励"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_20pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_32pt"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="right"
+                        android:src="@drawable/happysmallwriting_write_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:text="8强"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_28pt"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="right"
+                        android:src="@drawable/happysmallwriting_write_arrow"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/marg_2px"
+                        android:text="8.01-9.25\n8个周冠军"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_20pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_32pt"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="right"
+                        android:src="@drawable/happysmallwriting_write_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:text="总决赛"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_28pt"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img7"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="right"
+                        android:src="@drawable/happysmallwriting_write_arrow"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/marg_2px"
+                        android:text="9.26-9.30\n5000元现金奖励"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_20pt" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <TextView 
+                android:id="@+id/tv_btn"
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="@dimen/marg_50px"
+                android:layout_marginLeft="@dimen/marg_30px"
+                android:layout_marginRight="@dimen/marg_30px"
+                android:padding="@dimen/marg_20px"
+                android:gravity="center"
+                android:textSize="@dimen/size_32pt"
+                android:textColor="@color/red_E23924"
+                android:text="立即参与"
+                android:background="@drawable/bg_mra_whitlesold_selector"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

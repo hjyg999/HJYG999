@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/gold_e8"
+    android:orientation="vertical" >
+
+    <com.md.hjyg.layoutEntities.HeaderView
+        android:id="@+id/mheadView"
+        style="@style/headerWeight" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <com.md.hjyg.layoutEntities.RefreshableView
+            android:id="@+id/refreshable_view"
+            style="@style/Both_Match_style" >
+
+            <com.md.hjyg.utility.LoadMoreListView
+                android:id="@+id/mLoadMoreListView"
+                style="@style/Both_Match_style"
+                android:layout_marginTop="@dimen/marg_16px"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/marg_16px"
+                android:listSelector="@android:color/transparent" />
+        </com.md.hjyg.layoutEntities.RefreshableView>
+    </LinearLayout>
+
+</LinearLayout>

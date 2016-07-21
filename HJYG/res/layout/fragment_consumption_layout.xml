@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <GridView 
+        android:id="@+id/mGridView"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        style="@style/Both_Match_style" >
+    </GridView>
+
+</LinearLayout>

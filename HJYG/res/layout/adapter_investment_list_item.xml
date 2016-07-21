@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/Match_Wrap_style" >
+
+        <LinearLayout
+            android:id="@+id/lin_s"
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/marg_30px"
+            android:paddingLeft="@dimen/marg_30px"
+            android:paddingRight="@dimen/marg_30px"
+            android:paddingTop="@dimen/marg_20px" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_juoqi"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginRight="@dimen/marg_10px"
+                    android:src="@drawable/huoqi"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_loan_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="定投保D2015-001"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/size_28pt" />
+
+                <com.md.hjyg.utility.CustomDigitalClock
+                    android:id="@+id/cdc_hall_time"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginRight="@dimen/marg_10px"
+                    android:text="00:00:54"
+                    android:textColor="@color/yellow_ff9933"
+                    android:textSize="@dimen/size_24pt" />
+
+                <TextView
+                    android:id="@+id/tv_right_ys"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginRight="@dimen/marg_5px"
+                    android:background="@drawable/bg_mra_yellowff99ss_strok"
+                    android:paddingBottom="@dimen/marg_2px"
+                    android:paddingLeft="@dimen/marg_20px"
+                    android:paddingRight="@dimen/marg_20px"
+                    android:paddingTop="@dimen/marg_2px"
+                    android:text="预售"
+                    android:textColor="@color/yellow_ff9933"
+                    android:textSize="@dimen/size_24pt" />
+
+                <TextView
+                    android:id="@+id/tv_right_jx"
+                    style="@style/Both_Wrap_style"
+                    android:background="@drawable/bg_mra_yellowff99ss_strok"
+                    android:paddingBottom="@dimen/marg_2px"
+                    android:paddingLeft="@dimen/marg_20px"
+                    android:paddingRight="@dimen/marg_20px"
+                    android:paddingTop="@dimen/marg_2px"
+                    android:text="加息"
+                    android:textColor="@color/yellow_ff9933"
+                    android:textSize="@dimen/size_24pt" />
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="@dimen/marg_20px" >
+
+                <TextView
+                    android:id="@+id/tv_term_value"
+                    style="@style/Both_Wrap_style"
+                    android:text="30"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/size_36pt" />
+
+                <TextView
+                    android:id="@+id/tv_dw_value"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignBaseline="@+id/tv_term_value"
+                    android:layout_toRightOf="@+id/tv_term_value"
+                    android:text="个月"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/size_24pt" />
+
+                <LinearLayout
+                    android:id="@+id/lin"
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_rate_value"
+                        style="@style/Both_Wrap_style"
+                        android:text="11.00"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/size_36pt" />
+
+                    <TextView
+                        android:id="@+id/tv_rate_f"
+                        style="@style/Both_Wrap_style"
+                        android:text="%"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/size_24pt" />
+
+                    <TextView
+                        android:id="@+id/tv_rate_add"
+                        style="@style/Both_Wrap_style"
+                        android:text="+0.5"
+                        android:textColor="@color/yellow_ff9933"
+                        android:textSize="@dimen/size_24pt" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_amout_value"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignBaseline="@+id/tv_term_value"
+                    android:layout_alignParentRight="true"
+                    android:text="2016/03/02"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/size_36pt"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="@dimen/marg_2px" >
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_term_valuehit"
+                        style="@style/Both_Wrap_style"
+                        android:text="期限(月)"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="@dimen/size_24pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_ratehit"
+                        style="@style/Both_Wrap_style"
+                        android:text="@string/expect_year_rate"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="@dimen/size_24pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/booking_percentage_text"
+                        style="@style/Both_Wrap_style"
+                        android:text="核保审批"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="@dimen/size_24pt"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:layout_alignBottom="@+id/lin_s"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/marg_30px" >
+
+            <com.md.hjyg.layoutEntities.InvestProgressView
+                android:id="@+id/mProgressView"
+                style="@style/Both_Match_style" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.md.hjyg.layoutEntities.RefreshableScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/refreshableScrollView"
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    style="@style/Both_Match_style"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_deatils"
+                        style="@style/Match_Wrap_style"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            style="@style/Match_Wrap_style"
+                            android:background="@color/white"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/circle"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/circularshape"
+                                android:orientation="vertical"
+                                android:padding="10dp" >
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="3"
+                                    android:gravity="bottom" >
+
+                                    <TextView
+                                        android:id="@+id/tv_number"
+                                        style="@style/Both_Wrap_style"
+                                        android:text=""
+                                        android:textColor="@color/red"
+                                        android:textSize="26sp" />
+
+                                    <TextView
+                                        style="@style/Both_Wrap_style"
+                                        android:layout_alignBottom="@+id/tv_number"
+                                        android:layout_marginBottom="2dp"
+                                        android:layout_toRightOf="@+id/tv_number"
+                                        android:text="%"
+                                        android:textColor="@color/red"
+                                        android:textSize="14sp" />
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/gray_sq" />
+
+                                <TextView
+                                    android:id="@+id/tv_line"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal|top"
+                                    android:text="年化收益率"
+                                    android:textColor="@color/gray"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/tab"
+                                style="@style/Match_Wrap_style"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:weightSum="6" >
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_millionperday"
+                                        style="@style/Both_Wrap_style"
+                                        android:text=""
+                                        android:textColor="@color/red"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/millionperday"
+                                        style="@style/Both_Wrap_style"
+                                        android:text="每万元日收益"
+                                        android:textColor="@color/gray_sq"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_earningsdate"
+                                        style="@style/Both_Wrap_style"
+                                        android:text=""
+                                        android:textColor="@color/gray"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/earningsdate"
+                                        style="@style/Both_Wrap_style"
+                                        android:layout_gravity="center"
+                                        android:text="收益起始日"
+                                        android:textColor="@color/gray_sq"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_investmentamount"
+                                        style="@style/Both_Wrap_style"
+                                        android:text=""
+                                        android:textColor="@color/gray"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/investmentamount"
+                                        style="@style/Both_Wrap_style"
+                                        android:text="起投金额"
+                                        android:textColor="@color/gray_sq"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_line" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/gray_line" />
+
+                        <LinearLayout
+                            android:id="@+id/remainingamount"
+                            style="@style/Match_Wrap_style"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="10dp" >
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:layout_gravity="center"
+                                android:text="剩余金额  :"
+                                android:textColor="@color/gray_s"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_remainingamount"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/red"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_line" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/gray_line" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout1"
+                            style="@style/Match_Wrap_style"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="10dp" >
+
+                            <LinearLayout
+                                android:id="@+id/staticlabel"
+                                style="@style/Match_Wrap_style"
+                                android:background="@color/white"
+                                android:orientation="horizontal" >
+
+                               <!--  <TextView
+                                    android:id="@+id/tvinvestment"
+                                    style="@style/Both_Wrap_style"
+                                    android:text="起投金额 :"
+                                    android:textColor="@color/gray_sq"
+                                    android:textSize="14sp" /> -->
+
+                                <TextView
+                                    android:id="@+id/tv_investment"
+                                    style="@style/Both_Wrap_style"
+                                    android:text=""
+                                    android:textColor="@color/gray"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/staticlabel2"
+                                style="@style/Match_Wrap_style"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tv_incomeway"
+                                    style="@style/Both_Wrap_style"
+                                    android:text=""
+                                    android:textColor="@color/gray_sq"
+                                    android:textSize="14sp" />
+
+                                <!-- <TextView
+                                    android:id="@+id/tv_incomeway"
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_marginLeft="3dp"
+                                    android:text="按日计息按月复投"
+                                    android:textColor="@color/gray"
+                                    android:textSize="14sp" /> -->
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/staticlabel3"
+                                style="@style/Match_Wrap_style"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/text1"
+                                    style="@style/Both_Wrap_style"
+                                    android:text=""
+                                    android:textColor="@color/gray_sq"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray_line" />
+
+                        <include
+                            android:id="@+id/include_ratio"
+                            style="@style/Match_Wrap_style"
+                            layout="@layout/layout_link" />
+
+                        <TextView
+                            android:id="@+id/label"
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@color/gray_sq"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </ScrollView>
+            </com.md.hjyg.layoutEntities.RefreshableScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:background="@color/white"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <Button
+                android:id="@+id/btn_register_demand"
+                style="@style/Match_Wrap_style"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_selector_red"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/img_bg"
+        style="@style/Both_Wrap_style"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        style="@style/Both_Match_style"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/include_header"
+            style="@style/headerWeight"
+            layout="@layout/top_layout" />
+
+        <LinearLayout
+            style="@style/relativeLayoutWeight"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:background="@color/footer_button"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/marg_16px"
+                android:paddingLeft="@dimen/marg_30px"
+                android:paddingRight="@dimen/marg_30px"
+                android:paddingTop="@dimen/marg_16px" >
+
+                <TextView
+                    android:id="@+id/tv_no_of_record"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    style="@style/Both_Wrap_style"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_do_login"
+                style="@style/Match_Wrap_style"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/list_transaction_record"
+                style="@style/Match_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_30px"
+                android:layout_marginRight="@dimen/marg_30px"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:visibility="gone" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

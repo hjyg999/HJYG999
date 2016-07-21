@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list" >
+
+    <LinearLayout
+        android:id="@+id/lay_back_investment"
+        style="@style/wrap_match_style"
+        android:layout_centerVertical="true"
+        android:background="@color/bg_list"
+        android:paddingLeft="5dp" >
+
+        <ImageView
+            android:id="@+id/btn_back_select_city"
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/arrow" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Both_Wrap_style"
+        android:layout_centerInParent="true"
+        android:maxLength="19"
+        android:text="理财频道"
+        android:textColor="@color/gray"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        style="@style/Both_Wrap_style"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:src="@drawable/logo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lay_back_investment"
+        android:background="@color/red" />
+
+    <ImageView
+        android:id="@+id/head_right_img"
+        style="@style/Both_Wrap_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:src="@drawable/lottery_home_r"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/head_right_tv"
+        style="@style/Both_Wrap_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:text="登录"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+</RelativeLayout>

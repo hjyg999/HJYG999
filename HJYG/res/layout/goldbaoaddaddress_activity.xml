@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Match_Wrap_style"
+            android:background="@color/gold_qgray_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="请填写详细收货地址，我们将通过顺风速递发货。"
+            android:textColor="@color/gray_6"
+            android:textSize="@dimen/gold_mianSize" />
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/gold_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/gold_lin3"
+                    android:text="收件人"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <EditText
+                    android:id="@+id/ed_name"
+                    style="@style/gold_lin7"
+                    android:background="@color/white"
+                    android:hint="请输入收件人姓名"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_gold"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="@dimen/gold_mianSize" />
+            </LinearLayout>
+
+            <View style="@style/view_line_ma" />
+
+            <LinearLayout
+                android:id="@+id/lin_choiceaddress"
+                style="@style/gold_style"
+                android:background="@drawable/bg_white_selector"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/gold_lin3"
+                    android:text="所有地区"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <RelativeLayout style="@style/gold_lin7" >
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        style="@style/Both_Wrap_style"
+                        android:layout_centerVertical="true"
+                        android:hint="省/市/区"
+                        android:textColor="@color/gray_gold"
+                        android:textColorHint="@color/gray_q"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <ImageView
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/gold_noexpanded" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/view_line_ma" />
+
+            <LinearLayout
+                style="@style/gold_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/gold_lin3"
+                    android:text="详细地址"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <EditText
+                    android:id="@+id/ed_adress"
+                    style="@style/gold_lin7"
+                    android:background="@color/white"
+                    android:hint="街道名称/楼层/门牌号码"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_gold"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="@dimen/gold_mianSize" />
+            </LinearLayout>
+
+            <View style="@style/view_line_ma" />
+
+            <LinearLayout
+                style="@style/gold_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/gold_lin3"
+                    android:text="邮政编码"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <EditText
+                    android:id="@+id/ed_zipCode"
+                    style="@style/gold_lin7"
+                    android:background="@color/white"
+                    android:hint="如果您不清楚，请填写000000"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_gold"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="@dimen/gold_mianSize" />
+            </LinearLayout>
+
+            <View style="@style/view_line_ma" />
+
+            <LinearLayout
+                style="@style/gold_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/gold_lin3"
+                    android:text="联系电话"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <EditText
+                    android:id="@+id/ed_phone"
+                    style="@style/gold_lin7"
+                    android:background="@color/white"
+                    android:hint="请输入联系电话"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_gold"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="@dimen/gold_mianSize" />
+            </LinearLayout>
+
+            <View style="@style/view_line_ma" />
+
+            <RelativeLayout
+                android:id="@+id/rel_ckeck"
+                style="@style/gold_style" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:text="默认地址"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <ImageView
+                    android:id="@+id/img_ckeck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/gold_ckeckbox_no" />
+            </RelativeLayout>
+
+            <View style="@style/view_line_ma" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/Match_Wrap_style"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_selector"
+            android:padding="10dp"
+            android:text="确   认"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

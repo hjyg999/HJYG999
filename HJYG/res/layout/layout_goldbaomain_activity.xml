@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="168.88"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="持有市值(元)"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_60" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:text="持仓浮盈亏：-168.88元"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="历史收益：111,168.88元"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="2888.0000"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="持有黄金(克)"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="10"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="昨日生金豆(个)"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="1,528"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="累计生金豆(个)"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:background="@color/bg_list"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <LinearLayout
+                android:id="@+id/lin_nosell"
+                style="@style/Both_Wrap_style"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_bb"
+                    style="@style/Both_Wrap_style" />
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:text="停盘！"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:text="2016/12/01-2016/1203"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/gold_mianSize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_censell"
+                style="@style/Both_Match_style"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_tobuy"
+                        style="@style/Both_Wrap_style"
+                        android:background="@drawable/bg_redstroke_whitesolid_ra_selector"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="3dp"
+                        android:text="买入黄金"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/gold_mianSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_tosellout"
+                        style="@style/Both_Wrap_style"
+                        android:background="@drawable/bg_orgstroke_whitesolid_ra_selector"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="3dp"
+                        android:text="卖出黄金"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/gold_mianSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_toextract"
+                        style="@style/Both_Wrap_style"
+                        android:background="@drawable/bg_orgstroke_whitesolid_ra_selector"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="3dp"
+                        android:text="提取黄金"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/gold_mianSize" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.41"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                style="@style/Match_Wrap_style"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:text="实时金价：231.27元"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_Realprice"
+                        style="@style/Both_Wrap_style"
+                        android:background="@drawable/gold_bg_blra2"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp"
+                        android:text="实时金价"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_30price"
+                        style="@style/Both_Wrap_style"
+                        android:background="@drawable/gold_bg_brra1"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp"
+                        android:text="30天走势"
+                        android:textColor="@color/orange"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/img_chartbg"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/gold_main_bg" />
+
+                <LinearLayout
+                    style="@style/Both_Match_style"
+                    android:orientation="vertical" >
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/spread_line_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+                    </com.github.mikephil.charting.charts.LineChart>
+
+                    <LinearLayout
+                        android:id="@+id/lin_chart_bot"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left|center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="0.00"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/gold_mianSize" />
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="今日涨跌(元)"
+                                android:textColor="@color/gray_sq"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="0.00%"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/gold_mianSize" />
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="涨跌幅度"
+                                android:textColor="@color/gray_sq"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="0.00"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/gold_mianSize" />
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="今日最高"
+                                android:textColor="@color/gray_sq"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="0.00"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/gold_mianSize" />
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="今日涨跌(元)"
+                                android:textColor="@color/gray_sq"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.17"
+            android:orientation="vertical"
+            android:paddingBottom="5dp" >
+
+            <LinearLayout
+                android:id="@+id/lin_income"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_white_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="金豆明细"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <ImageView
+                    style="@style/Both_Wrap_style"
+                    android:src="@drawable/gold_arow_right" />
+            </LinearLayout>
+
+            <View style="@style/view_line_ma" />
+
+            <LinearLayout
+                android:id="@+id/lin_transaction"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_white_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="交易记录"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <ImageView
+                    style="@style/Both_Wrap_style"
+                    android:src="@drawable/gold_arow_right" />
+            </LinearLayout>
+
+            <View style="@style/view_line_ma"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

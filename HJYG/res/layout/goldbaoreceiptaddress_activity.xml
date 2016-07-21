@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/headerWeight" >
+
+        <include
+            android:id="@+id/include_header"
+            style="@style/Both_Match_style"
+            layout="@layout/template_header" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_white_selector"
+            android:padding="5dp"
+            android:text="编辑"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+             >
+
+            <ListView
+                android:id="@+id/mListView"
+                style="@style/Match_Wrap_style"
+                android:listSelector="@color/white"
+                android:divider="@color/white"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+        <View  style="@style/view_line"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/Match_Wrap_style"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_selector"
+            android:padding="10dp"
+            android:text="新增收货地址"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

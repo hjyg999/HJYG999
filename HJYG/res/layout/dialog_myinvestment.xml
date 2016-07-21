@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/marg_20px"
+    android:paddingRight="@dimen/marg_20px" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Match_Wrap_style"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/marg_30px"
+        android:text="逾期利息明细"
+        android:textColor="@color/gray_gold"
+        android:textSize="@dimen/size_36pt" />
+
+    <RelativeLayout
+        style="@style/Match_Wrap_style"
+        android:paddingBottom="@dimen/marg_20px"
+        android:paddingTop="@dimen/marg_20px" >
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:text="日期"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/size_30pt" />
+        <TextView
+            android:layout_alignParentRight="true"
+            style="@style/Both_Wrap_style"
+            android:text="逾期利息"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/size_30pt" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mListView"
+        style="@style/Match_Wrap_style"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout>

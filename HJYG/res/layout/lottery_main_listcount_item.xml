@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="0.3" >
+
+        <TextView
+            android:id="@+id/lottery_username_tv"
+            style="@style/Both_Wrap_style"
+            android:text="sdfdf"
+            android:textSize="12sp"
+            android:textColor="@color/lottery_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="0.3" >
+        
+        <TextView
+            android:id="@+id/lottery_prizename_tv"
+            style="@style/Both_Wrap_style"
+            android:text="sdfdf"
+            android:textSize="12sp"
+            android:textColor="@color/lottery_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="0.4" >
+        
+        <TextView
+            android:id="@+id/lottery_time_tv"
+            style="@style/Both_Wrap_style"
+            android:text="sdfdf"
+            android:textSize="12sp"
+            android:textColor="@color/lottery_text" />
+    </LinearLayout>
+
+</LinearLayout>

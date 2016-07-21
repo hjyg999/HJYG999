@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/top_layout"
+        style="@style/headerWeight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:background="@color/gray_f7"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_tab0"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="加息券"
+                android:textColor="@color/red_BF1424"
+                android:textSize="@dimen/size_28pt" />
+
+            <View
+                android:id="@+id/v_tab0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/red_BF1424"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="红包"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+
+            <View
+                android:id="@+id/v_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/red_BF1424"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <!-- <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已过期"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+
+            <View
+                android:id="@+id/v_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/red_BF1424"
+                android:visibility="invisible" />
+        </LinearLayout> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/id_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

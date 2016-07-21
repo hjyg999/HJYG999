@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <RelativeLayout style="@style/relativeLayoutWeight" >
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            style="@style/Both_Match_style" >
+
+            <LinearLayout
+                style="@style/Both_Match_style"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    style="@style/Match_Wrap_style"
+                    android:showDividers="middle" />
+
+                <View
+                    android:id="@+id/red_line_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_line" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    style="@style/Both_Match_style"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </TabHost>
+    </RelativeLayout>
+
+</LinearLayout>

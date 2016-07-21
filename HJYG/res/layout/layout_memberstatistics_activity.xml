@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        style="@style/relativeLayoutWeight"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/myRecommend_friend"
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/home_item_bg_selector"
+                android:orientation="vertical"
+                android:padding="@dimen/marg_30px" >
+
+                <RelativeLayout style="@style/Match_Wrap_style" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_centerVertical="true"
+                        android:text="我推荐的好友"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_28pt" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="@dimen/marg_16px"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/m_register_number"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/gray_s"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginTop="5dp"
+                            android:text="注册人数"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/size_24pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/m_invest_number"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/gray_s"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginTop="5dp"
+                            android:text="充值人数"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/size_24pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/m_income"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginTop="5dp"
+                            android:text="投资人数"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/size_24pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myfriendRecommend_friend"
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/home_item_bg_selector"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <RelativeLayout style="@style/Match_Wrap_style" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_centerVertical="true"
+                        android:text="我好友推荐的好友"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_28pt" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="@dimen/marg_16px"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/f_register_number"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/gray_s"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginTop="5dp"
+                            android:text="注册人数"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/size_24pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/f_invest_number"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/gray_s"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginTop="5dp"
+                            android:text="充值人数"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/size_24pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/f_income"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginTop="5dp"
+                            android:text="投资人数"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/size_24pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="我推荐的好友详情"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_24pt" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autotv"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="@dimen/marg_20px"
+                    android:background="@drawable/bg_grad_strok"
+                    android:drawableLeft="@drawable/rec_search_left_icon"
+                    android:drawablePadding="@dimen/marg_16px"
+                    android:hint="请输入好友的手机号码或者姓名"
+                    android:textColorHint="@color/gray_q"
+                    android:padding="@dimen/marg_16px"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_24pt" />
+            </LinearLayout>
+
+            <View style="@style/view_line" />
+
+            <View
+                style="@style/view_line"
+                android:layout_marginTop="@dimen/marg_16px" />
+
+            <ListView
+                android:id="@+id/mListView"
+                style="@style/Match_Wrap_style"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/lin_nodata"
+                style="@style/Match_Wrap_style"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/load_more_img"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/jxw_ku_142x180" />
+
+                <TextView
+                    android:id="@+id/load_more_text"
+                    style="@style/Both_Wrap_style"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="暂无数据!"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size_28pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_loading"
+                style="@style/Both_Wrap_style"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marg_10px"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:indeterminateDrawable="@drawable/loading"
+                    android:visibility="visible" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginLeft="5dp"
+                    android:text="数据加载中..."
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

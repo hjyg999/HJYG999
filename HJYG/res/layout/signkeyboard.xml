@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llSignKeyBoard"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btno1"
+            style="@style/btn_keyboardview_signkey_style"
+            android:text="@string/char_126"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btno2"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_33" />
+
+        <Button
+            android:id="@+id/btno3"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_64" />
+
+        <Button
+            android:id="@+id/btno4"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_35" />
+
+        <Button
+            android:id="@+id/btno5"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_36" />
+
+        <Button
+            android:id="@+id/btno6"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_37" />
+
+        <Button
+            android:id="@+id/btno7"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_94" />
+
+        <Button
+            android:id="@+id/btno8"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_38" />
+
+        <Button
+            android:id="@+id/btno9"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_42" />
+
+        <Button
+            android:id="@+id/btno0"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_40" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnt1"
+            style="@style/btn_keyboardview_signkey_style"
+            android:text="@string/char_41" />
+
+        <Button
+            android:id="@+id/btnt2"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_95" />
+
+        <Button
+            android:id="@+id/btnt3"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_43" />
+
+        <Button
+            android:id="@+id/btnt4"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_124" />
+
+        <Button
+            android:id="@+id/btnt5"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_96" />
+
+        <Button
+            android:id="@+id/btnt6"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_45" />
+
+        <Button
+            android:id="@+id/btnt7"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_61" />
+
+        <Button
+            android:id="@+id/btnt8"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_92" />
+
+        <Button
+            android:id="@+id/btnt9"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_123" />
+
+        <Button
+            android:id="@+id/btnt0"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_125" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btntt1"
+            style="@style/btn_keyboardview_signkey_style"
+            android:text="@string/char_91" />
+
+        <Button
+            android:id="@+id/btntt2"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_93" />
+
+        <Button
+            android:id="@+id/btntt3"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_58" />
+
+        <Button
+            android:id="@+id/btntt4"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_34" />
+
+        <Button
+            android:id="@+id/btntt5"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_59" />
+
+        <Button
+            android:id="@+id/btntt6"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_39" />
+
+        <Button
+            android:id="@+id/btntt7"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_60" />
+
+        <Button
+            android:id="@+id/btntt8"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_62" />
+
+        <Button
+            android:id="@+id/btntt9"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_63" />
+
+        <Button
+            android:id="@+id/btntt0"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_44" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <Button
+            android:id="@+id/btnSign123"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_weight="2"
+            android:background="@drawable/kbkeyback_change"
+            android:text="123"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnf1"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_46" />
+
+        <Button
+            android:id="@+id/btnSignSpace"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="4"
+            android:text="Space" />
+
+        <Button
+            android:id="@+id/btnf2"
+            style="@style/btn_keyboardview_signkey_style"
+            android:layout_marginLeft="1dp"
+            android:text="@string/char_47" />
+
+    </LinearLayout>
+
+</LinearLayout>

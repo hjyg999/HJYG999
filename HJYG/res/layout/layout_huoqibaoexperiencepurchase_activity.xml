@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.87"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/details"
+            style="@style/Match_Wrap_style"
+            android:background="@color/gray_e9"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marg_20px"
+            android:paddingLeft="@dimen/marg_30px"
+            android:paddingRight="@dimen/marg_30px"
+            android:paddingTop="@dimen/marg_20px" >
+
+            <TextView
+                android:id="@+id/tv_titledate"
+                style="@style/Both_Wrap_style"
+                android:gravity="center"
+                android:text="日期"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+
+            <TextView
+                android:id="@+id/tv_titleamount"
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="收入(元)"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/marg_30px"
+            android:paddingRight="@dimen/marg_30px" >
+
+            <com.md.hjyg.utility.LoadMoreListView
+                android:id="@+id/mListView"
+                style="@style/Match_Wrap_style"
+                android:divider="@color/gray_line"
+                android:dividerHeight="1dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:orientation="vertical" >
+
+        <View style="@style/view_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="*收入均为体验金利息收入"
+            android:textColor="@color/gray_gold"
+            android:textSize="@dimen/size_24pt" />
+    </LinearLayout>
+
+</LinearLayout>

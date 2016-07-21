@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:layout_weight="1"
+    android:background="@drawable/tab_indicator_selector"
+    android:orientation="horizontal" >
+
+    <!-- android:layout_width="wrap_content" 把50修改成了0 ，显示平分 -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            style="@style/wrap_match_style"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/title"
+                style="?android:attr/tabWidgetStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@drawable/tab_redpackettext"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray_line"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" />
+
+</LinearLayout>

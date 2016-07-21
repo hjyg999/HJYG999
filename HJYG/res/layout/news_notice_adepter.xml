@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="15dp" >
+
+    <ImageView
+        android:id="@+id/new_ishot_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/marg_20px"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/news_title"
+            style="@style/Both_Wrap_style"
+            android:text="1"
+            android:textColor="@color/gray_gold"
+            android:textSize="@dimen/size_32pt" />
+
+        <TextView
+            android:id="@+id/news_time"
+            style="@style/Both_Wrap_style"
+            android:layout_marginTop="3dp"
+            android:text="2"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/size_24pt"  />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    style="@style/gold_style"
+                    android:background="@drawable/bg_white_selector" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_centerVertical="true"
+                        android:text="持有黄金"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="2.0689克"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/gold_mianSize" />
+                </RelativeLayout>
+
+                <View style="@style/view_line_ma" />
+
+                <LinearLayout
+                    android:id="@+id/lin_goldtype"
+                    style="@style/gold_style"
+                    android:background="@drawable/bg_white_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_goldtype"
+                        style="@style/gold_lin3"
+                        android:text="金条类型"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <RelativeLayout style="@style/gold_lin7" >
+
+                        <TextView
+                            android:id="@+id/ed_goldtype"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:hint="选择金条类型"
+                            android:textColor="@color/gray_gold"
+                            android:textColorHint="@color/gray_q"
+                            android:textSize="@dimen/gold_mianSize" />
+
+                        <ImageView
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/description"
+                            android:src="@drawable/gold_noexpanded" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View style="@style/view_line_ma" />
+
+                <LinearLayout
+                    style="@style/gold_style"
+                    android:background="@drawable/bg_white_selector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_acount"
+                        style="@style/gold_lin3"
+                        android:text="金条数量"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <EditText
+                        android:id="@+id/ed_acount"
+                        style="@style/gold_lin7"
+                        android:background="@color/white"
+                        android:hint="请输入提取金条的数量"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/gray_gold"
+                        android:textColorHint="@color/gray_q"
+                        android:textSize="@dimen/gold_mianSize" />
+                </LinearLayout>
+
+                <View style="@style/view_line_ma" />
+
+                <LinearLayout
+                    android:id="@+id/lin_choieshop"
+                    style="@style/gold_style"
+                    android:background="@drawable/bg_white_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_choieshop"
+                        style="@style/gold_lin3"
+                        android:text="选择金店"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <RelativeLayout style="@style/gold_lin7" >
+
+                        <TextView
+                            android:id="@+id/ed_choieshop"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:background="@color/white"
+                            android:hint="请选择就近的金店取货"
+                            android:textColor="@color/gray_gold"
+                            android:textColorHint="@color/gray_q"
+                            android:textSize="@dimen/gold_mianSize" />
+
+                        <ImageView
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/description"
+                            android:src="@drawable/gold_arow_right" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View style="@style/view_line_ma" />
+
+                <LinearLayout
+                    style="@style/gold_style"
+                    android:background="@drawable/bg_white_selector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_password"
+                        style="@style/gold_lin3"
+                        android:text="交易密码"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <EditText
+                        android:id="@+id/ed_password"
+                        style="@style/gold_lin7"
+                        android:background="@color/white"
+                        android:hint="请输入交易密码"
+                        android:inputType="textPassword"
+                        android:textColor="@color/gray_gold"
+                        android:textColorHint="@color/gray_q"
+                        android:textSize="@dimen/gold_mianSize" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Match_Wrap_style"
+                    android:background="@color/gold_qgray_bg"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:text="加工费：39.95元/克(10元/克)"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="20dp" >
+
+                    <TextView
+                        style="@style/Match_Wrap_style"
+                        android:text="提金规则"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <TextView
+                        style="@style/Match_Wrap_style"
+                        android:layout_marginTop="5dp"
+                        android:lineSpacingExtra="3dp"
+                        android:text="1.投资金条类产品仅限提取合作品牌玛丽莱金条；\n2.可兑换合作商家的黄金类饰品，工费按合作商家店面规定为准，另行付费；\n3.请本人携带身份证件及手机到店兑换及提取；\n4.服务热线：4000-781-901。"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <View style="@style/view_line" />
+
+        <Button
+            android:id="@+id/btn_buy"
+            style="@style/Match_Wrap_style"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_selector"
+            android:padding="10dp"
+            android:text="确认提取"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

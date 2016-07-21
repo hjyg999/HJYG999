@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/marg_22px"
+        android:paddingRight="@dimen/marg_22px" >
+
+        <RelativeLayout
+            android:id="@+id/rl_province"
+            style="@style/Match_Wrap_style" >
+
+            <EditText
+                android:background="@drawable/bg_edit_line_selector_redorgray"
+                android:id="@+id/ed_province"
+                style="@style/Match_Wrap_style"
+                android:drawableLeft="@drawable/bank_adr"
+                android:drawablePadding="@dimen/marg_20px"
+                android:editable="false"
+                android:hint="省/市"
+                android:paddingBottom="@dimen/marg_40px"
+                android:paddingLeft="@dimen/marg_8px"
+                android:paddingRight="@dimen/marg_8px"
+                android:paddingTop="@dimen/marg_40px"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray_q"
+                android:textSize="@dimen/size_28pt" />
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="-5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/Both_Wrap_style"
+                    android:padding="@dimen/marg_10px"
+                    android:src="@drawable/arrow_bottom_gray"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/Match_Wrap_style" >
+
+            <EditText
+                android:id="@+id/ed_branch"
+                style="@style/Match_Wrap_style"
+                android:background="@drawable/bg_edit_line_selector_redorgray"
+                android:drawableLeft="@drawable/bank_ka"
+                android:drawablePadding="@dimen/marg_20px"
+                android:hint="请务必填写正确的支行名称"
+                android:paddingBottom="@dimen/marg_40px"
+                android:paddingLeft="@dimen/marg_8px"
+                android:paddingRight="@dimen/marg_8px"
+                android:paddingTop="@dimen/marg_40px"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray_q"
+                android:textSize="@dimen/size_28pt" />
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="-5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_delete"
+                    style="@style/Both_Wrap_style"
+                    android:padding="@dimen/marg_10px"
+                    android:src="@drawable/delete_28"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/marg_60px"
+            android:id="@+id/tv_btn"
+            style="@style/Match_Wrap_style"
+            android:background="@drawable/bg_ra_redstroke_selector"
+            android:gravity="center"
+            android:padding="@dimen/marg_26px"
+            android:text="确定"
+            android:textColor="@color/red"
+            android:textSize="@dimen/size_36pt" />
+
+        <TextView
+            android:layout_marginTop="@dimen/marg_60px"
+            style="@style/Both_Wrap_style"
+            android:text="@string/tips"
+            android:textColor="@color/gray_gold"
+            android:textSize="@dimen/size_24pt" />
+
+        <TextView
+            android:id="@+id/tv_hitmsg"
+            style="@style/Match_Wrap_style"
+            android:layout_marginTop="6dp"
+            android:lineSpacingExtra="3dp"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="@dimen/size_24pt" />
+
+        <ImageView
+            android:id="@+id/img_bot"
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/marg_60px"
+            android:src="@drawable/aliyun" />
+    </LinearLayout>
+
+</LinearLayout>

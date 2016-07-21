@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/marg_35px"
+    android:paddingTop="@dimen/marg_35px" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3" >
+
+        <TextView
+            android:id="@+id/tv_safty"
+            style="@style/Both_Wrap_style"
+            android:text="安全保障"
+            android:gravity="center"
+            android:drawablePadding="@dimen/marg_10px"
+            android:drawableLeft="@drawable/details_safty"
+            android:textColor="@color/gray_gold"
+            android:textSize="@dimen/size_28pt" />
+
+        <TextView
+            android:id="@+id/tv_records"
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentRight="true"
+            android:text="交易记录"
+            android:gravity="center"
+            android:drawablePadding="@dimen/marg_10px"
+            android:drawableLeft="@drawable/details_records"
+            android:textColor="@color/gray_gold"
+            android:textSize="@dimen/size_28pt" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>

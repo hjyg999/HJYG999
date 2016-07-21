@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <RelativeLayout style="@style/relativeLayoutWeight" >
+
+        <ImageView
+            android:id="@+id/img_two_dimensional_code"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_MyTwoDimensionDes"
+            style="@style/Match_Wrap_style"
+            android:layout_above="@+id/img_two_dimensional_code"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:paddingBottom="30dp"
+            android:textColor="@color/gray_sq"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/marg_20px"
+    android:paddingTop="@dimen/marg_20px" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="2016/02/13"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/size_30pt" />
+
+    <TextView
+        android:id="@+id/tv_income"
+        style="@style/Both_Wrap_style"
+        android:text="2.00"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/size_30pt" />
+
+</LinearLayout>

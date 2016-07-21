@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.42"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="center"
+            android:src="@drawable/register_succeed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/add_bankcard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_red"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="立即充值"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tologin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_red_stroke_border_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="注册完成"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                style="@style/wrap_match_style"
+                android:orientation="vertical" >
+
+                <ImageView
+                    style="@style/Both_Wrap_style"
+                    android:src="@drawable/registersucceed" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/green_q" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:paddingTop="1dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="注册成功"
+                    android:textColor="@color/green_q"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tep1_texthit"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginTop="1dp"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                style="@style/wrap_match_style"
+                android:orientation="vertical" >
+
+                <ImageView
+                    style="@style/Both_Wrap_style"
+                    android:src="@drawable/registerfail" />
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/vertical_lin2"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/gray_q" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:paddingTop="1dp" >
+
+                <TextView
+                    android:id="@+id/tep2_text"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tep2_texthit"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginTop="1dp"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/tep3"
+                style="@style/Both_Wrap_style"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:visibility="gone"
+                    style="@style/Both_Wrap_style"
+                    android:src="@drawable/registerfail" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:paddingTop="1dp" >
+
+                <TextView
+                    android:id="@+id/tep3_text"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tep3_texthit"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginTop="1dp"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/Match_Wrap_style"
+        android:background="@color/red"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="保存二维码"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/save_tv"
+        android:background="@drawable/bg_white_selector"
+        style="@style/Match_Wrap_style"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="保存到手机"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:background="@drawable/bg_white_selector"
+        style="@style/Match_Wrap_style"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="取消"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+</LinearLayout>

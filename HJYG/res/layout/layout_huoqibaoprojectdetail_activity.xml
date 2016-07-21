@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+    <ListView 
+        android:id="@+id/myListView"
+        style="@style/relativeLayoutWeight"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
+        ></ListView>
+    
+
+    <!-- <ScrollView
+        android:id="@+id/scroll_main"
+        style="@style/relativeLayoutWeight"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/project_brief"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text="@string/huoqi_project_brief"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_investmentrange"
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/investment_outlet"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/investmentrange"
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text="@string/huo_description"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_projectduration"
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/duration"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/projectduration"
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:singleLine="false"
+                    android:text="@string/huoqibao_duration"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/expect_year_rate"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_Rate"
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/investment_amount"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_StartInvestAmount"
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/huoqi_total_amount"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_Total"
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/huoqi_purchaseLimit"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_PurchaseLimit"
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/buy_rule"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/buy_rule"
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/widrawal_rule"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text="@string/huoqi_widrawal_rule"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/huoqihao_time_t"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text="@string/huoqihao_time"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView> -->
+
+</LinearLayout>

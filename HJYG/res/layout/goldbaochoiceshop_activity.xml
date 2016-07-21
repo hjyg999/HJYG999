@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:background="@color/gold_qgray_bg"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="请选择就近的金店取货"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/gold_mianSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+             >
+
+            <LinearLayout
+                android:id="@+id/lin_choiceaddress"
+                style="@style/gold_style"
+                android:background="@drawable/bg_white_selector"
+                android:orientation="horizontal"
+                 >
+
+                <TextView
+                    style="@style/gold_lin3"
+                    android:text="所有地区"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <RelativeLayout style="@style/gold_lin7" >
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        style="@style/Both_Wrap_style"
+                        android:layout_centerVertical="true"
+                        android:hint="省/市/区"
+                        android:textColor="@color/gray_gold"
+                        android:textColorHint="@color/gray_q"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <ImageView
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/gold_noexpanded" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/view_line_ma" />
+
+            <LinearLayout
+                style="@style/gold_style"
+                android:background="@drawable/bg_white_selector"
+                android:orientation="horizontal"
+                 >
+
+                <TextView
+                    style="@style/gold_lin3"
+                    android:text="选择金店"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <RelativeLayout style="@style/gold_lin7" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_centerVertical="true"
+                        android:hint="就近的金店"
+                        android:textColor="@color/gray_gold"
+                        android:textColorHint="@color/gray_q"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <ImageView
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/gold_noexpanded" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/view_line_ma" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <Button
+            android:id="@+id/btn_comfire"
+            style="@style/Match_Wrap_style"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_selector"
+            android:padding="10dp"
+            android:text="确认"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

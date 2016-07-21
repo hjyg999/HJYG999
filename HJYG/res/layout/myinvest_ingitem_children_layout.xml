@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+    <RelativeLayout
+        style="@style/Match_Wrap_style"
+        android:paddingBottom="@dimen/marg_16px"
+        android:paddingLeft="@dimen/marg_28px"
+        android:paddingRight="@dimen/marg_20px"
+        android:paddingTop="@dimen/marg_16px" >
+
+        <ImageView
+            android:id="@+id/img"
+            style="@style/Both_Wrap_style"
+            android:layout_centerVertical="true"
+            android:src="@drawable/myinvest_tyj" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/Both_Wrap_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marg_10px"
+            android:layout_toRightOf="@+id/img"
+            android:text="体验金"
+            android:textColor="@color/gray_sq"
+            android:textSize="@dimen/size_24pt" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="5,000元"
+            android:textColor="@color/gray_sq"
+            android:textSize="@dimen/size_24pt" />
+    </RelativeLayout>
+
+</LinearLayout>

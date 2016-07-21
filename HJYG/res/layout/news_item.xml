@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/checkbox_news"
+            style="@style/Both_Wrap_style"
+            android:visibility="gone"
+            android:layout_marginLeft="2dp"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/read_status_icon"
+            style="@style/Both_Wrap_style"
+            android:background="@drawable/news_unread"
+            android:layout_marginLeft="4dp" />
+
+        <LinearLayout
+            style="@style/Both_Wrap_style"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                style="@style/Both_Wrap_style"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_news_time"
+                style="@style/Both_Wrap_style"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

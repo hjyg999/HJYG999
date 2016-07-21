@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        style="@style/Both_Match_style"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/headerWeight" >
+
+            <ImageView
+                android:id="@+id/lay_back_investment"
+                style="@style/Both_Wrap_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/description"
+                android:padding="5dp"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Both_Wrap_style"
+                android:layout_centerInParent="true"
+                android:maxLength="19"
+                android:text="活动抽奖"
+                android:textColor="@color/gray"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/myawards"
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/red_bg"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="我的奖品"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <com.md.hjyg.layoutEntities.RefreshableScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refreshableScrollView"
+            style="@style/relativeLayoutWeight"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/mScrollView"
+                style="@style/Both_Match_style"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout style="@style/Both_Wrap_style" >
+
+                        <ImageView
+                            android:id="@+id/img_top"
+                            style="@style/Both_Wrap_style"
+                            android:contentDescription="@string/description"
+                            android:src="@drawable/meeting_topimg" />
+
+                        <TextView
+                            android:id="@+id/tv_starttime"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/meeting_time_bg"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/yellow_FEE473"
+                            android:textSize="@dimen/size_28pt" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_lottery"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="@drawable/meeting_lotteryimg"
+                        android:visibility="visible" >
+
+                        <ImageView
+                            android:id="@+id/img_meeting_viewbg"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/description"
+                            android:src="@drawable/meeting_viewbg" />
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout"
+                            style="@style/Both_Match_style"
+                            android:layout_centerInParent="true" >
+                        </FrameLayout>
+
+                        <ImageView
+                            android:id="@+id/img_pointer"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/description"
+                            android:src="@drawable/meeting_pointer" />
+
+                        <ImageView
+                            android:id="@+id/img_btn"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/description"
+                            android:src="@drawable/meeting_btn_yes" />
+
+                        <ImageView
+                            android:id="@+id/img_load"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/description"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/img_bot_cr"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/description"
+                            android:src="@drawable/meeting_cr1" />
+
+                        <LinearLayout
+                            android:id="@+id/rel_havezj"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/meeting_zj_rbg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:id="@+id/img_havezj"
+                                style="@style/Both_Wrap_style" />
+
+                            <TextView
+                                android:id="@+id/tv_havezjmsg"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginTop="@dimen/marg_10px"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/gold_8A0506"
+                                android:textSize="@dimen/size_28pt" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rel_zj_pop"
+                            android:layout_width="270dp"
+                            android:layout_height="220dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/meeting_zj_bg"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:id="@+id/img_clos"
+                                style="@style/Both_Wrap_style"
+                                android:layout_alignParentRight="true"
+                                android:padding="8dp"
+                                android:src="@drawable/delete_28" />
+
+                            <LinearLayout
+                                style="@style/Both_Match_style"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.6"
+                                    android:gravity="center_horizontal|bottom"
+                                    android:orientation="vertical" >
+
+                                    <ImageView
+                                        android:id="@+id/img_zj"
+                                        style="@style/Both_Wrap_style"
+                                        android:src="@drawable/meeting_bb_zj" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_zjmsg"
+                                        style="@style/Both_Wrap_style"
+                                        android:text="恭喜你，抽中10,000元体验金"
+                                        android:textColor="@color/yellow_FFED00"
+                                        android:textSize="@dimen/size_28pt" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical" >
+
+                                        <TextView
+                                            android:id="@+id/tv_btn_zj"
+                                            style="@style/Both_Wrap_style"
+                                            android:background="@drawable/bg_ra_yellow_ffe400_selector"
+                                            android:paddingBottom="@dimen/marg_16px"
+                                            android:paddingLeft="@dimen/marg_130px"
+                                            android:paddingRight="@dimen/marg_130px"
+                                            android:paddingTop="@dimen/marg_16px"
+                                            android:text="查看奖品"
+                                            android:textColor="@color/yellow_FEE473"
+                                            android:textSize="@dimen/size_28pt" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_jjks_pop"
+                            android:layout_width="270dp"
+                            android:layout_height="180dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/meeting_jjks_bg"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.65"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical" >
+
+                                <ImageView
+                                    android:id="@+id/img_jjks"
+                                    style="@style/Both_Wrap_style"
+                                    android:src="@drawable/meeting_bb_jjks" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.35"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    style="@style/Both_Wrap_style"
+                                    android:text="即将开始，敬请期待！"
+                                    android:textColor="@color/yellow_FFED00"
+                                    android:textSize="@dimen/size_28pt" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_listbg"
+                        style="@style/Match_Wrap_style"
+                        android:background="@drawable/meeting_mbg_c"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/img_namelist"
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/description"
+                            android:src="@drawable/meeting_namelist" />
+
+                        <RelativeLayout
+                            style="@style/Match_Wrap_style"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/img_namebg"
+                                style="@style/Both_Wrap_style"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/meeting_rbg"
+                                android:contentDescription="@string/description" />
+
+                            <LinearLayout
+                                android:id="@+id/lin_listView"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <ListView
+                                    android:id="@+id/mlistView"
+                                    style="@style/Match_Wrap_style"
+                                    android:divider="@color/c_FDC661"
+                                    android:dividerHeight="1dp"
+                                    android:scrollbars="none"
+                                    android:smoothScrollbar="true" >
+                                </ListView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lin_nodate"
+                                style="@style/Both_Wrap_style"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical" >
+
+                                <ImageView
+                                    style="@style/Both_Wrap_style"
+                                    android:contentDescription="@string/description"
+                                    android:src="@drawable/meeting_bb_ku_nodata" />
+
+                                <TextView
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_marginTop="@dimen/marg_20px"
+                                    android:text="暂无中奖记录"
+                                    android:textColor="@color/gold_8A0506"
+                                    android:textSize="@dimen/size_28pt" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_line"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/meeting_line" />
+
+                    <LinearLayout
+                        style="@style/Match_Wrap_style"
+                        android:background="#8d0710"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/img_namerule"
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/meeting_rule"
+                            android:contentDescription="@string/description" />
+
+                        <RelativeLayout
+                            style="@style/Match_Wrap_style"
+                            android:paddingBottom="@dimen/marg_30px" >
+
+                            <ImageView
+                                android:id="@+id/img_namerulebg"
+                                style="@style/Both_Wrap_style"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/meeting_rbg"
+                                android:contentDescription="@string/description" />
+
+                            <TextView
+                                android:id="@+id/tv_rule"
+                                style="@style/Match_Wrap_style"
+                                android:lineSpacingExtra="@dimen/marg_5px"
+                                android:paddingLeft="@dimen/marg_70px"
+                                android:paddingRight="@dimen/marg_70px"
+                                android:paddingTop="@dimen/marg_20px"
+                                android:textColor="@color/gold_8A0506"
+                                android:textSize="@dimen/size_28pt" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </com.md.hjyg.layoutEntities.RefreshableScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_loading"
+        style="@style/Both_Wrap_style"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_loading_m"
+            style="@style/Both_Wrap_style" />
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:layout_marginTop="@dimen/marg_20px"
+            android:text="拼命加载中..."
+            android:textColor="@color/gray"
+            android:textSize="@dimen/size_32pt" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_mDownView"
+        style="@style/Both_Match_style"
+        android:background="#a0000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.md.hjyg.layoutEntities.LotteryCountDownView
+            android:id="@+id/mDownView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/down_nubimg"
+            style="@style/Both_Wrap_style"
+            android:layout_centerInParent="true"
+            android:src="@drawable/meeting_sz0" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/to_top"
+        style="@style/Both_Wrap_style"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="5dp"
+        android:alpha="0.5"
+        android:background="#00000000"
+        android:padding="10dp"
+        android:src="@drawable/meeting_totop" />
+
+</RelativeLayout>

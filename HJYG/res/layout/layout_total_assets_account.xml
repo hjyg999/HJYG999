@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <ScrollView
+        style="@style/relativeLayoutWeight"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/Both_Match_style"
+            android:orientation="vertical" 
+            android:paddingBottom="@dimen/marg_30px">
+
+            <LinearLayout
+                android:id="@+id/line_bg"
+                android:layout_width="293dp"
+                android:layout_height="470dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marg_30px"
+                android:background="@drawable/jcze_bg660x1060"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.63"
+                    android:paddingTop="@dimen/marg_30px" >
+
+                    <LinearLayout
+                        style="@style/Both_Match_style"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <com.md.hjyg.layoutEntities.ShadeProgressView
+                            android:id="@+id/shadeProgressView"
+                            android:layout_width="207dp"
+                            android:layout_height="207dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Match_Wrap_style"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/marg_40px" >
+
+                        <TextView
+                            android:id="@+id/tv_available_bal_value"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/size_56pt" />
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:text="可用余额(元)"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            android:id="@+id/tv_total_income_value"
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginTop="@dimen/marg_20px"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <LinearLayout
+                            android:id="@+id/line_mx"
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginTop="@dimen/marg_40px"
+                            android:background="@drawable/bg_mra_whitlestroke_nosolid_selector"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/marg_5px"
+                            android:paddingLeft="@dimen/marg_30px"
+                            android:paddingRight="@dimen/marg_30px"
+                            android:paddingTop="@dimen/marg_5px" >
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="明细"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size_28pt" />
+
+                            <ImageView
+                                android:id="@+id/img_arrow1"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginLeft="@dimen/marg_5px"
+                                android:src="@drawable/arrow_whit24x24" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.373"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/marg_30px"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:text="冻结金额"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            android:id="@+id/tv_amount_freeze_value"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/marg_60px"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/marg_30px"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:text="待收本金"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            android:id="@+id/tv_principal_amt_value"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/marg_60px"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/marg_30px"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:text="待收利息"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            android:id="@+id/tv_proceeds_value"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/marg_60px"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_myhuoqibao"
+                        android:background="@drawable/bg_no_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/marg_30px"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:text="活期宝"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            android:id="@+id/tv_huoqibao_value"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/marg_60px"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <ImageView
+                            android:id="@+id/img_arrow2"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/marg_20px"
+                            android:src="@drawable/arrow_whit24x24" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

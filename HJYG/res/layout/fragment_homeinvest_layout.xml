@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/gold_e8"
+    android:orientation="vertical" >
+
+    <com.md.hjyg.layoutEntities.HeaderView
+        android:id="@+id/mheadView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.md.hjyg.layoutEntities.RefreshableScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refreshableScrollView"
+            style="@style/Both_Match_style"
+            android:orientation="vertical" >
+
+            <com.md.hjyg.layoutEntities.ScrollViewExtend
+                android:id="@+id/mScrollView"
+                style="@style/Both_Match_style"
+                android:fillViewport="true"
+                android:isScrollContainer="true"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/ll_view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="@dimen/marg_5px"
+                        android:orientation="vertical" >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/view_pager"
+                            style="@style/Both_Match_style" />
+
+                        <LinearLayout
+                            android:id="@+id/dotLayout"
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:orientation="horizontal" />
+                    </FrameLayout>
+
+                    <RelativeLayout
+                        style="@style/Match_Wrap_style"
+                        android:background="@color/white"
+                        android:padding="@dimen/marg_30px" >
+
+                        <ImageView
+                            android:id="@+id/img_laba"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/laba_red" />
+
+                        <TextSwitcher
+                            android:id="@+id/mTextSwitcher"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/marg_16px"
+                            android:layout_toRightOf="@+id/img_laba" />
+
+                        <TextSwitcher
+                            android:id="@+id/mTextSwitcher_r"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/huoqibao_ll"
+                        style="@style/Match_Wrap_style"
+                        android:layout_marginTop="@dimen/marg_16px"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/marg_30px"
+                        android:paddingLeft="@dimen/marg_30px"
+                        android:paddingRight="@dimen/marg_30px"
+                        android:paddingTop="@dimen/marg_20px" >
+
+                        <RelativeLayout style="@style/Match_Wrap_style" >
+
+                            <ImageView
+                                android:id="@+id/img_juoqi"
+                                style="@style/Both_Wrap_style"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/marg_10px"
+                                android:src="@drawable/huoqi"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tv_loan_title"
+                                style="@style/Both_Wrap_style"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/img_juoqi"
+                                android:text="活期宝"
+                                android:textColor="@color/gray_gold"
+                                android:textSize="@dimen/size_28pt" />
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="1元起投"
+                                android:textColor="@color/gray_sq"
+                                android:textSize="@dimen/size_24pt" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            style="@style/Match_Wrap_style"
+                            android:layout_marginTop="@dimen/marg_20px" >
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    style="@style/Both_Wrap_style"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_term_value"
+                                        style="@style/Both_Wrap_style"
+                                        android:text=""
+                                        android:textColor="@color/gray_gold"
+                                        android:textSize="@dimen/size_36pt" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_term_valuehit"
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_marginTop="@dimen/marg_2px"
+                                    android:text="每万元日收益(元)"
+                                    android:textColor="@color/gray_sq"
+                                    android:textSize="@dimen/size_24pt" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:id="@+id/lin_c"
+                                    style="@style/Both_Wrap_style"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/huoqibao_rate"
+                                        style="@style/Both_Wrap_style"
+                                        android:text=""
+                                        android:textColor="@color/red"
+                                        android:textSize="@dimen/size_36pt" />
+
+                                    <TextView
+                                        style="@style/Both_Wrap_style"
+                                        android:text="%"
+                                        android:textColor="@color/red"
+                                        android:textSize="@dimen/size_24pt" />
+
+                                    <TextView
+                                        style="@style/Both_Wrap_style"
+                                        android:text=""
+                                        android:textColor="@color/yellow_ff9933"
+                                        android:textSize="@dimen/size_24pt" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_ratehit"
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_marginTop="@dimen/marg_2px"
+                                    android:text="@string/expect_year_rate"
+                                    android:textColor="@color/gray_sq"
+                                    android:textSize="@dimen/size_24pt" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:layout_alignParentRight="true"
+                                android:gravity="right"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/tv_huoqibao"
+                                    style="@style/Both_Wrap_style"
+                                    android:text=""
+                                    android:textColor="@color/gray_gold"
+                                    android:textSize="@dimen/size_36pt"
+                                    android:visibility="visible" />
+
+                                <TextView
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_marginTop="@dimen/marg_2px"
+                                    android:text="剩余可投(元)"
+                                    android:textColor="@color/gray_sq"
+                                    android:textSize="@dimen/size_24pt"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/mListView"
+                        style="@style/Match_Wrap_style"
+                        android:layout_marginTop="@dimen/marg_16px"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="@dimen/marg_16px"
+                        android:listSelector="@android:color/transparent" />
+
+                    <LinearLayout
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/marg_40px"
+                        android:paddingTop="@dimen/marg_40px" >
+
+                        <RelativeLayout style="@style/Match_Wrap_style" >
+
+                            <TextView
+                                android:id="@+id/tv_text1"
+                                style="@style/Both_Wrap_style"
+                                android:text=""
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/size_24pt" />
+
+                            <TextView
+                                android:id="@+id/tv_text2"
+                                style="@style/Both_Wrap_style"
+                                android:layout_alignParentRight="true"
+                                android:text=""
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/size_24pt" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_text3"
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginTop="@dimen/marg_2px"
+                            android:text=""
+                            android:textColor="@color/gray_sq"
+                            android:textSize="@dimen/size_24pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.md.hjyg.layoutEntities.ScrollViewExtend>
+        </com.md.hjyg.layoutEntities.RefreshableScrollView>
+
+        <ImageView
+            android:id="@+id/img_ec"
+            style="@style/Both_Wrap_style"
+            android:visibility="visible"
+            android:src="@drawable/happysmallwriting_home"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/marg_40px"
+            android:layout_marginRight="@dimen/marg_30px"
+             />
+
+        <include
+            style="@style/Both_Match_style"
+            layout="@layout/layout_loading" />
+    </RelativeLayout>
+
+</LinearLayout>

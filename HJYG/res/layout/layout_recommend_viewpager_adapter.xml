@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <com.md.hjyg.layoutEntities.RecommendedView
+        android:id="@+id/myView"
+        style="@style/Both_Match_style" />
+    <!--
+             <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11111111111111111"
+            />
+    -->
+
+</LinearLayout>

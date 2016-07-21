@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:background="@color/header_color" >
+
+    <LinearLayout
+        android:id="@+id/ll_logo_header"
+        android:layout_width="wrap_content"
+        android:background="@color/header_color"
+        android:paddingLeft="5dp" >
+
+        <!-- android:layout_height="?android:attr/actionBarSize" -->
+
+        <ImageView
+            android:id="@+id/btn_back"
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="Back"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tv_title"
+        style="@style/Both_Wrap_style"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+</RelativeLayout>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <ScrollView
+        style="@style/relativeLayoutWeight"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical"
+            android:paddingBottom="15dp" >
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/huoqibao_topbg"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.63"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginRight="2dp"
+                            android:gravity="right"
+                            android:orientation="vertical"
+                            android:visibility="invisible" >
+
+                            <TextView
+                                android:id="@+id/experiencegold_in"
+                                style="@style/Both_Wrap_style"
+                                android:background="@drawable/huoqibao_strok2"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text=".00"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_number_mytreasure"
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="bottom"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+                            android:orientation="vertical"
+                            android:paddingBottom="2dp" >
+
+                            <TextView
+                                android:id="@+id/experiencegold"
+                                style="@style/Both_Wrap_style"
+                                android:background="@drawable/huoqibao_strok2"
+                                android:gravity="center"
+                                android:text=""
+                                android:paddingBottom="6dp"
+                                android:textColor="@color/wxredpa_jl"
+                                android:textSize="12sp" 
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:id="@+id/tv_number_mytreasure_e"
+                                style="@style/Both_Wrap_style"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_sumtext"
+                        style="@style/Match_Wrap_style"
+                        android:gravity="center"
+                        android:text="总金额(元)"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        android:textSize="12sp" />
+
+                    <!--
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" > 
+
+                        <RelativeLayout style="@style/Both_Wrap_style" >
+
+                            <TextView
+                                android:id="@+id/tv_number_mytreasure_e"
+                                style="@style/Both_Wrap_style"
+                                android:text="0.00"
+                                android:textColor="@color/red"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:layout_alignBottom="@+id/tv_number_mytreasure_e"
+                                android:layout_marginBottom="3dp"
+                                android:layout_toRightOf="@+id/tv_number_mytreasure_e"
+                                android:text="元"
+                                android:textColor="@color/gray"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            style="@style/Match_Wrap_style"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:text="持有金额"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout style="@style/Both_Wrap_style" >
+
+                            <TextView
+                                android:id="@+id/tv_number_mytreasure"
+                                style="@style/Both_Wrap_style"
+                                android:text=""
+                                android:textColor="@color/red"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:layout_alignBottom="@+id/tv_number_mytreasure"
+                                android:layout_marginBottom="3dp"
+                                android:layout_toRightOf="@+id/tv_number_mytreasure"
+                                android:text="元"
+                                android:textColor="@color/gray"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            style="@style/Match_Wrap_style"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:text="体验金在保额"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.37"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_millionperday_mytreasure"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            style="@style/Match_Wrap_style"
+                            android:text="昨日收益(元)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.2"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_earningsdate_mytreasure"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            style="@style/Match_Wrap_style"
+                            android:gravity="center"
+                            android:text="历史累计收益(元)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_freezamount"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            style="@style/Match_Wrap_style"
+                            android:gravity="right"
+                            android:text="冻结金额(元)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/rl_extract"
+                    style="@style/Both_Wrap_style"
+                    android:background="@drawable/button_nocheck"
+                    android:gravity="center"
+                    android:text="@string/extract"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/rl_purchase"
+                    style="@style/Both_Wrap_style"
+                    android:background="@drawable/button_check"
+                    android:gravity="center"
+                    android:text="@string/buy"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/staticlabel"
+                    style="@style/Match_Wrap_style"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                   <!--  <TextView
+                        android:id="@+id/tvinvestment"
+                        style="@style/Both_Wrap_style"
+                        android:text="起投金额 :"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="12sp" /> -->
+
+                    <TextView
+                        android:id="@+id/tv_investment"
+                        style="@style/Both_Wrap_style"
+                        android:text=""
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/staticlabel2"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_incomeway"
+                        style="@style/Both_Wrap_style"
+                        android:text="收益方式 :"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="12sp" />
+
+                    <!-- <TextView
+                        android:id="@+id/tv_incomeway"
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="3dp"
+                        android:text="按日计息按月复投"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" /> -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/staticlabel3"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/text1"
+                        style="@style/Both_Wrap_style"
+                        android:text=""
+                        android:textColor="@color/gray_sq"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" >
+
+                    <TextView
+                        android:id="@+id/mostInterest"
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentLeft="true"
+                        android:text="最高收益："
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/mostInterest_vale"
+                        style="@style/Both_Wrap_style"
+                        android:layout_toRightOf="@+id/mostInterest"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/atLeastInterest_vale"
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/atLeastInterest"
+                        style="@style/Both_Wrap_style"
+                        android:layout_toLeftOf="@+id/atLeastInterest_vale"
+                        android:text="最低收益："
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" >
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/spread_line_chart"
+                        style="@style/Both_Match_style"
+                        android:layout_gravity="center"
+                        android:background="@color/bg_list" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_financial_records"
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/home_item_bg_selector"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <ImageView
+                    android:id="@+id/tranrecord_icon"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/tranrecord_icon_new" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/tranrecord_icon"
+                    android:text="资金记录"
+                    android:textColor="@color/gray"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

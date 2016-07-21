@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_goldPrice"
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="299.29"
+                    android:textColor="@color/orange"
+                    android:textSize="28sp" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:text="当前金价(元/克)"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <View style="@style/view_line_ma" />
+
+                <RelativeLayout style="@style/gold_style" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:text="当前持有黄金"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <TextView
+                        android:id="@+id/tv_haveGold"
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentRight="true"
+                        android:text="3.1568克"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/gold_mianSize" />
+                </RelativeLayout>
+
+                <View style="@style/view_line_ma" />
+
+                <LinearLayout
+                    style="@style/gold_style"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_sellamount"
+                        style="@style/gold_lin3"
+                        android:text="卖出黄金"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <LinearLayout
+                        style="@style/gold_lin7"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/ed_sellamount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="请输入要卖出的黄金克数"
+                            android:inputType="numberDecimal"
+                            android:text=""
+                            android:textColor="@color/gray_gold"
+                            android:textColorHint="@color/gray_q"
+                            android:textSize="@dimen/gold_mianSize" />
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:text="克"
+                            android:textColor="@color/gray_gold"
+                            android:textSize="@dimen/gold_mianSize" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sumAcount"
+                style="@style/Match_Wrap_style"
+                android:background="@color/gold_qgray_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="金额：460.01元"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/gold_mianSize" />
+
+            <LinearLayout
+                style="@style/gold_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/gold_lin3"
+                    android:text="交易密码"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <EditText
+                    android:id="@+id/ed_Password"
+                    style="@style/gold_lin7"
+                    android:background="@color/white"
+                    android:hint="请输入交易密码"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:textColor="@color/gray_gold"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="@dimen/gold_mianSize" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_feel"
+                style="@style/Match_Wrap_style"
+                android:background="@color/gold_qgray_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="手续费：3.68元(卖出黄金收取3‰手续费)"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/gold_mianSize" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <Button
+            android:id="@+id/btn_sellout"
+            style="@style/Match_Wrap_style"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_selector"
+            android:padding="10dp"
+            android:text="立即卖出"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

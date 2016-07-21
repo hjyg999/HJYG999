@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:background="@drawable/homescreen_border"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_loan_name"
+            style="@style/Both_Wrap_style"
+            android:text="信-快乐宝H20150707-006"
+            android:textColor="@color/gray_s"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_receipt_date"
+            style="@style/Both_Wrap_style"
+            android:text="@string/collection_date"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_receipt_date_value"
+            style="@style/Both_Wrap_style"
+            android:text="2015-09-17"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_my_invetment_list_amount"
+                    style="@style/Both_Wrap_style"
+                    android:text="5000元"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="投资金额"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_my_invetment_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_my_invetment_list_rate_count"
+                style="@style/Both_Wrap_style"
+                android:text="13.50 %"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_my_invetment_list_rate"
+                style="@style/Both_Wrap_style"
+                android:text="@string/rate"
+                android:textColor="@color/gray_sq"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_my_investment_list_project_duration_value"
+                style="@style/Both_Wrap_style"
+                android:text="6个月"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_my_investment_list_project_duration"
+                style="@style/Both_Wrap_style"
+                android:text="@string/project_duration"
+                android:textColor="@color/gray_sq"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_my_investment_list_invest_amount_value"
+                    style="@style/Both_Wrap_style"
+                    android:text="5000.32元"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_my_investment_list_invest_amount"
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/my_principalinterest_amount"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

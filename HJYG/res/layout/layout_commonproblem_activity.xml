@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <ScrollView
+        android:id="@+id/scroll_main"
+        style="@style/relativeLayoutWeight"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_escription"
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/huo_description_q"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/description"
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text="@string/huo_description"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_investmentrange"
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/investmentrange_q"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/investmentrange"
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text="@string/investmentrange"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_projectduration"
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/projectduration_q"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/projectduration"
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:singleLine="false"
+                    android:text="@string/projectduration"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_annualrate"
+                    style="@style/Both_Wrap_style"
+                    android:text="@string/huoqihao_time_q"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/annualrate"
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="5dp"
+                    android:text="@string/huoqihao_time"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

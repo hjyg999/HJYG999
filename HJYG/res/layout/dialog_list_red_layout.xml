@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Match_Wrap_style"
+        android:background="@drawable/bg_ratop_red"
+        android:padding="@dimen/marg_30px"
+        android:text="选择抽奖活动"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_32pt" />
+
+    <ListView
+        android:id="@+id/mListView"
+        style="@style/Match_Wrap_style"
+        android:divider="@color/gray_line"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

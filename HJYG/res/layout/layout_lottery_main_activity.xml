@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lotterymain"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/headerWeight" >
+
+        <ImageView
+            android:id="@+id/lay_back_investment"
+            style="@style/Both_Wrap_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/description"
+            android:padding="5dp"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Both_Wrap_style"
+            android:layout_centerInParent="true"
+            android:maxLength="19"
+            android:text="抽奖活动"
+            android:textColor="@color/gray"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/myawards"
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/red_bg"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="我的奖品"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.92" >
+
+        <com.md.hjyg.layoutEntities.RefreshableScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refreshableScrollView"
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                style="@style/Both_Match_style"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    style="@style/Both_Match_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/top_img"
+                        style="@style/Match_Wrap_style"
+                        android:contentDescription="@string/description" />
+
+                    <LinearLayout
+                        style="@style/Match_Wrap_style"
+                        android:background="@drawable/lottery_common_bg"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp" >
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bg_sred_mra"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="5dp"
+                            android:text="做任务  > 赚抽奖机会  > 抽奖  > 领取奖品"
+                            android:textColor="@color/white_60"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/lottery_lin_cer"
+                            style="@style/Match_Wrap_style"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.05"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/linear_circle_top_hor_l"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.05"
+                                    android:gravity="bottom|right"
+                                    android:orientation="horizontal" >
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_circle_top_hor"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.9"
+                                    android:gravity="bottom"
+                                    android:orientation="horizontal" >
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_circle_top_hor_r"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.05"
+                                    android:gravity="bottom|left"
+                                    android:orientation="horizontal" >
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.9"
+                                android:baselineAligned="false"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    style="@style/Both_Match_style"
+                                    android:baselineAligned="false"
+                                    android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_circle_left_ver"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.05"
+                                        android:gravity="right"
+                                        android:orientation="vertical" >
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.9"
+                                        android:orientation="vertical" >
+
+                                        <LinearLayout
+                                            style="@style/Both_Match_style"
+                                            android:orientation="vertical" >
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="0.25"
+                                                android:orientation="horizontal" >
+
+                                                <LinearLayout
+                                                    android:id="@+id/award1"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award1_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award1_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award1_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award1_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/award2"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award2_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award2_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award2_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award2_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/award3"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award3_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award3_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award3_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award3_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/award4"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award4_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award4_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award4_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award4_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="0.25"
+                                                android:orientation="horizontal" >
+
+                                                <LinearLayout
+                                                    android:id="@+id/award12"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award12_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award12_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award12_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award12_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.5"
+                                                    android:background="@color/lottery_no"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical" >
+
+                                                    <LinearLayout
+                                                        style="@style/Match_Wrap_style"
+                                                        android:gravity="center_horizontal"
+                                                        android:orientation="horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/lottery_hit"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/text_color_title"
+                                                            android:textSize="15sp" />
+
+                                                        <TextView
+                                                            android:id="@+id/lottery_hit_amount"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:layout_marginLeft="2dp"
+                                                            android:layout_marginRight="2dp"
+                                                            android:text=""
+                                                            android:textColor="@color/red"
+                                                            android:textSize="20sp" />
+
+                                                        <TextView
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text="次抽奖机会"
+                                                            android:textColor="@color/text_color_title"
+                                                            android:textSize="15sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        style="@style/Match_Wrap_style"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:gravity="center_horizontal"
+                                                        android:orientation="horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/text_reg0"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text="单笔投资≥5万三个月及以上"
+                                                            android:textColor="@color/text_color_title"
+                                                            android:textSize="10sp" />
+
+                                                        <TextView
+                                                            android:id="@+id/text_reg1"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text="+1"
+                                                            android:textColor="@color/red"
+                                                            android:textSize="10sp" />
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/award5"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award5_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:gravity="center"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award5_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award5_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award5_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="0.25"
+                                                android:orientation="horizontal" >
+
+                                                <LinearLayout
+                                                    android:id="@+id/award11"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award11_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award11_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award11_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award11_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <FrameLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.5"
+                                                    android:paddingTop="3dp"
+                                                    android:paddingBottom="2dp" >
+
+                                                    <LinearLayout
+                                                        style="@style/Both_Match_style"
+                                                        android:background="@drawable/bg_ra_lottery_no"
+                                                        android:padding="6dp" >
+
+                                                        <TextView
+                                                            android:id="@+id/toLottery_tv"
+                                                            style="@style/Both_Match_style"
+                                                            android:layout_gravity="center"
+                                                            android:background="@drawable/bg_ra_red_lottery_selector"
+                                                            android:enabled="false"
+                                                            android:gravity="center"
+                                                            android:text=""
+                                                            android:textColor="@color/white"
+                                                            android:textSize="20sp"
+                                                            android:textStyle="bold" />
+                                                    </LinearLayout>
+                                                </FrameLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/award6"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award6_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award6_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award6_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award6_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="0.25"
+                                                android:orientation="horizontal" >
+
+                                                <LinearLayout
+                                                    android:id="@+id/award10"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award10_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award10_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award10_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award10_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/award9"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award9_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award9_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award9_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award9_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/award8"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award8_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award8_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award8_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award8_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:id="@+id/award7"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:layout_weight="0.25"
+                                                    android:background="@color/lottery_no"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp" >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:layout_weight="0.3"
+                                                        android:gravity="bottom|center_horizontal" >
+
+                                                        <TextView
+                                                            android:id="@+id/award7_text"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:text=""
+                                                            android:textColor="@color/lottery_awardname"
+                                                            android:textSize="12sp" />
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.7"
+                                                        android:gravity="center_horizontal|top" >
+
+                                                        <ImageView
+                                                            android:id="@+id/award7_img"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" />
+
+                                                        <RelativeLayout
+                                                            android:id="@+id/award7_img_redbag"
+                                                            style="@style/Both_Wrap_style"
+                                                            android:visibility="gone" >
+
+                                                            <ImageView
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:src="@drawable/lottery_award_redbag_iv" />
+
+                                                            <LinearLayout
+                                                                style="@style/Both_Wrap_style"
+                                                                android:layout_centerInParent="true"
+                                                                android:gravity="center"
+                                                                android:orientation="horizontal"
+                                                                android:paddingTop="5dp" >
+
+                                                                <TextView
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text="¥"
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_sy" />
+
+                                                                <TextView
+                                                                    android:id="@+id/award7_redbag_Amount"
+                                                                    style="@style/Both_Wrap_style"
+                                                                    android:text=""
+                                                                    android:textColor="@color/lottery_orange"
+                                                                    android:textSize="@dimen/lottery_size" />
+                                                            </LinearLayout>
+                                                        </RelativeLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_circle_right_ver"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.05"
+                                        android:gravity="left"
+                                        android:orientation="vertical" >
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.05"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/linear_circle_bottom_hor_l"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.05"
+                                    android:gravity="top|right"
+                                    android:orientation="horizontal" >
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_circle_bottom_hor"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.9"
+                                    android:gravity="top"
+                                    android:orientation="horizontal" >
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear_circle_bottom_hor_r"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.05"
+                                    android:gravity="top|left"
+                                    android:orientation="horizontal" >
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/Match_Wrap_style"
+                            android:orientation="vertical"
+                            android:padding="10dp" >
+
+                            <TextView
+                                android:id="@+id/img_rul_text"
+                                style="@style/Both_Wrap_style"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_mra_whitlestrok_whitlesolid"
+                                android:gravity="center"
+                                android:paddingBottom="7dp"
+                                android:paddingLeft="40dp"
+                                android:paddingRight="40dp"
+                                android:paddingTop="7dp"
+                                android:text="中奖名单"
+                                android:textColor="@color/lottery_text"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ListView
+                                android:id="@+id/lottery_main_lv"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:layout_marginTop="15dp"
+                                android:divider="@null"
+                                android:dividerHeight="20dp"
+                                android:scrollbars="none"
+                                android:smoothScrollbar="true"
+                                android:visibility="gone" >
+                            </ListView>
+
+                            <ImageView
+                                android:id="@+id/noda_img"
+                                style="@style/Both_Wrap_style"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:contentDescription="@string/description"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/noda_tv"
+                                style="@style/Both_Wrap_style"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="50dp"
+                                android:layout_marginTop="5dp"
+                                android:text="暂无抽奖记录"
+                                android:textColor="@color/lottery_awardname"
+                                android:textSize="14sp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/bg_mra_whitlestrok_whitlesolid"
+                                android:gravity="center"
+                                android:paddingBottom="7dp"
+                                android:paddingLeft="40dp"
+                                android:paddingRight="40dp"
+                                android:paddingTop="7dp"
+                                android:text="获奖规则"
+                                android:textColor="@color/lottery_text"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_LotteryRule"
+                                style="@style/Match_Wrap_style"
+                                android:layout_marginTop="15dp"
+                                android:lineSpacingExtra="3dp"
+                                android:text=""
+                                android:textColor="@color/lottery_text"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_btn"
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_mra_whitlestrok_btnselector"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:paddingTop="5dp"
+                            android:text="立即投资"
+                            android:textColor="@color/lottery_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </com.md.hjyg.layoutEntities.RefreshableScrollView>
+
+        <ImageButton
+            android:id="@+id/to_top"
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#00000000"
+            android:padding="10dp"
+            android:alpha="0.5"
+            android:src="@drawable/lottery_main_totop_btn" />
+    </RelativeLayout>
+
+</LinearLayout>

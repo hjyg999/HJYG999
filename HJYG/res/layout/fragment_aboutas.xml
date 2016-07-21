@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            style="@style/Both_Match_style"
+            android:background="@drawable/aboutus_header"
+            android:contentDescription="@string/description" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.88"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_about_us"
+            style="@style/Both_Wrap_style"
+            android:background="@color/bg_list"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_news_notice"
+                style="@style/Match_Wrap_style"
+                android:background="@drawable/bg_selector"
+                android:gravity="center_vertical"
+                android:padding="12dp" >
+
+                <ImageView
+                    android:id="@+id/about_notice"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/aboutus_notice" />
+
+                <TextView
+                    android:id="@+id/tv_news_notice"
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/about_notice"
+                    android:text="@string/news_notice"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/news_notice_img_next"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_welcome_page"
+                style="@style/Match_Wrap_style"
+                android:background="@drawable/bg_selector"
+                android:gravity="center_vertical"
+                android:padding="12dp" >
+
+                <ImageView
+                    android:id="@+id/about_welcome"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/aboutus_welcome" />
+
+                <TextView
+                    android:id="@+id/tv_welcome_page"
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/about_welcome"
+                    android:text="@string/welcome_page"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img_next"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_about_us"
+                style="@style/Match_Wrap_style"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_selector"
+                android:padding="12dp" >
+
+                <ImageView
+                    android:id="@+id/aboutus_aboutus_iv"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/aboutus_aboutus" />
+
+                <TextView
+                    android:id="@+id/tv_abbout_xintou"
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/aboutus_aboutus_iv"
+                    android:text="@string/about_xintou"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_about_us_zero_holds"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/img_about_us"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_feedback"
+                style="@style/Match_Wrap_style"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_selector"
+                android:padding="12dp" >
+
+                <ImageView
+                    android:id="@+id/aboutus_feedback_iv"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/aboutus_feedback" />
+
+                <TextView
+                    android:id="@+id/tv_feedback"
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/aboutus_feedback_iv"
+                    android:text="@string/feedback"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img_feedback_next"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_version_update"
+                style="@style/Match_Wrap_style"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_selector"
+                android:padding="12dp" >
+
+                <ImageView
+                    android:id="@+id/aboutus_update_iv"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/aboutus_update" />
+
+                <TextView
+                    android:id="@+id/tv_version_update"
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/aboutus_update_iv"
+                    android:text="@string/version_update"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/about_us_new_im"
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_version_update"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/aboutus_update_new" />
+
+                <TextView
+                    android:id="@+id/tv_version_update_value"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/img_version_update_next"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_customer_service"
+                style="@style/Match_Wrap_style"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_selector"
+                android:padding="12dp" >
+
+                <ImageView
+                    android:id="@+id/aboutus_service_iv"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/aboutus_connectus" />
+
+                <TextView
+                    android:id="@+id/tv_customer_service"
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/aboutus_service_iv"
+                    android:text="@string/customer_service"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img_customer_service_next"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_hotline_service"
+            style="@style/Both_Wrap_style"
+            android:layout_below="@+id/ll_about_us"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

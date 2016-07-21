@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_Linearview"
+    style="@style/Match_Wrap_style"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/marg_30px" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/Both_Wrap_style"
+            android:text="活动"
+            android:textColor="@color/gray_gold"
+            android:textSize="@dimen/size_28pt" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/Both_Wrap_style"
+            android:text=""
+            android:textColor="@color/gray_sq"
+            android:textSize="@dimen/size_22pt"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        style="@style/Both_Wrap_style"
+        android:contentDescription="@string/description"
+        android:src="@drawable/select_type" 
+        android:visibility="gone"/>
+
+</LinearLayout>

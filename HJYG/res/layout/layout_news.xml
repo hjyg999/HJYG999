@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.md.hjyg.layoutEntities.HeaderView
+        android:id="@+id/mheadView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08" />
+
+    <com.md.hjyg.utility.LoadMoreListView
+        android:id="@+id/android:list"
+        android:listSelector="@drawable/bg_selector"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.82" />
+
+    <LinearLayout
+        android:id="@+id/footer_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/include_footer"
+            style="@style/Both_Match_style"
+            layout="@layout/template_news_footer" />
+    </LinearLayout>
+
+</LinearLayout>

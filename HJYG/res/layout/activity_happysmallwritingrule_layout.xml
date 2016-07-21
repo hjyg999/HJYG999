@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_E23924"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        style="@style/Both_Match_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.92"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/mScrollView"
+            style="@style/Match_Wrap_style"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/Both_Match_style"
+                android:background="@drawable/happysmallwriting_rule_bg"
+                android:layout_margin="7dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal" >
+
+                    <com.md.hjyg.layoutEntities.DashedLine 
+                        android:layout_width="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="1dp"/>
+                    
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:text="活动规则 "
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/size_44pt" />
+                    
+                    <com.md.hjyg.layoutEntities.DashedLine 
+                        android:layout_width="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.07"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_hsw_text_strok"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="1dp"
+                        android:text="活动说明"
+                        android:textSize="@dimen/size_36pt" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="●“100字快乐微文竞赛活动”是信投宝举办的首届中小学微作文评比大赛。"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_30pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_hsw_text_strok"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="1dp"
+                        android:text="参赛要求"
+                        android:textSize="@dimen/size_36pt" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="●信投宝实名注册会员。\n●学生年龄6-15岁。\n●100字以内的作文（不得代笔）。"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_30pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_hsw_text_strok"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="1dp"
+                        android:text="奖项设置"
+                        android:textSize="@dimen/size_36pt" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="●周冠军将获得1000元现金红包(8名)。\n●总冠军将获得5000元现金红包(1名)。\n●颁奖仪式将在评选活动结束后进行。"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_30pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.15"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_hsw_text_strok"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="1dp"
+                        android:text="活动时间"
+                        android:textSize="@dimen/size_36pt" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="●7月15日-9月18日,在信投宝平台填写学生资料并上传照片与提交作文。\n●8月1日-9月25日,信投宝每周组织专家评选作文，并提交前十名参与本周的线上投票并产生周冠军，一共选出8位周冠军。\n●9月26日-9月30日,周冠军最后一周参与总冠军争夺。"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_30pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_hsw_text_strok"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="1dp"
+                        android:text="夺冠评选标准"
+                        android:textSize="@dimen/size_36pt" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="●专家评分与平台会员点赞各占50%，综合评分最高者获胜。每周综合分最高者为周冠军。\n●比赛最后一周，8个周冠军分数于9月25日晚上12点全部清零，重新由专家和会员评出总冠军一名。"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_30pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.33"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_hsw_text_strok"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="1dp"
+                        android:text="注意事项"
+                        android:textSize="@dimen/size_36pt" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="●严禁选手刷票，刷票行为一经核实，取消评选资格。\n●如有疑问，请联系信投宝客服电话 400 - 078 - 1901。"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_30pt" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="20dp"
+                        android:text="本活动最终解释权归信投宝所有"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_30pt"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

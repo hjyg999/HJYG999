@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@drawable/sliding_bg"
+    android:id="@+id/mSlidingView"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/sliding_top_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6" >
+
+            <LinearLayout
+                android:id="@+id/lin_info"
+                style="@style/Both_Wrap_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marg_30px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/re_top_head"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/gesture_xt_bg_gray"
+                    android:padding="3dp"
+                    android:visibility="visible" >
+
+                    <com.md.hjyg.layoutEntities.CircularImage
+                        android:id="@+id/head_sex"
+                        style="@style/Both_Match_style"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/gesture_xt_bg_white" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginLeft="@dimen/marg_20px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_usename"
+                        style="@style/Both_Wrap_style"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginTop="@dimen/marg_2px"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_24pt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_recommand_qrcode"
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/marg_30px"
+                android:src="@drawable/sliding_rwm" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.71"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lin_bankaccount"
+            style="@style/Match_Wrap_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marg_26px"
+            android:paddingLeft="@dimen/marg_30px"
+            android:paddingRight="@dimen/marg_30px"
+            android:paddingTop="@dimen/marg_26px" >
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/sliding_1yhk" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_20px"
+                android:text="银行卡管理"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+        </LinearLayout>
+
+        <View style="@style/view_line_ma" />
+
+        <LinearLayout
+            android:id="@+id/lin_editPassword"
+            style="@style/Match_Wrap_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marg_26px"
+            android:paddingLeft="@dimen/marg_30px"
+            android:paddingRight="@dimen/marg_30px"
+            android:paddingTop="@dimen/marg_26px" >
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/sliding_2dlmm" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_20px"
+                android:text="修改登录密码"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+        </LinearLayout>
+
+        <View style="@style/view_line_ma" />
+
+        <LinearLayout
+            android:id="@+id/lin_editDealword"
+            style="@style/Match_Wrap_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marg_26px"
+            android:paddingLeft="@dimen/marg_30px"
+            android:paddingRight="@dimen/marg_30px"
+            android:paddingTop="@dimen/marg_26px" >
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/sliding_3jymm" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_20px"
+                android:text="修改交易密码"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+        </LinearLayout>
+
+        <View style="@style/view_line_ma" />
+
+        <LinearLayout
+            android:id="@+id/lin_gestureLockEdited"
+            style="@style/Match_Wrap_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marg_26px"
+            android:paddingLeft="@dimen/marg_30px"
+            android:paddingRight="@dimen/marg_30px"
+            android:paddingTop="@dimen/marg_26px" >
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/sliding_4xgssmm" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_20px"
+                android:text="修改手势密码"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+        </LinearLayout>
+
+        <View style="@style/view_line_ma" 
+            android:id="@+id/view_line"/>
+
+        <LinearLayout
+            android:id="@+id/lin_on_off"
+            style="@style/Match_Wrap_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marg_16px"
+            android:paddingLeft="@dimen/marg_30px"
+            android:paddingRight="@dimen/marg_30px"
+            android:paddingTop="@dimen/marg_16px" >
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/sliding_5kqssmm" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marg_20px"
+                android:layout_weight="1"
+                android:text="开启/关闭手势密码"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+
+            <ImageView
+                android:id="@+id/gesture_lock_on_off"
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/check_switch_on" />
+        </LinearLayout>
+
+        <View style="@style/view_line_ma" />
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marg_26px"
+            android:paddingLeft="@dimen/marg_30px"
+            android:paddingRight="@dimen/marg_30px"
+            android:paddingTop="@dimen/marg_26px" >
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/sliding_6sjrz" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marg_20px"
+                android:layout_weight="1"
+                android:text="手机认证"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                style="@style/Both_Wrap_style"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_28pt" />
+        </LinearLayout>
+
+        <View style="@style/view_line_ma" />
+
+        <LinearLayout
+            android:id="@+id/line_versionUpdate"
+            style="@style/Match_Wrap_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marg_26px"
+            android:paddingLeft="@dimen/marg_30px"
+            android:paddingRight="@dimen/marg_30px"
+            android:paddingTop="@dimen/marg_26px" >
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/sliding_7bbgx" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marg_20px"
+                android:layout_weight="1"
+                android:text="版本更新"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                style="@style/Both_Wrap_style"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_28pt" />
+        </LinearLayout>
+
+        <View style="@style/view_line_ma" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_signOut"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:orientation="vertical" >
+
+        <View style="@style/view_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="安全退出"
+            android:textColor="@color/red"
+            android:textSize="@dimen/size_32pt" />
+    </LinearLayout>
+
+</LinearLayout>

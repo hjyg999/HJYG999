@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style" >
+
+    <ImageView
+        android:id="@+id/rule_img"
+        android:contentDescription="@string/description"
+        style="@style/Both_Wrap_style"
+        android:layout_alignParentRight="true"
+        />
+    <LinearLayout 
+        style="@style/Match_Wrap_style"
+        android:orientation="vertical"
+        >
+        <TextView 
+            style="@style/Match_Wrap_style"
+            android:lineSpacingExtra="3dp"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_title"
+            android:text="1、活动时间：\n2016年1月1日-1月20日"/>
+        <TextView 
+            android:id="@+id/lottery_rules_text"
+            android:layout_marginTop="20dp"
+            style="@style/Match_Wrap_style"
+            android:lineSpacingExtra="3dp"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_title"
+            android:text="2、活动期内\n单笔≥5万投资3个月及以上的客户，可参与猴年贺岁豪礼大放送抽奖活动，单个账户不超过2次抽奖机会。"/>
+        <TextView 
+            android:layout_marginTop="20dp"
+            style="@style/Match_Wrap_style"
+            android:textSize="12sp"
+            android:textColor="@color/red_q"
+            android:text="豪礼大礼包"/>
+       
+        <TextView 
+            android:layout_marginTop="3dp"
+            style="@style/Match_Wrap_style"
+            android:lineSpacingExtra="3dp"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_title"
+            android:text="华为mate8、1000元现金红包、贺岁版3D金苹果、500元现金红包、200元现金红包、88元现金红包、第五套人民币同号钞限量版、金镶玉佛吊坠、金镶玉叶吊坠。"/>
+         <TextView 
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="3dp"
+            style="@style/Match_Wrap_style"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_title"
+            android:text="3、活期宝项目不参与抽奖活动；单笔投资与实物黄金活动不同时参与，但可叠加。"/>
+         <TextView 
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="3dp"
+            style="@style/Match_Wrap_style"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_title"
+            android:text="4、参与猴年贺岁豪礼大放送抽奖活动的客户，将获邀参与信投宝特别举办的新年贺岁主题答谢活动，现场领取所中奖品。"/>
+         <TextView 
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="3dp"
+            style="@style/Match_Wrap_style"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_title"
+            android:text="5、客服人员将在10个工作日内与您联系，告知活动事宜。"/>
+    </LinearLayout>
+
+</RelativeLayout>

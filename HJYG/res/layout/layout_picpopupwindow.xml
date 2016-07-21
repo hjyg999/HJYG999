@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tv_titile"
+        style="@style/Match_Wrap_style"
+        android:padding="10dp"
+        android:text="通过以下方式分享你的专属推荐链接给朋友，可直接注册，无需填写推荐人，您就自动成了他的专属推荐人。"
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        style="@style/Match_Wrap_style"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/weixin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/weixin"
+                android:gravity="center"
+                android:text="微信"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/weixin_frends"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/weixin_frends"
+                android:gravity="center"
+                android:text="朋友圈"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/qq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/qq"
+                android:gravity="center"
+                android:text="QQ"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/qqzone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/qqzone"
+                android:gravity="center"
+                android:text="QQ空间"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sina"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/sinaze"
+                android:gravity="center"
+                android:text="微博"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/email"
+                android:gravity="center"
+                android:text="邮件"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/sms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/sms"
+                android:gravity="center"
+                android:text="短信"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/copy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/copy"
+                android:gravity="center"
+                android:text="复制链接"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            style="@style/Match_Wrap_style"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home_item_bg_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取  消"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

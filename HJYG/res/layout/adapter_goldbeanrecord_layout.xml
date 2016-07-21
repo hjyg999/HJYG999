@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/marg_20px"
+        android:paddingTop="@dimen/marg_20px" >
+
+        <ImageView
+            android:id="@+id/tv_img"
+            style="@style/Both_Wrap_style"
+            android:src="@drawable/gb_record1"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/marg_20px"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Both_Wrap_style"
+                android:text="金豆抽奖-奖金豆"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_28pt" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                style="@style/Both_Wrap_style"
+                android:layout_alignBaseline="@+id/tv_title"
+                android:layout_alignParentRight="true"
+                android:text="+30"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_36pt" />
+
+            <TextView
+                android:layout_marginTop="@dimen/marg_20px"
+                android:id="@+id/tv_time"
+                style="@style/Both_Wrap_style"
+                android:layout_below="@+id/tv_title"
+                android:text="08/28 12:50"
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/size_24pt" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/Both_Wrap_style"
+                android:layout_alignBaseline="@+id/tv_time"
+                android:layout_alignParentRight="true"
+                android:text="剩余:"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_28pt" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+</LinearLayout>

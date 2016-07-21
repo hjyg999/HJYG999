@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <ScrollView
+            style="@style/Match_Wrap_style"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:text="真实姓名："
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/ed_account_name"
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="3dp"
+                        android:text=""
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ed_select_bank"
+                    style="@style/Match_Wrap_style"
+                    android:background="@drawable/homescreen_border"
+                    android:drawableRight="@drawable/arrow_bottom_gray"
+                    android:hint="选择银行"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ed_add_bank_province"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/homescreen_border"
+                    android:drawableRight="@drawable/arrow_bottom_gray"
+                    android:hint="选择支行所在的省"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ed_select_city"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/homescreen_border"
+                    android:drawableRight="@drawable/arrow_bottom_gray"
+                    android:hint="选择支行所在的市"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ed_branch_name"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/homescreen_border"
+                    android:hint="支行名称  请务必填写正确的支行名"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ed_bank_card"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/homescreen_border"
+                    android:hint="银行卡号"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ed_bank_card_again"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/homescreen_border"
+                    android:hint="确认银行卡号"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ed_mobile_no_bank_card"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/homescreen_border"
+                    android:hint="与银行卡绑定的手机号"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/ed_security_code_bank_card"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@drawable/homescreen_border"
+                        android:hint="输入短信验证码"
+                        android:singleLine="true"
+                        android:padding="10dp"
+                        android:textColor="@color/gray"
+                        android:textColorHint="@color/gray_q"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/btn_free_verification_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/btn_selector_red"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="获取短信验证码"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_next_add_bank_account"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_selector_red"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="确认提交"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="*提交成功的银行卡信息不允许修改，请在提交前确认相关信息的真实有效性！"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </ScrollView>
+
+      <!--   <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/ll_verify_deatils"
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_select_bank"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/select_bank"
+                    android:textColor="@color/text_color_title"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ed_select_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_corner"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/drop_arrow"
+                    android:hint="@string/select_bank"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_account_name"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/account_name"
+                    android:textColor="@color/text_color_title"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ed_account_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_corner"
+                    android:hint="开户所用姓名"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="12dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_bank_card"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/bank_card"
+                    android:textColor="@color/text_color_title"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ed_bank_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_corner"
+                    android:hint="银行卡号"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:paddingLeft="12dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_add_bank_province"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/province"
+                    android:textColor="@color/text_color_title"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ed_add_bank_province"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_corner"
+                    android:drawableRight="@drawable/drop_arrow"
+                    android:editable="false"
+                    android:hint="@string/select_the_province"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_city"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/city"
+                    android:textColor="@color/text_color_title"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ed_select_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_corner"
+                    android:drawableRight="@drawable/drop_arrow"
+                    android:editable="false"
+                    android:hint="@string/select_the_city"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_branch_name"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/branch_name"
+                    android:textColor="@color/text_color_title"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ed_branch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_corner"
+                    android:hint="@string/select_the_branch"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="12dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_next_add_bank_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_border"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:text="@string/add_band_card"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </ScrollView> -->
+    </LinearLayout>
+
+</LinearLayout>

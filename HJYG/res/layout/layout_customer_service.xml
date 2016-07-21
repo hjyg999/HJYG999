@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style" 
+    android:orientation="vertical"
+    android:background="@color/bg_list">
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:background="@color/white"
+        android:padding="10dp" 
+        android:orientation="vertical">
+        
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/tv_contact"
+            style="@style/Match_Wrap_style"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+       <!--  <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/tv_contact"
+            style="@style/Both_Wrap_style"
+            android:text="总公司： 深圳信投在线金融信息服务有限公司"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/tv_address"
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="长沙子公司：长沙信投在线电子商务有限公司"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/tv_weixin"
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="办公电话：0731—85958988 \n工作时间：工作日 8:30—18:00"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:textIsSelectable="true"
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="客服热线：400-078-1901 全年365天  8:30-21:00 "
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:textIsSelectable="true"
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="客服邮箱: xintou365@163.com  邮编:410000"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:textIsSelectable="true"
+            android:text="微信公众号:xintouzaixiancs \n新浪微博:http://weibo.com/p/1006065176211398 "
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:textIsSelectable="true"
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="总部地址：深圳市福田区福华1路大中华国际交易广场1702"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:textIsSelectable="true"
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="湖南地址：长沙芙蓉中路一段475号玛丽莱大厦6楼"
+            android:textColor="@color/gray"
+            android:textSize="14sp" /> -->
+    </LinearLayout>
+
+</LinearLayout>

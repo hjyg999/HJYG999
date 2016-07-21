@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_projectdetails"
+        style="@style/Match_Wrap_style"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/home_item_bg_selector"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/projectdetail_icon"
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/projectdetail_icon_new" />
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/projectdetail_icon"
+            android:text="项目详情"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <ImageView
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_financial_records"
+        style="@style/Match_Wrap_style"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/home_item_bg_selector"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/tranrecord_icon"
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tranrecord_icon_new" />
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tranrecord_icon"
+            android:text="交易记录"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <ImageView
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_common_problem"
+        style="@style/Match_Wrap_style"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/home_item_bg_selector"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/question_icon"
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/question" />
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/question_icon"
+            android:text="常见问题"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <ImageView
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+</LinearLayout>

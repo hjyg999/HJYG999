@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style" >
+
+    <com.md.hjyg.utility.LoadMoreListView
+        android:id="@+id/android:list"
+        style="@style/Both_Match_style"
+        android:divider="@color/bg_list"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"/>
+
+</RelativeLayout>

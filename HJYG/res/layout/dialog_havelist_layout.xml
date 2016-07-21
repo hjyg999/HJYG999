@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <RelativeLayout
+        style="@style/Match_Wrap_style"
+        android:background="@color/red" >
+
+        <TextView
+            style="@style/Match_Wrap_style"
+            android:padding="15dp"
+            android:text="选择金条类型"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/close_dialog" />
+    </RelativeLayout>
+    
+    <ListView 
+        style="@style/Match_Wrap_style"
+        android:id="@+id/mListView"
+        android:dividerHeight="1dp"
+        android:divider="@color/gray_line"
+        android:listSelector="@drawable/bg_white_selector"
+        android:scrollbars="none"
+        />
+
+</LinearLayout>

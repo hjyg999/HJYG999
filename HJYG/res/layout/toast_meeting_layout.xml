@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:background="@drawable/bg_ra_toastbg"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="@dimen/marg_30px" >
+
+    <ImageView
+        style="@style/Both_Wrap_style"
+        android:src="@drawable/tishcw_28x28" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/marg_10px"
+        android:id="@+id/tv_content"
+        style="@style/Both_Wrap_style"
+        android:text="aaaaaaa"
+        android:textColor="@color/white"
+        android:textSize="@dimen/marg_32px" />
+
+</LinearLayout>

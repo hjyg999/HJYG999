@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:scaleType="center"
+            android:src="@drawable/gold_ckeckbox_no" />
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="张三"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="151****0516"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_isdefault"
+                    style="@style/Both_Wrap_style"
+                    android:paddingRight="10dp"
+                    android:text="默认"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/Both_Wrap_style"
+                    android:text="湖南长沙开福区玛丽莱大厦6楼"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:scaleType="center"
+            android:src="@drawable/gold_address_edit" />
+    </LinearLayout>
+
+    <View style="@style/view_line_ma" />
+
+</LinearLayout>

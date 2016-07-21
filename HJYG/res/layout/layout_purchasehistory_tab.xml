@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/details"
+        style="@style/Match_Wrap_style"
+        android:orientation="horizontal"
+        android:background="@drawable/homescreen_border"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_titledate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日期"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_titleamount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="金额（元）"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_titleremark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="备注"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:orientation="vertical" >
+
+        <!--
+        <ListView
+            android:id="@+id/list_transactions"
+            style="@style/Match_Wrap_style" >
+        </ListView>
+        -->
+
+        <com.md.hjyg.utility.LoadMoreListView
+            android:id="@+id/list_transactions"
+            style="@style/Match_Wrap_style"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

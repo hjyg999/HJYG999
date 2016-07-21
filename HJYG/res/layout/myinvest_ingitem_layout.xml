@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_main"
+    style="@style/Match_Wrap_style"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/marg_10px"
+    android:paddingLeft="@dimen/marg_20px"
+    android:paddingRight="@dimen/marg_20px"
+    android:paddingTop="@dimen/marg_20px" >
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:background="@drawable/bg_ra_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/marg_20px"
+        android:paddingTop="@dimen/marg_20px" >
+
+        <RelativeLayout
+            style="@style/Match_Wrap_style"
+            android:paddingLeft="@dimen/marg_20px"
+            android:paddingRight="@dimen/marg_20px" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Both_Wrap_style"
+                android:text="标题"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/Both_Wrap_style"
+                android:layout_alignBaseline="@+id/tv_title"
+                android:layout_alignParentRight="true"
+                android:text="时间：2016/02/04"
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/size_24pt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/Match_Wrap_style"
+            android:layout_marginTop="@dimen/marg_10px"
+            android:paddingLeft="@dimen/marg_20px"
+            android:paddingRight="@dimen/marg_20px" >
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_alignBaseline="@+id/tv_account"
+                android:text="投资金额(元)"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_24pt" />
+
+            <TextView
+                android:id="@+id/tv_account"
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:text="1,000.00"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_30pt" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:layout_marginTop="@dimen/marg_5px"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/marg_20px"
+            android:paddingRight="@dimen/marg_20px" >
+
+            <TextView
+                android:id="@+id/tv_rate"
+                style="@style/Both_Wrap_style"
+                android:text="年利率：10.00%"
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/size_24pt" />
+
+            <TextView
+                android:id="@+id/tv_selectBtn"
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_10px"
+                android:background="@drawable/bg_ra_red_selector"
+                android:paddingBottom="@dimen/marg_2px"
+                android:paddingLeft="@dimen/marg_10px"
+                android:paddingRight="@dimen/marg_10px"
+                android:paddingTop="@dimen/marg_2px"
+                android:text="选择加息券红包"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_24pt" />
+
+            <TextView
+                android:id="@+id/tv_add1"
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_5px"
+                android:text="5,000元"
+                android:textColor="@color/green_99CC33"
+                android:textSize="@dimen/size_24pt"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_add1"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:src="@drawable/myinvest_tyj"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_add2"
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_5px"
+                android:text="+20元"
+                android:textColor="@color/green_99CC33"
+                android:textSize="@dimen/size_24pt"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_add2"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:src="@drawable/myinvest_xj"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rel_state"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/img_state"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/arrow_grayb_36x20" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_listtitle"
+            style="@style/Both_Wrap_style"
+            android:layout_marginLeft="@dimen/marg_20px"
+            android:paddingTop="@dimen/marg_10px"
+            android:paddingBottom="@dimen/marg_10px"
+            android:text="使用投资红包"
+            android:textColor="@color/green_99CC33"
+            android:textSize="@dimen/size_24pt" />
+
+        <ListView
+            android:id="@+id/mListView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/tv_term"
+            style="@style/Both_Wrap_style"
+            android:layout_marginLeft="@dimen/marg_20px"
+            android:paddingTop="@dimen/marg_10px"
+            android:text="项目期限"
+            android:textColor="@color/gray_sq"
+            android:textSize="@dimen/size_24pt" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/Both_Wrap_style"
+            android:layout_marginLeft="@dimen/marg_20px"
+            android:layout_marginTop="@dimen/marg_2px"
+            android:text="状态"
+            android:textColor="@color/gray_sq"
+            android:textSize="@dimen/size_24pt" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/Both_Wrap_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marg_35px"
+        android:text="选择红包加息券"
+        android:textColor="@color/gray_gold"
+        android:textSize="@dimen/size_28pt" />
+
+    <TextView
+        android:id="@+id/tv_hit"
+        style="@style/Both_Wrap_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marg_5px"
+        android:text="竞标成功！选择红包加息券可获得额外收益。"
+        android:textColor="@color/red"
+        android:textSize="@dimen/size_24pt" />
+
+    <LinearLayout
+        android:id="@+id/lin_list"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/mListView"
+            style="@style/Match_Wrap_style"
+            android:layout_marginTop="@dimen/marg_16px"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:layout_marginTop="@dimen/marg_16px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:background="@drawable/bg_raleftbot_gray_f7"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/marg_30px"
+            android:text="额外收益：0.00元"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/size_30pt" />
+
+        <TextView
+            android:id="@+id/tv_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ra_red_rightbot_selector"
+            android:gravity="center"
+            android:padding="@dimen/marg_30px"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_30pt" />
+    </LinearLayout>
+
+</LinearLayout>

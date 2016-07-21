@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/umeng_socialize_list_item_bgcolor"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/umeng_socialize_title"
+        layout="@layout/umeng_socialize_titile_bar" />
+
+    <ScrollView
+        android:id="@+id/umeng_xp_ScrollView"
+        style="@style/Both_Match_style"
+        android:layout_gravity="center" >
+
+        <RelativeLayout
+            style="@style/Match_Wrap_style" >
+
+            <TextView
+                android:id="@+id/umeng_socialize_first_area_title"
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="17dp"
+                android:paddingLeft="17dp"
+                android:textColor="@color/umeng_socialize_list_item_textcolor"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/umeng_socialize_first_area"
+                style="@style/Match_Wrap_style"
+                android:layout_below="@id/umeng_socialize_first_area_title"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/umeng_socialize_second_area_title"
+                style="@style/Match_Wrap_style"
+                android:layout_below="@id/umeng_socialize_first_area"
+                android:layout_marginTop="18dp"
+                android:paddingLeft="26dp"
+                android:textColor="@color/umeng_socialize_list_item_textcolor"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/umeng_socialize_second_area"
+                style="@style/Match_Wrap_style"
+                android:layout_below="@id/umeng_socialize_second_area_title"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <ScrollView
+        style="@style/relativeLayoutWeight"
+        android:background="@drawable/lottery_common_bg" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:text="抽奖机会"
+                android:textColor="@color/yellow"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="①注册获得一次抽奖机会；"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="②充值获得一次抽奖机会；"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="③投资1000元月标获得一次抽奖机会。"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="20dp"
+                android:text="奖品设置"
+                android:textColor="@color/yellow"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="1、红包。红包奖励分为两种："
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="第一种：现金红包分为3元、5元；"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="第二种：投资红包"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="8元（投资500元 ≥1个月）"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="10元（投资5000元 ≥1个月）"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="30元（投资10000元 ≥3个月）"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="50元（投资10000元 ≥6个月）"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="投资红包30天有效期，30天后失效。"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="2、水晶包金吊坠"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="3、金镶玉吊坠"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="4、钻石（2分、10分）"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="5、Iphone6s一台"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

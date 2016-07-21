@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/headerWeight" >
+
+        <include
+            android:id="@+id/include_header"
+            style="@style/Both_Match_style"
+            layout="@layout/template_header" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/gold_search" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

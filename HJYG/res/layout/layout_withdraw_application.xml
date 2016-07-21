@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <ScrollView style="@style/relativeLayoutWeight" >
+
+        <LinearLayout
+            android:id="@+id/ll_deatils"
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical" >
+
+            <!--
+           <RelativeLayout
+               android:id="@+id/rl_add_bank_card"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginTop="15dp"
+               android:visibility="gone"
+               android:background="@color/bank_card_button_color">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/add_icon"
+                   android:layout_marginTop="15dp"
+                   android:layout_toLeftOf="@+id/btn_add_bank_card"/>
+
+               <TextView
+
+                   android:id="@+id/btn_add_bank_card"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/add_band_card"
+                   android:textColor="@color/white"
+                   android:paddingLeft="10dp"
+                   android:textSize="22sp"
+                   android:layout_centerInParent="true"/>
+           </RelativeLayout>
+            -->
+
+
+            <!--
+                 <LinearLayout
+                android:id="@+id/ll_bank_details"
+                style="@style/Match_Wrap_style"
+                android:layout_margin="15dp"
+                android:background="@color/withdrwals_bg"
+                android:orientation="vertical"
+                android:visibility="visible" >
+            -->
+
+            <TextView
+                android:id="@+id/tv_withdraw_available_bal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/available_balance"
+                style="@style/textColor_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ed_withdraw_available_bal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editext_withdraw_corner"
+                android:hint="@string/available_balance"
+                android:paddingLeft="12sp"
+                android:textColor="#636363"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_bank_card_withdrawals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/bank_card_withdrawals"
+                style="@style/textColor_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ed_bank_card_withdrawals"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editext_withdraw_corner"
+                android:hint="@string/hint_bank_card_withdrawals"
+                android:paddingLeft="12sp"
+                android:text=""
+                android:textColor="#636363"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_withdrawal_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/withdrwal_amt"
+                style="@style/textColor_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ed_withdrawal_amt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_corner"
+                android:hint="@string/withdrawal_amount"
+                android:imeOptions="actionNext"
+                android:paddingLeft="12sp"
+                android:singleLine="true"
+                android:textColor="#636363"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_withdraw_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/withdrwal_pass"
+                style="@style/textColor_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ed_withdrawal_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_corner"
+                android:hint="@string/withdrwal_pass"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="12sp"
+                android:singleLine="true"
+                android:textColor="#636363"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="10dp"
+                android:text="@string/withdrwal_tishi"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_withdrawal_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/withdrwal_type"
+                style="@style/textColor_gray"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_recommended"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/edittext_corner"
+                android:orientation="horizontal"
+                android:paddingTop="2dp" >
+
+                <Button
+                    android:id="@+id/btn_fast_withdrawals"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:singleLine="true"
+                    android:text="@string/fast_withdrwal"
+                    style="@style/textColor_gray"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_ordinary_withdrawals"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/red"
+                    android:textColor="@color/white"
+                    android:text="@string/ordinary_withdrwal"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_withdrawals"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_selector_red"
+                android:text="@string/fast_withdrwal"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_withdraw_description"
+                style="@style/Match_Wrap_style"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/my_account_lable"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_my_investment"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:text="@string/withdraw_description"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_withdraw_description"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/invest_rarrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

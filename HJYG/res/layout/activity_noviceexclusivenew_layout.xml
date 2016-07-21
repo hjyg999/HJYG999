@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Both_Match_style"
+        android:orientation="vertical" >
+
+        <com.md.hjyg.layoutEntities.HeaderView
+            android:id="@+id/mheadView"
+            style="@style/headerWeight" />
+
+        <ScrollView
+            android:id="@+id/mScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/lin_scr"
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/marg_30px"
+                    android:paddingRight="@dimen/marg_30px"
+                    android:paddingTop="@dimen/marg_30px" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:background="@drawable/orange_ra_sbg"
+                        android:paddingBottom="@dimen/marg_2px"
+                        android:paddingLeft="@dimen/marg_5px"
+                        android:paddingRight="@dimen/marg_5px"
+                        android:paddingTop="@dimen/marg_2px"
+                        android:text="投资即送"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_22pt" />
+
+                    <TextView
+                        android:id="@+id/tv_Title"
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="@dimen/marg_10px"
+                        android:text=""
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <TextView
+                        android:id="@+id/tv_prizename2"
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="@dimen/marg_10px"
+                        android:text=""
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/size_28pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginLeft="@dimen/marg_30px"
+                    android:layout_marginRight="@dimen/marg_30px"
+                    android:layout_marginTop="@dimen/marg_10px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:text="市场价"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="@dimen/size_24pt" />
+
+                    <TextView
+                        android:id="@+id/tv_Price"
+                        style="@style/Both_Wrap_style"
+                        android:text=""
+                        android:textColor="@color/gray_s"
+                        android:textSize="@dimen/size_36pt" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:text="元"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="@dimen/size_24pt" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_award"
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/marg_10px" />
+
+                <ExpandableListView
+                    android:id="@+id/expandableListView"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="@dimen/marg_10px"
+                    android:childDivider="@color/white"
+                    android:divider="@color/white"
+                    android:listSelector="@drawable/bg_white_selector"
+                    android:scrollbars="none" />
+
+                <View style="@style/view_line_new" />
+
+                <LinearLayout
+                    android:id="@+id/line_addimg"
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/marg_30px"
+                    android:layout_marginTop="@dimen/marg_20px"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rel_investinfo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:alpha="0.9"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/marg_40px"
+            android:paddingRight="@dimen/marg_40px" >
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="投资"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_24pt" />
+
+                <TextView
+                    android:id="@+id/tv_invest_vale"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_24pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="期限"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_24pt" />
+
+                <TextView
+                    android:id="@+id/tv_invest_term"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_24pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="预期收益"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_24pt" />
+
+                <TextView
+                    android:id="@+id/tv_invest_income"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_24pt" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tobuybtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:alpha="0.9"
+            android:background="@drawable/bg_white_selector"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/size_32pt" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/to_top"
+        style="@style/Both_Wrap_style"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="66dp"
+        android:layout_marginRight="5dp"
+        android:alpha="0.5"
+        android:background="#00000000"
+        android:padding="10dp"
+        android:src="@drawable/meeting_totop" />
+
+</RelativeLayout>

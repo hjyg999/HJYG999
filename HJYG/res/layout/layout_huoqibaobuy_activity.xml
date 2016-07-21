@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        android:id="@+id/lin_UI"
+        style="@style/CenterWeight_84"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lin_top"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/buy_top_bg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/experiencegold"
+                    style="@style/Both_Wrap_style"
+                    android:background="@drawable/bg_y"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/gold"
+                    android:textSize="@dimen/size_28pt"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_availablebalance"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/size_60pt" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="可用余额(元)"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_28pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/line_style"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/gold_lin3"
+                    android:text="可购买金额"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/size_28pt" />
+
+                <TextView
+                    android:id="@+id/tv_purchaseamount"
+                    style="@style/gold_lin7"
+                    android:text=""
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/size_28pt" />
+            </LinearLayout>
+
+            <View style="@style/view_line_new" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:background="@color/gold_qgray_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/marg_16px"
+                android:paddingLeft="@dimen/marg_30px"
+                android:paddingRight="@dimen/marg_30px"
+                android:paddingTop="@dimen/marg_16px" >
+
+                <TextView
+                    android:id="@+id/tv_perperson"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_28pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/line_style"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/gold_lin3"
+                    android:text="购买金额"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/size_28pt" />
+
+                <LinearLayout
+                    style="@style/gold_lin7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/purchaseamount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/gray_gold"
+                        android:textColorHint="@color/gray_q"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <ImageView
+                        android:id="@+id/img_delete"
+                        style="@style/Both_Wrap_style"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/delete_28"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/marg_20px"
+                        android:background="@color/gray_q" />
+
+                    <TextView
+                        android:id="@+id/tv_recharge"
+                        style="@style/Both_Wrap_style"
+                        android:background="@drawable/bg_white_selector"
+                        android:paddingLeft="@dimen/marg_20px"
+                        android:paddingRight="@dimen/marg_20px"
+                        android:text="充值"
+                        android:textColor="@color/blue_ht"
+                        android:textSize="@dimen/size_28pt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/view_line_new_red" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:background="@color/gold_qgray_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/marg_16px"
+                android:paddingLeft="@dimen/marg_30px"
+                android:paddingRight="@dimen/marg_30px"
+                android:paddingTop="@dimen/marg_16px" >
+
+                <TextView
+                    android:id="@+id/tv_buyhit"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_28pt" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_date_current"
+                style="@style/Both_Wrap_style"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/details_time"
+                android:drawablePadding="@dimen/marg_10px"
+                android:paddingTop="@dimen/marg_60px"
+                android:text=""
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/size_24pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/marg_20px" >
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:drawableLeft="@drawable/tishzq_28x28"
+                android:drawablePadding="@dimen/marg_5px"
+                android:gravity="center"
+                android:text="同意"
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/size_28pt" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:text="《协议合同(范本)》"
+                android:textColor="@color/blue_ht"
+                android:textSize="@dimen/size_28pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/headerWeight"
+        android:orientation="vertical" >
+
+        <View style="@style/view_line" />
+
+        <Button
+            android:id="@+id/btn_submit_treasure"
+            style="@style/Bottom_btn_style"
+            android:text="确    定" />
+    </LinearLayout>
+
+</LinearLayout>

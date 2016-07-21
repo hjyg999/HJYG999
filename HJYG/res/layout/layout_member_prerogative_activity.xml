@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:background="@drawable/member_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="bottom|center_horizontal" >
+
+                <RelativeLayout style="@style/Both_Wrap_style" >
+
+                    <ImageView
+                        android:id="@+id/my_redpacket"
+                        style="@style/Both_Wrap_style"
+                        android:src="@drawable/member1" />
+
+                    <TextView
+                        android:id="@+id/my_redpacket_vale"
+                        style="@style/Both_Wrap_style"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="红包加息券\n"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/gray_s"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.17" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.28"
+                android:gravity="bottom|center_horizontal" >
+
+                <RelativeLayout style="@style/Both_Wrap_style" >
+
+                    <ImageView
+                        android:id="@+id/share_redpacket"
+                        style="@style/Both_Wrap_style"
+                        android:src="@drawable/member2" />
+
+                    <TextView
+                        android:id="@+id/share_redpacket_vale"
+                        style="@style/Both_Wrap_style"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/gray_s"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.72" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.68" >
+
+            <LinearLayout
+                style="@style/Both_Match_style"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:gravity="bottom|center_horizontal" >
+
+                        <RelativeLayout style="@style/Both_Wrap_style" >
+
+                            <ImageView
+                                android:id="@+id/assarting"
+                                style="@style/Both_Wrap_style"
+                                android:src="@drawable/member3" />
+
+                            <TextView
+                                android:id="@+id/assarting_vale"
+                                style="@style/Both_Wrap_style"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="活动抽奖\n"
+                                android:textColor="@color/gray_s"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Both_Match_style"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.36" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.47"
+                        android:gravity="bottom|center_horizontal" >
+
+                        <RelativeLayout style="@style/Both_Wrap_style" >
+
+                            <ImageView
+                                android:id="@+id/Lottery"
+                                style="@style/Both_Wrap_style"
+                                android:src="@drawable/member4" />
+
+                            <TextView
+                                android:id="@+id/Lottery_vale"
+                                style="@style/Both_Wrap_style"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text=""
+                                android:paddingBottom="5dp"
+                                android:textColor="@color/gray_s"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.53" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.64" >
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

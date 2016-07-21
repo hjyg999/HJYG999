@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/top_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/gesture_xt_bg_gray"
+        android:padding="1.5dp"
+        android:visibility="visible" >
+
+        <com.md.hjyg.layoutEntities.CircularImage
+            android:id="@+id/head_sex"
+            style="@style/Both_Match_style"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gesture_xt_bg_white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/Both_Wrap_style"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/top_head"
+        android:layout_marginLeft="@dimen/marg_16px"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_encrypted_name"
+            style="@style/Both_Wrap_style"
+            android:text="111111111"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_date_of_investment"
+            style="@style/Both_Wrap_style"
+            android:text="111111111"
+            android:textColor="@color/gray_sq"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_amount_invested"
+        style="@style/Both_Wrap_style"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="1111111111"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/img_experiencegold"
+        style="@style/Both_Wrap_style"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/tv_amount_invested"
+        android:src="@drawable/experiencegold"
+        android:visibility="gone" />
+
+</RelativeLayout>

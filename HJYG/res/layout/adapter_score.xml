@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:background="@drawable/homescreen_border"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/score_cause"
+                style="@style/Both_Wrap_style"
+                android:text="登录"
+                android:textColor="@color/gray_s"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/score_time"
+                style="@style/Both_Wrap_style"
+                android:text="2015-07-24 15:25:25"
+                android:textColor="@color/gray_sq"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/score_change"
+                style="@style/Both_Wrap_style"
+                android:text="+1"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:text="积分变化"
+                android:textColor="@color/gray_sq"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/score_amount"
+                style="@style/Both_Wrap_style"
+                android:text="52"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:text="本次余额"
+                android:textColor="@color/gray_sq"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:background="@color/bg_list"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/score_remark"
+            style="@style/Both_Wrap_style"
+            android:text="备注："
+            android:textColor="@color/gray_sq"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

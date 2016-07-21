@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/lin_nodata"
+        style="@style/Both_Wrap_style"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            style="@style/Both_Wrap_style"
+            android:src="@drawable/meeting_nodata190_240" />
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:layout_marginTop="@dimen/marg_30px"
+            android:text="抱歉，暂无数据！"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/size_32pt" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/Both_Match_style" 
+        android:id="@+id/lin_data">
+
+        <com.md.hjyg.layoutEntities.RefreshableView
+            android:id="@+id/refreshable_view"
+            style="@style/Both_Match_style" >
+
+            <com.md.hjyg.utility.LoadMoreListView
+                android:id="@+id/mLoadMoreListView"
+                style="@style/Both_Match_style"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:dividerHeight="1dp"
+                android:listSelector="@drawable/bg_selector" />
+        </com.md.hjyg.layoutEntities.RefreshableView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/marg_30px" >
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            style="@style/Match_Wrap_style"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/gray_gold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_news_details"
+            style="@style/Both_Wrap_style"
+            android:layout_marginTop="@dimen/marg_40px"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <!-- <TextView
+            android:id="@+id/tv_xintou_online"
+            style="@style/Both_Wrap_style"
+            android:padding="10dp"
+            android:text="@string/xintou_bao"
+            android:textColor="@color/gray"
+            android:textSize="14sp" /> -->
+
+        <LinearLayout
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/marg_20px"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sender_name"
+                style="@style/Both_Wrap_style"
+                android:text="@string/system_admin"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_sent_date"
+                style="@style/Both_Wrap_style"
+                android:textColor="@color/gray"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

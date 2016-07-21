@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.md.hjyg.layoutEntities.HeaderView
+        android:id="@+id/mheadView"
+        style="@style/headerWeight" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/marg_20px" >
+
+                <TextView
+                    android:id="@+id/newsnotice_title"
+                    style="@style/Match_Wrap_style"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/marg_20px"
+                    android:layout_marginLeft="@dimen/marg_20px"
+                    style="@style/Both_Wrap_style"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        style="@style/Both_Wrap_style"
+                        android:gravity="center"
+                        android:background="@drawable/bg_mra_graysqstrok_whorgra_selector"
+                        android:paddingBottom="@dimen/marg_2px"
+                        android:paddingLeft="@dimen/marg_16px"
+                        android:paddingRight="@dimen/marg_16px"
+                        android:text=""
+                        android:textColor="@color/gray_sq"
+                        android:textSize="@dimen/size_24pt" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/marg_10px"
+                        android:text=""
+                        android:id="@+id/newsnotice_time"
+                        style="@style/Match_Wrap_style"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="@dimen/size_24pt" />
+                </LinearLayout>
+
+                <WebView
+                    android:id="@+id/newsnotice_webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

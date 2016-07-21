@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        style="@style/Both_Match_style"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_checkall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/news_footer_selector"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="7dp"
+            android:text="@string/checkall"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#999980" >
+        </View>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/news_footer_selector"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="7dp"
+            android:text="@string/delete"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#999980" >
+        </View>
+
+        <Button
+            android:id="@+id/btn_read"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/news_footer_selector"
+            android:drawablePadding="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/gray"
+            android:paddingTop="7dp"
+            android:text="@string/marked_as_read"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#999980" >
+        </View>
+
+        <Button
+            android:id="@+id/btn_unread"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/gray"
+            android:background="@drawable/news_footer_selector"
+            android:text="@string/unread"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

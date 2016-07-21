@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/marg_30px"
+    android:paddingTop="@dimen/marg_30px" >
+
+    <LinearLayout
+        android:id="@+id/line_novic"
+        style="@style/Both_Wrap_style"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_ra_grag_line_strok_selector"
+        android:orientation="vertical"
+        android:padding="@dimen/marg_20px"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal" />
+
+        <RelativeLayout 
+            android:id="@+id/rel_bot"
+            style="@style/Match_Wrap_style" 
+            android:layout_marginTop="@dimen/marg_5px">
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="投资"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_24pt" />
+
+                <TextView
+                    android:id="@+id/tv_invest_vale"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/glod"
+                    android:textSize="@dimen/size_24pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="期限"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_24pt" />
+
+                <TextView
+                    android:id="@+id/tv_invest_term"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/glod"
+                    android:textSize="@dimen/size_24pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="预期收益"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_24pt" />
+
+                <TextView
+                    android:id="@+id/tv_invest_income"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/glod"
+                    android:textSize="@dimen/size_24pt" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_bot"
+            style="@style/Match_Wrap_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/marg_5px"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_InvestAmount"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/size_28pt" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="投资金额"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_24pt" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/marg_16px"
+                android:layout_marginTop="@dimen/marg_16px"
+                android:background="@color/gray_q" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_LoanInterest"
+                        style="@style/Both_Wrap_style"
+                        android:text="3个月"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:text="期限"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="@dimen/size_24pt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/marg_16px"
+                android:layout_marginTop="@dimen/marg_16px"
+                android:background="@color/gray_q" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        style="@style/Both_Wrap_style"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_InvestRate"
+                            style="@style/Both_Wrap_style"
+                            android:text="4.9%"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:text="年化"
+                            android:textColor="@color/gray_sq"
+                            android:textSize="@dimen/size_24pt" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="@dimen/marg_10px"
+                        android:layout_marginRight="@dimen/marg_10px"
+                        android:text="+"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <LinearLayout
+                        style="@style/Both_Wrap_style"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_InvestAwad"
+                            style="@style/Both_Wrap_style"
+                            android:text="3500元"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:text="商品价"
+                            android:textColor="@color/gray_sq"
+                            android:textSize="@dimen/size_24pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/marg_5px"
+                android:layout_marginTop="@dimen/marg_5px"
+                android:background="@color/gray_q" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_InvestCount"
+                        style="@style/Both_Wrap_style"
+                        android:text="200万"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:text="剩余金额"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="@dimen/size_24pt" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_main_pop"
+    style="@style/Both_Match_style" >
+
+    <com.md.hjyg.layoutEntities.SlidingMenu
+        android:id="@+id/mSlidingMenu"
+        style="@style/Both_Match_style"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/layout_slidingmenu_accout" />
+
+            <LinearLayout
+                style="@style/Both_Match_style"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/id_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.9" />
+
+                <View style="@style/view_line" />
+
+                <com.md.hjyg.layoutEntities.FooterView
+                    android:id="@+id/mFooterView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.md.hjyg.layoutEntities.SlidingMenu>
+
+    <RelativeLayout
+        android:id="@+id/rel_pop"
+        style="@style/Both_Match_style"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            style="@style/Both_Match_style"
+            android:alpha="0.5"
+            android:background="#000000" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/Both_Wrap_style"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/img_pop"
+                style="@style/Both_Wrap_style"
+                 />
+
+            <ImageView
+                android:id="@+id/img_pop_closs"
+                style="@style/Both_Wrap_style"
+                android:layout_alignRight="@+id/img_pop"
+                 />
+
+            <TextView
+                android:id="@+id/tv_toinvst"
+                style="@style/Both_Wrap_style"
+                android:layout_below="@+id/img_pop"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/marg_30px"
+                android:background="@drawable/bg_ra_reded325b_selector"
+                android:paddingBottom="@dimen/marg_16px"
+                android:paddingLeft="@dimen/marg_50px"
+                android:paddingRight="@dimen/marg_50px"
+                android:paddingTop="@dimen/marg_16px"
+                android:text="立即领取"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_36pt" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

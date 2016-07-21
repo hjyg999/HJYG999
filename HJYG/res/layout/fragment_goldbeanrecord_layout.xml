@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:paddingLeft="@dimen/marg_30px"
+    android:paddingRight="@dimen/marg_30px">
+
+    <LinearLayout
+        android:id="@+id/lin_nodata"
+        style="@style/Both_Match_style"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center" >
+
+            <LinearLayout
+                style="@style/Both_Wrap_style"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/img_nodate"
+                    style="@style/Both_Wrap_style"
+                    android:src="@drawable/jxw_ku_142x180" />
+
+                <TextView
+                    android:id="@+id/tv_nodate"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginTop="@dimen/marg_30px"
+                    android:text="抱歉，暂无数据！"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size_28pt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.md.hjyg.utility.LoadMoreListView
+        android:visibility="gone"
+        android:id="@+id/mListView"
+        style="@style/Both_Match_style"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llNumKeyBoard"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_q"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/close_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/keyboard_inner"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            style="@style/Both_Wrap_style"
+            android:padding="8dp"
+            android:src="@drawable/keyboard_arrow_down" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnNum1"
+            style="@style/btn_keyboardview_numkey_style"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btnNum2"
+            style="@style/btn_keyboardview_numkey_style"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btnNum3"
+            style="@style/btn_keyboardview_numkey_style"
+            android:text="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnNum4"
+            style="@style/btn_keyboardview_numkey_style"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btnNum5"
+            style="@style/btn_keyboardview_numkey_style"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btnNum6"
+            style="@style/btn_keyboardview_numkey_style"
+            android:text="6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnNum7"
+            style="@style/btn_keyboardview_numkey_style"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btnNum8"
+            style="@style/btn_keyboardview_numkey_style"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btnNum9"
+            style="@style/btn_keyboardview_numkey_style"
+            android:text="9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/keypad_sign_x"
+            style="@style/btn_keyboardview_numkey_two_style"
+            android:text="x" />
+
+        <Button
+            android:id="@+id/btnNum0"
+            style="@style/btn_keyboardview_numkey_style"
+            android:text="0" />
+
+        <LinearLayout
+            android:id="@+id/keypad_sign_del1"
+            style="@style/btn_keyboardview_numkey_two_style"
+            android:gravity="center" >
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:padding="17dp"
+                android:src="@drawable/keyboard_delete" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

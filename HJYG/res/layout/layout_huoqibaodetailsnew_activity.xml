@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <RelativeLayout style="@style/relativeLayoutWeight" >
+
+        <com.md.hjyg.layoutEntities.RefreshableScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refreshableScrollView"
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical" >
+
+            <ScrollView
+                style="@style/Both_Match_style"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical" >
+
+                    <com.md.hjyg.layoutEntities.ProjectDetailsView
+                        android:id="@+id/mProjectDetailsView"
+                        style="@style/Match_Wrap_style" />
+
+                    <LinearLayout
+                        style="@style/Match_Wrap_style"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/marg_32px"
+                        android:paddingLeft="@dimen/marg_30px"
+                        android:paddingRight="@dimen/marg_30px"
+                        android:paddingTop="@dimen/marg_32px" >
+
+                        <TextView
+                            android:id="@+id/tv_InterestWayDes"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            android:id="@+id/tv_LeastAmtDes"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/size_28pt" />
+                    </LinearLayout>
+
+                    <View style="@style/view_line_new" />
+
+                    <include layout="@layout/details_center_layout" />
+
+                    <ExpandableListView
+                        android:id="@+id/expandableListView"
+                        style="@style/Match_Wrap_style"
+                        android:childDivider="@color/white"
+                        android:divider="@color/white"
+                        android:listSelector="@drawable/bg_white_selector"
+                        android:scrollbars="none" />
+
+                    <View style="@style/view_line_new" />
+
+                    <TextView
+                        android:id="@+id/tv_label"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/marg_30px"
+                        android:layout_marginTop="@dimen/marg_60px"
+                        android:drawableLeft="@drawable/details_time"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/gray_sq"
+                        android:textSize="@dimen/size_24pt" />
+                    <LinearLayout
+                        android:id="@+id/line"
+                        style="@style/Match_Wrap_style"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </com.md.hjyg.layoutEntities.RefreshableScrollView>
+
+        <LinearLayout
+            android:id="@+id/line_bottom"
+            style="@style/Match_Wrap_style"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.9"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_tobuy"
+                style="@style/Bottom_btn_style_alpha"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_alignTop="@+id/line_bottom" />
+    </RelativeLayout>
+
+</LinearLayout>

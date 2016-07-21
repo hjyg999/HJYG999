@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        style="@style/Both_Match_style"
+        android:layout_below="@+id/include_header"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_about_us"
+            style="@style/Match_Wrap_style"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            style="@style/Match_Wrap_style"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_contact"
+                style="@style/Both_Wrap_style"
+                android:text="@string/contact"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/Both_Wrap_style"
+                android:layout_below="@+id/tv_contact"
+                android:paddingTop="10dp"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_address_value"
+                style="@style/Both_Wrap_style"
+                android:layout_below="@+id/tv_contact"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_address"
+                android:paddingTop="10dp"
+                android:text="@string/address_details"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_zip_code"
+                style="@style/Both_Wrap_style"
+                android:layout_below="@+id/tv_address"
+                android:paddingTop="10dp"
+                android:text="@string/zip_code"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_zip_code_no"
+                style="@style/Both_Wrap_style"
+                android:layout_below="@+id/tv_address"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/tv_zip_code"
+                android:paddingTop="10dp"
+                android:text="400001"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_micro_letter"
+                style="@style/Both_Wrap_style"
+                android:layout_below="@+id/tv_zip_code"
+                android:paddingTop="10dp"
+                android:text="@string/micro_letter"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_microletter_value"
+                style="@style/Both_Wrap_style"
+                android:layout_below="@+id/tv_zip_code"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/tv_micro_letter"
+                android:paddingTop="10dp"
+                android:text="xintouzaixincs"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:background="@drawable/bg_ra_rul_left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="说明"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/recommand_bg_rul_titlestr" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp" >
+
+                        <ImageView
+                            android:id="@+id/rul_silver"
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center_vertical"
+                            android:paddingTop="3dp"
+                            android:src="@drawable/rec_silver_level" />
+
+                        <TextView
+                            android:id="@+id/leve1_name"
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/recommand_bg_rul_titlestr" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp" >
+
+                        <ImageView
+                            android:id="@+id/rul_gold"
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center_vertical"
+                            android:paddingTop="3dp"
+                            android:src="@drawable/rec_gold_level" />
+
+                        <TextView
+                            android:id="@+id/leve2_name"
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:background="@drawable/bg_rul_cer"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginTop="0.5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="生\n效\n条\n件"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/recommand_bg_rul_cerstr" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:paddingBottom="0.5dp"
+                        android:paddingTop="0.5dp" >
+
+                        <TextView
+                            android:id="@+id/silver_condition"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/recommand_bg_rul_cersq"
+                            android:lineSpacingExtra="3dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/recommand_bg_rul_cerstr" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:paddingBottom="0.5dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="0.5dp" >
+
+                        <TextView
+                            android:id="@+id/gold_condition"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/recommand_bg_rul_cers"
+                            android:lineSpacingExtra="3dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/bg_rul_cer"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginTop="0.5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="推\n荐\n的\n好\n友\n奖\n励"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/recommand_bg_rul_cerstr" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:paddingBottom="0.5dp"
+                        android:paddingTop="0.5dp" >
+
+                        <TextView
+                            android:id="@+id/silver_reward"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/recommand_bg_rul_cersq"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="3dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/recommand_bg_rul_cerstr" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:paddingBottom="0.5dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="0.5dp" >
+
+                        <TextView
+                            android:id="@+id/gold_reward"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/recommand_bg_rul_cers"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="3dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/bg_rul_cer"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginTop="0.5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="好\n友\n推\n荐\n的\n好\n友\n奖\n励"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/recommand_bg_rul_cerstr" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:paddingBottom="0.5dp"
+                        android:paddingTop="0.5dp" >
+
+                        <TextView
+                            android:id="@+id/silver_reward_twoLevel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/recommand_bg_rul_cersq"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="3dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/recommand_bg_rul_cerstr" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:paddingBottom="0.5dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="0.5dp" >
+
+                        <TextView
+                            android:id="@+id/gold_reward_twoLevel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/recommand_bg_rul_cers"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="3dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/bg_rul_cer"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginTop="0.5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="奖\n励\n发\n放"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/recommand_bg_rul_cerstr" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:paddingBottom="1dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="0.5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_reward"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/recommand_bg_rul_bot"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="3dp"
+                            android:padding="10dp"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/bg_rul_bot"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginTop="0.5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="理\n财\n师\n等\n级\n变\n更"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/recommand_bg_rul_cerstr" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:paddingBottom="1dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="0.5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_level_change"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/recommand_bg_rul_bot"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="3dp"
+                            android:padding="10dp"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <!-- android:text="1、活期宝项目不计算理财师收益。\n2、奖励每日进行结算，结算后立即发放到用户的信投宝账户内。" -->
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_rul_bot_ra"
+                    android:padding="10dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_remark"
+                        style="@style/Both_Match_style"
+                        android:lineSpacingExtra="3dp"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <!-- android:text="备注：\n1、一级好友为直接推荐的好友，二级好友为好友推荐的好友;\n2、本理财师规则将会依据平台的运营情况进行相应的调整，届时以公告通知为准;\n3、如达到理财师要求需要跟信投宝申请理财师资格，信投宝保留3个工作日审核时间;\n4、若您采用某些特殊技术手段，一经核实，信投宝保留拒绝支付奖励或删除相应好友的权利;\n5、详细规则登录PC端，信投宝对该规则保留最终解释权。" -->
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lin_apply"
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/apply_hit"
+                style="@style/Match_Wrap_style"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="8dp"
+                android:text="@string/apply_hit"
+                android:textColor="@color/gray_sq"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_apply"
+                style="@style/Match_Wrap_style"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_selector_red"
+                android:padding="10dp"
+                android:text="@string/apply_recommended"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

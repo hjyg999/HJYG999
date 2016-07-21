@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E9E9E9"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="按克数购买"
+                android:textColor="@color/red" />
+
+            <View
+                android:id="@+id/tab1_line"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E9E9E9"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="按金额购买"
+                android:textColor="@color/gray_gold" />
+
+            <View
+                android:id="@+id/tab2_line"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/red"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="299.29"
+                android:textColor="@color/orange"
+                android:textSize="28sp" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:text="当前金价(元/克)"
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/gold_mianSize" />
+
+            <View style="@style/view_line_ma" />
+
+            <RelativeLayout style="@style/gold_style" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="可用余额"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:text="2000.00元"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/gold_mianSize" />
+            </RelativeLayout>
+
+            <View style="@style/view_line_ma" />
+
+            <LinearLayout
+                style="@style/gold_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_edhit"
+                    style="@style/gold_lin3"
+                    android:text="购买克数"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <EditText
+                    android:id="@+id/ed_amount"
+                    style="@style/gold_lin7"
+                    android:background="@color/white"
+                    android:hint="0.0010-500.0000克"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:textColor="@color/gray_gold"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="@dimen/gold_mianSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_buyhit"
+            style="@style/Match_Wrap_style"
+            android:background="@color/gold_qgray_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="所需金额：0.00元"
+            android:textColor="@color/gray_gold"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:text="@string/tips"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/gold_mianSize" />
+
+            <TextView
+                android:id="@+id/tv_tip"
+                style="@style/Both_Wrap_style"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/tips"
+                android:textColor="@color/gray_sq"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/gold_greenyes" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="3dp"
+                android:text="同意"
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/gold_mianSize" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="3dp"
+                android:text="《协议合同》"
+                android:textColor="#0162D8"
+                android:textSize="@dimen/gold_mianSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line" />
+
+        <Button
+            android:id="@+id/btn_buy"
+            style="@style/Match_Wrap_style"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_selector"
+            android:padding="10dp"
+            android:text="确   定"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

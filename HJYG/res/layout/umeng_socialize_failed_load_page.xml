@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="#ffffff" >
+
+    <TextView
+        style="@style/Both_Wrap_style"
+        android:layout_centerInParent="true"
+        android:text="网络加载失败，请点击重试。"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

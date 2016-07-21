@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/re_top_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/gesture_xt_bg_gray"
+        android:padding="1.5dp"
+        android:visibility="gone" >
+
+        <com.md.hjyg.layoutEntities.CircularImage
+            android:id="@+id/img_top_head"
+            style="@style/Both_Match_style"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gesture_xt_bg_white" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_top_left"
+        style="@style/Both_Wrap_style"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_top_logo"
+        style="@style/Both_Wrap_style"
+        android:layout_centerInParent="true"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/tv_top_title"
+        style="@style/Both_Wrap_style"
+        android:layout_centerInParent="true"
+        android:maxLength="19"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_44pt" />
+
+    <TextView
+        android:id="@+id/tv_top_right"
+        style="@style/Both_Wrap_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_28pt"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_top_right"
+        style="@style/Both_Wrap_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp" />
+
+</RelativeLayout>

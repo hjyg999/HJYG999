@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/marg_16px" >
+
+    <FrameLayout
+        android:id="@+id/mFrameLayout"
+        android:layout_width="234dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            style="@style/Both_Match_style"
+            android:background="@drawable/bg_ra_gray_f7"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.71"
+                android:paddingLeft="@dimen/marg_10px" >
+
+                <RelativeLayout
+                    style="@style/Match_Wrap_style"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/redpacket_xj" />
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="@dimen/marg_10px"
+                        android:layout_toRightOf="@+id/img"
+                        android:text="现金红包"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/size_24pt" />
+
+                    <TextView
+                        android:id="@+id/tv_term"
+                        style="@style/Both_Wrap_style"
+                        android:layout_below="@+id/tv_type"
+                        android:layout_marginLeft="@dimen/marg_10px"
+                        android:layout_toRightOf="@+id/img"
+                        android:text="有效期：2015/08/01-2015/08/31"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/tv_condition"
+                        style="@style/Both_Wrap_style"
+                        android:layout_below="@+id/tv_term"
+                        android:layout_marginLeft="@dimen/marg_10px"
+                        android:layout_marginTop="@dimen/marg_20px"
+                        android:layout_toRightOf="@+id/img"
+                        android:text="兑换要求：现金红包可以直接提现。aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_20pt" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.29" >
+
+                <LinearLayout
+                    android:id="@+id/lin_amount"
+                    android:layout_width="51dp"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/redpacked_m"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_amount"
+                            style="@style/Both_Wrap_style"
+                            android:text="10,000元"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/size_20pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.57"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_timetype"
+                            style="@style/Both_Wrap_style"
+                            android:text="可使用"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_20pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_albg"
+            style="@style/Both_Match_style"
+            android:alpha="0.5"
+            android:background="@color/black" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/img_ok"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:src="@drawable/redpacked_ok" 
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_income"
+        style="@style/Both_Wrap_style"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/marg_16px"
+        android:paddingTop="@dimen/marg_16px"
+        android:text="加息券收益:50元"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/size_28pt" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="234dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/gray_line" />
+
+</LinearLayout>

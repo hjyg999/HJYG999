@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+    <TextView 
+        android:background="@color/white"
+        style="@style/Match_Wrap_style"
+        android:text="选择证件类型"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red"
+        />
+    <ListView 
+        android:id="@id/android:list"
+        style="@style/Match_Wrap_style"
+        android:background="@color/white"
+        android:listSelector="@drawable/dialog_list_bg_selector"
+        ></ListView>
+
+</LinearLayout>

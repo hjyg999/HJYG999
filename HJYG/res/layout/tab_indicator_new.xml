@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="40dp"
+    android:layout_weight="1"
+    android:background="@drawable/tab_indicator_selector"
+    android:orientation="horizontal" >
+
+    <!-- android:layout_width="wrap_content" 把50修改成了0 ，显示平分 -->
+
+    <RelativeLayout
+        style="@style/Both_Wrap_style"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/icon_tab"
+            style="@style/Both_Match_style"
+            android:background="@drawable/tab_indicator_selector" />
+
+        <RelativeLayout
+            style="@style/Both_Wrap_style"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/title"
+                style="?android:attr/tabWidgetStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@drawable/tab_text" />
+            <TextView
+                android:id="@+id/title_isbuy"
+                android:layout_toRightOf="@+id/title"
+                android:layout_marginLeft="2dp"
+                style="?android:attr/tabWidgetStyle"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:text=""
+                android:textSize="10sp"
+                 android:textColor="@drawable/tab_txt_buy"
+                 android:background="@drawable/tab_txet_bg"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                />
+            <!-- android:background="@drawable/tab_txet_bg"  android:textColor="@drawable/tab_txt_buy"-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#cccccc"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" />
+
+</LinearLayout>

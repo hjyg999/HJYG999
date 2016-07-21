@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/line_left"
+        style="@style/wrap_match_style"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/gray_q" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            style="@style/Both_Wrap_style"
+            android:background="@drawable/list_bg_c_s"
+            android:gravity="center"
+            android:text="01"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20pt" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/gray_q" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/marg_10px"
+        android:paddingTop="@dimen/marg_10px" >
+
+        <LinearLayout
+            android:id="@+id/lin_bg"
+            style="@style/Both_Match_style"
+            android:layout_marginLeft="@dimen/marg_26px"
+            android:background="@drawable/list_bg_y"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                style="@style/Match_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_16px"
+                android:layout_marginRight="@dimen/marg_16px"
+                android:layout_marginTop="@dimen/marg_16px" >
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/Both_Wrap_style"
+                    android:text="成功"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/size_28pt" />
+
+                <TextView
+                    android:id="@+id/tv_acount"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:text="1000"
+                    android:textColor="@color/yellow_FF9832"
+                    android:textSize="@dimen/size_28pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/Match_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_16px"
+                android:layout_marginRight="@dimen/marg_16px"
+                android:layout_marginTop="@dimen/marg_2px" >
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/Both_Wrap_style"
+                    android:text="成功"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_24pt" />
+
+                <TextView
+                    android:id="@+id/tv_s_acount"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:text="1000"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_24pt" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_time_2"
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="@dimen/marg_16px"
+                android:layout_marginRight="@dimen/marg_16px"
+                android:layout_marginTop="@dimen/marg_2px"
+                android:text=""
+                android:textColor="@color/gray_sq"
+                android:visibility="gone"
+                android:textSize="@dimen/size_24pt" />
+
+            <TextView
+                android:id="@+id/tv_remark"
+                style="@style/Both_Wrap_style"
+                android:layout_marginBottom="@dimen/marg_16px"
+                android:layout_marginLeft="@dimen/marg_16px"
+                android:layout_marginRight="@dimen/marg_16px"
+                android:layout_marginTop="@dimen/marg_20px"
+                android:text="成功"
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/size_24pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <RelativeLayout style="@style/relativeLayoutWeight" >
+
+        <ScrollView
+            style="@style/Match_Wrap_style"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/marg_30px" >
+
+                <LinearLayout
+                    android:id="@+id/lin_bg"
+                    android:layout_width="293dp"
+                    android:layout_height="435dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/hqb_tyj_bg"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.6" >
+
+                        <LinearLayout
+                            style="@style/Match_Wrap_style"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/marg_40px" >
+
+                            <TextView
+                                android:id="@+id/income_amount"
+                                style="@style/Both_Wrap_style"
+                                android:text=""
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/size_56pt" />
+
+                            <TextView
+                                android:layout_marginTop="-5dp"
+                                style="@style/Both_Wrap_style"
+                                android:text="累计收益(元)"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/size_28pt" />
+
+                            <TextView
+                                android:id="@+id/day_income"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginTop="@dimen/marg_20px"
+                                android:text="昨日收益"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size_28pt" />
+
+                            <LinearLayout
+                                android:id="@+id/income_record"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginTop="@dimen/marg_40px"
+                                android:background="@drawable/bg_mra_whitlestroke_nosolid_selector"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/marg_5px"
+                                android:paddingLeft="@dimen/marg_30px"
+                                android:paddingRight="@dimen/marg_30px"
+                                android:paddingTop="@dimen/marg_5px" >
+
+                                <TextView
+                                    style="@style/Both_Wrap_style"
+                                    android:text="明细"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/size_28pt" />
+
+                                <ImageView
+                                    android:id="@+id/img_arrow1"
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_marginLeft="@dimen/marg_5px"
+                                    android:src="@drawable/arrow_whit24x24" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/money_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/bg_no_selector" >
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/marg_30px"
+                            android:text="体验金可用余额"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            android:id="@+id/usable_amount"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/marg_60px"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <ImageView
+                            android:id="@+id/img_arrow2"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/marg_20px"
+                            android:src="@drawable/arrow_whit24x24" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" >
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/marg_30px"
+                            android:text="体验金冻结金额"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            android:id="@+id/freeze_amount"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/marg_60px"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" >
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/marg_30px"
+                            android:text="体验金在保额"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            android:id="@+id/buy_amount"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/marg_60px"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" >
+
+                        <TextView
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/marg_30px"
+                            android:text="体验金总额"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            android:id="@+id/total_amount"
+                            style="@style/Both_Wrap_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/marg_60px"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_28pt" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/line"
+                    style="@style/Match_Wrap_style"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/line_bottom"
+            style="@style/Match_Wrap_style"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.9"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buy_huoqibao"
+                style="@style/Bottom_btn_style_alpha"
+                android:text="购买活期宝" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_alignTop="@+id/line_bottom" />
+    </RelativeLayout>
+
+</LinearLayout>

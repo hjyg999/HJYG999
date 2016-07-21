@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <RelativeLayout
+        style="@style/relativeLayoutWeight"
+        android:background="@color/bg_list" >
+
+        <LinearLayout
+            android:id="@+id/ll_deatils"
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_loan_title"
+                style="@style/Match_Wrap_style"
+                android:background="@color/red"
+                android:padding="10dp"
+                android:text="XintoubaoH20150512-688"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tag_color" />
+
+            <RelativeLayout
+                style="@style/Match_Wrap_style"
+                android:background="@color/white"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_bidding_maxamt"
+                    style="@style/Both_Wrap_style"
+                    android:padding="5dp"
+                    android:text="剩余金额："
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_rem_amt"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tag_color" />
+
+            <RelativeLayout
+                style="@style/Match_Wrap_style"
+                android:background="@color/white"
+                android:padding="5dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:padding="5dp"
+                    android:text="可用余额："
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_bal_available"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tag_color" />
+
+            <RelativeLayout
+                style="@style/Match_Wrap_style"
+                android:background="@color/white"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentLeft="true"
+                    android:padding="5dp"
+                    android:text="购买金额："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView"
+                    android:background="@color/white"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/Crrency_symbol" />
+
+                    <EditText
+                        android:id="@+id/ed_purchase_amount"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="请输入购买金额"
+                        android:inputType="number"
+                        android:maxLength="7"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/text_color_title"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_purchase_price"
+            style="@style/Match_Wrap_style"
+            android:layout_below="@+id/ll_deatils"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_purchase_price"
+                style="@style/Both_Wrap_style"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_confirm_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rl_purchase_price"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_selector_red"
+            android:text="立即投标"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</LinearLayout>

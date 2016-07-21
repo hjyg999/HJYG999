@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/lin_qiandao"
+                android:layout_width="254dp"
+                android:layout_height="130dp"
+                android:background="@drawable/gb_toqiandao"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35" />
+
+                <TextView
+                    android:id="@+id/tv_toqiandao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:layout_marginTop="@dimen/marg_20px"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_gbamount"
+                style="@style/Both_Wrap_style"
+                android:text="0"
+                android:textColor="@color/gold"
+                android:textSize="@dimen/size_60pt" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:text="我的金豆(个)"
+                android:textColor="@color/green_99CC33"
+                android:textSize="@dimen/size_28pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_choujiang"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@drawable/gb_choujiang"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.36" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.345"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/tv_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.135" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_tolot"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.37" >
+
+                    <com.md.hjyg.layoutEntities.RippleView
+                        android:id="@+id/mRippleView"
+                        style="@style/Both_Wrap_style"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_rule"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.145" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.295" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

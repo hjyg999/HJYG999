@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <RelativeLayout style="@style/relativeLayoutWeight" >
+
+        <ScrollView
+            style="@style/Match_Wrap_style"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lin_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/buy_top_bg"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/ed_bank_card_withdrawals"
+                        style="@style/Both_Wrap_style"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/size_60pt" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:text="可提现金额(元)"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_28pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/line_style"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/gold_lin3"
+                        android:text="可用余额"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <TextView
+                        android:id="@+id/ed_withdraw_available_bal"
+                        style="@style/gold_lin7"
+                        android:text=""
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/size_28pt" />
+                </LinearLayout>
+
+                <View style="@style/view_line_new" />
+
+                <LinearLayout
+                    style="@style/line_style"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/gold_lin3"
+                        android:text="提现金额"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <EditText
+                        android:id="@+id/ed_withdrawal_amt"
+                        style="@style/gold_lin7"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:hint="最低提现金额100元"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/gray_gold"
+                        android:textColorHint="@color/gray_sq"
+                        android:textSize="@dimen/size_28pt" />
+                </LinearLayout>
+
+                <View style="@style/view_line_new" />
+
+                <LinearLayout
+                    style="@style/line_style"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/gold_lin3"
+                        android:text="到账卡号"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <LinearLayout
+                        style="@style/gold_lin7"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/img_bank"
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginRight="5dp" />
+
+                        <TextView
+                            android:id="@+id/ed_withdrawal_account"
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textColor="@color/gray_gold"
+                            android:textSize="@dimen/size_28pt" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_line_new" />
+
+                <LinearLayout
+                    style="@style/line_style"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/gold_lin3"
+                        android:text="交易密码"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <EditText
+                        android:id="@+id/ed_withdrawal_password"
+                        style="@style/gold_lin7"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:hint="请输入交易密码"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/gray_gold"
+                        android:textColorHint="@color/gray_sq"
+                        android:textSize="@dimen/size_28pt" />
+                </LinearLayout>
+
+                <View style="@style/view_line_new" />
+
+                <LinearLayout
+                    style="@style/line_style"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/gold_lin3"
+                        android:text="手续费"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <LinearLayout
+                        style="@style/gold_lin7"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/freeamount_tv"
+                            style="@style/Both_Wrap_style"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:text=""
+                            android:textColor="@color/gray_gold"
+                            android:textSize="@dimen/size_28pt" />
+
+                        <TextView
+                            android:id="@+id/freecount_tv"
+                            style="@style/Both_Wrap_style"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:text=""
+                            android:textColor="@color/gray_q"
+                            android:textSize="@dimen/size_24pt" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_line_new" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_changepwddes"
+                        style="@style/Match_Wrap_style"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_commission"
+                        style="@style/Match_Wrap_style"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        style="@style/Match_Wrap_style"
+                        android:layout_marginTop="15dp"
+                        android:text="到账时间说明："
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <TextView
+                        android:id="@+id/tv_withdrawldes"
+                        style="@style/Match_Wrap_style"
+                        android:layout_marginTop="5dp"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/img_aly"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marg_30px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line"
+                    style="@style/Match_Wrap_style"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/line_bottom"
+            style="@style/Match_Wrap_style"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.9"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_withdrawals"
+                style="@style/Bottom_btn_style_alpha"
+                android:text="申   请" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_alignTop="@+id/line_bottom" />
+    </RelativeLayout>
+
+</LinearLayout>

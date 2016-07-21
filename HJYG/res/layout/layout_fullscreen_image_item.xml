@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:gravity="fill_horizontal" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/Both_Match_style"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true" />
+
+    <Button
+        android:id="@+id/btnProceed"
+        style="@style/Both_Wrap_style"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/splashscreen_btn"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+</FrameLayout>

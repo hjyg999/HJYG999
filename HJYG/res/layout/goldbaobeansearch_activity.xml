@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Match_Wrap_style"
+            android:background="@color/gold_qgray_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="按月查询"
+            android:textColor="@color/gray_gold"
+            android:textSize="@dimen/gold_mianSize" />
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:id="@+id/tv_month1"
+                style="@style/Both_Wrap_style"
+                android:background="@drawable/bg_mra_red_strok"
+                android:paddingBottom="5dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="5dp"
+                android:text="近1个月"
+                android:textColor="@color/red"
+                android:textSize="@dimen/gold_mianSize" />
+
+            <TextView
+                android:id="@+id/tv_month3"
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_grad_strok"
+                android:paddingBottom="5dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="5dp"
+                android:text="近3个月"
+                android:textColor="@color/gray_q"
+                android:textSize="@dimen/gold_mianSize" />
+
+            <TextView
+                android:id="@+id/tv_month6"
+                style="@style/Both_Wrap_style"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_grad_strok"
+                android:paddingBottom="5dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="5dp"
+                android:text="近6个月"
+                android:textColor="@color/gray_q"
+                android:textSize="@dimen/gold_mianSize" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Match_Wrap_style"
+            android:background="@color/gold_qgray_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="按日查询"
+            android:textColor="@color/gray_gold"
+            android:textSize="@dimen/gold_mianSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="从"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <TextView
+                    android:id="@+id/tv_startDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text=""
+                    android:textColor="@color/gray_q"
+                    android:textSize="@dimen/gold_mianSize" />
+            </LinearLayout>
+
+            <View style="@style/view_line_ma" />
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="到"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/gold_mianSize" />
+
+                <TextView
+                    android:id="@+id/tv_endDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text=""
+                    android:textColor="@color/gray_q"
+                    android:textSize="@dimen/gold_mianSize" />
+            </LinearLayout>
+
+            <View style="@style/view_line_ma" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:paddingTop="50dp"
+                    android:text="说明：红色为选中查询方式，\n只能选用一种查询方式，\n按月查询则不能按日查询。"
+                    android:textColor="#39A8D1"
+                    android:textSize="@dimen/gold_mianSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <Button
+            android:id="@+id/btn_comfirm"
+            style="@style/Match_Wrap_style"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_selector"
+            android:padding="10dp"
+            android:text="确   认"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

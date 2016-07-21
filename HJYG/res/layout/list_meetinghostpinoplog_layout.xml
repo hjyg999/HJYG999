@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:paddingBottom="@dimen/marg_16px"
+    android:paddingLeft="@dimen/marg_30px"
+    android:paddingRight="@dimen/marg_30px"
+    android:paddingTop="@dimen/marg_16px" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Both_Wrap_style"
+        android:layout_centerVertical="true"
+        android:text="抽奖活动名称一"
+        android:textColor="@color/gray_gold"
+        android:textSize="@dimen/size_28pt" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:lineSpacingExtra="1dp"
+        style="@style/Both_Wrap_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="2016/02/14 14:00:00起\n2016/02/14 14:00:00止"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/size_24pt" />
+
+</RelativeLayout>

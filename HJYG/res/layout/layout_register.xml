@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <ScrollView
+            style="@style/Both_Match_style"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout style="@style/Match_Wrap_style" >
+
+                    <EditText
+                        android:id="@+id/ed_mobileno"
+                        style="@style/Match_Wrap_style"
+                        android:background="@drawable/bg_edit_selector"
+                        android:drawableLeft="@drawable/bg_edit_phoneimg_selector"
+                        android:drawablePadding="5dp"
+                        android:hint="手机号码"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="@color/gray"
+                        android:textColorHint="@color/gray_q"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ed_mobileno_img"
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:src="@drawable/delete"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <!--
+                      android:background="@drawable/bg_edit_selector"
+                    android:drawableLeft="@drawable/bg_edit_phoneimg_selector"
+                    android:drawableEnd="@drawable/login_phone_no"
+                -->
+
+                <RelativeLayout
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="10dp" >
+
+                    <EditText
+                        android:id="@+id/ed_login_password"
+                        style="@style/Match_Wrap_style"
+                        android:background="@drawable/bg_edit_selector"
+                        android:drawableLeft="@drawable/bg_edit_passedwordimg_selector"
+                        android:drawablePadding="5dp"
+                        android:hint="请最少输入6位密码"
+                        android:digits="@string/rule_password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textColor="@color/gray"
+                        android:textColorHint="@color/gray_q"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ed_login_password_img"
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:src="@drawable/delete"
+                        android:visibility="gone" />
+                </RelativeLayout>
+                <!--
+                     android:background="@drawable/bg_edit_selector"
+                    android:drawableLeft="@drawable/bg_edit_passedwordimg_selector"
+                    android:drawablePadding="5dp"
+                -->
+
+
+                <!--
+                     <TextView
+                    android:id="@+id/ed_login_password_hint"
+                    style="@style/Both_Wrap_style"
+                    android:layout_marginTop="3dp"
+                    android:text="请最少输入6位密码"
+                    android:textColor="@color/red"
+                    android:textSize="10sp" />
+                -->
+
+                <com.md.hjyg.layoutEntities.PasswordHitView
+                    android:id="@+id/passwordHitView"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="10dp" />
+
+                <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_week"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/red"
+                        android:gravity="center"
+                        android:paddingBottom="1dp"
+                        android:paddingTop="1dp"
+                        android:text="@string/week_password"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_medium_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray_q"
+                        android:gravity="center"
+                        android:paddingBottom="1dp"
+                        android:paddingTop="1dp"
+                        android:text="@string/medium_password"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_high_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray_q"
+                        android:gravity="center"
+                        android:paddingBottom="1dp"
+                        android:paddingTop="1dp"
+                        android:text="@string/high_password"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+                -->
+
+                <RelativeLayout
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="10dp" >
+
+                    <EditText
+                        android:id="@+id/ed_login_password_again"
+                        style="@style/Match_Wrap_style"
+                        android:background="@drawable/bg_edit_selector"
+                        android:drawableLeft="@drawable/bg_edit_passedwordimg_selector"
+                        android:drawablePadding="5dp"
+                        android:hint="请确认登录密码"
+                        android:digits="@string/rule_password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textColor="@color/gray"
+                        android:textColorHint="@color/gray_q"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ed_login_password_again_img"
+                        style="@style/Both_Wrap_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:src="@drawable/delete"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/edittext_hint"
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="请输入11位手机号码"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+                <!--
+                     <EditText
+                    android:id="@+id/ed_recommended_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/homescreen_border"
+                    android:hint="推荐人手机号（可选填）"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray_q"
+                    android:textSize="16sp" 
+                    android:visibility="gone"/>
+                -->
+
+
+                <!--
+                <LinearLayout
+                    android:id="@+id/recommended_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_white_selector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="推荐人"
+                        android:textColor="@color/blue"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_recommended"
+                        android:layout_width="30dp"
+                        android:layout_height="15dp"
+                        android:background="@null"
+                        android:button="@drawable/register_commond_arrow_selector"
+                        android:gravity="center_vertical" 
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+                -->
+
+                <TextView
+                    android:id="@+id/btn_next"
+                    style="@style/Match_Wrap_style"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_selector_red"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/btn_next"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/checkbox"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:button="@drawable/img_selector"
+                        android:checked="true"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_terms"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:text="@string/accept_conditions"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_terms_tittle"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/accept_conditions_tittle"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <include
+                    style="@style/Match_Wrap_style"
+                    layout="@layout/layout_bottomimg" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

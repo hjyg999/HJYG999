@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white" >
+
+    <LinearLayout
+        style="@style/Both_Match_style"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/include_header"
+            style="@style/headerWeight"
+            layout="@layout/top_layout" />
+
+        <ScrollView
+            style="@style/relativeLayoutWeight"
+            android:scrollbars="none" >
+
+            <RelativeLayout style="@style/Both_Match_style" >
+
+                <LinearLayout
+                    android:id="@+id/lin_bg"
+                    style="@style/Match_Wrap_style"
+                    android:background="@drawable/gb_qiandao_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/Match_Wrap_style"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_qiandao"
+                            android:layout_width="254dp"
+                            android:layout_height="130dp"
+                            android:background="@drawable/gb_qiandao"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.35" />
+
+                            <TextView
+                                android:id="@+id/tv_toqiandao"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.35" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_qdday"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marg_20px"
+                        android:text="连续签到天"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_28pt" />
+
+                    <LinearLayout
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marg_20px"
+                        android:gravity="bottom"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_qd0"
+                            style="@style/Both_Wrap_style"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_qd0"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/gb_o" />
+
+                            <TextView
+                                android:id="@+id/tv_qd0"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginTop="@dimen/marg_10px"
+                                android:text=""
+                                android:textColor="@color/glod"
+                                android:textSize="@dimen/size_24pt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_qd1"
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginLeft="@dimen/marg_20px"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_qd1"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/gb_o" />
+
+                            <TextView
+                                android:id="@+id/tv_qd1"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginTop="@dimen/marg_10px"
+                                android:text=""
+                                android:textColor="@color/glod"
+                                android:textSize="@dimen/size_24pt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_qd2"
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginLeft="@dimen/marg_20px"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_qd2"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/gb_o" />
+
+                            <TextView
+                                android:id="@+id/tv_qd2"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginTop="@dimen/marg_10px"
+                                android:text=""
+                                android:textColor="@color/glod"
+                                android:textSize="@dimen/size_24pt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_qd3"
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginLeft="@dimen/marg_20px"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_qd3"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/gb_o" />
+
+                            <TextView
+                                android:id="@+id/tv_qd3"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginTop="@dimen/marg_10px"
+                                android:text=""
+                                android:textColor="@color/gray_sq"
+                                android:textSize="@dimen/size_24pt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_qd4"
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginLeft="@dimen/marg_20px"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_qd4"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/gb_o" />
+
+                            <TextView
+                                android:id="@+id/tv_qd4"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginTop="@dimen/marg_10px"
+                                android:text=""
+                                android:textColor="@color/gray_sq"
+                                android:textSize="@dimen/size_24pt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_qd5"
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginLeft="@dimen/marg_20px"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_qd5"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/gb_o" />
+
+                            <TextView
+                                android:id="@+id/tv_qd5"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginTop="@dimen/marg_10px"
+                                android:text=""
+                                android:textColor="@color/gray_sq"
+                                android:textSize="@dimen/size_24pt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_qd6"
+                            style="@style/Both_Wrap_style"
+                            android:layout_marginLeft="@dimen/marg_20px"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_qdhit"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/gb_7gift" />
+
+                            <ImageView
+                                android:id="@+id/img_qd6"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginTop="@dimen/marg_10px"
+                                android:src="@drawable/gb_o" />
+
+                            <TextView
+                                android:id="@+id/tv_qd6"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginTop="@dimen/marg_10px"
+                                android:text=""
+                                android:textColor="@color/gray_sq"
+                                android:textSize="@dimen/size_24pt" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marg_20px"
+                        android:text="温馨提示：连续签到7天将获得额外礼品"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="@dimen/size_20pt" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_pop"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gb_gift"
+        android:orientation="vertical"
+        android:padding="@dimen/marg_20px"
+        android:visibility="gone"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_popmsg"
+                style="@style/Both_Match_style"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="恭喜您，联系签到7天，\n额外获取+5金豆"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_20pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

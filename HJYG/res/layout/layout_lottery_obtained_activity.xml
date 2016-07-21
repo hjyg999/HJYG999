@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <com.md.hjyg.utility.LoadMoreListView
+            android:id="@+id/mLoadMoreListView"
+            style="@style/Match_Wrap_style"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/nodata"
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                style="@style/Match_Wrap_style"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                android:src="@drawable/lottery_noda" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:gravity="center"
+                android:text="暂无抽奖记录"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

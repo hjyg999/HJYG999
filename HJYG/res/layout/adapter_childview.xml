@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_titel"
+        style="@style/Both_Wrap_style"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="黄金投资，毫克买起"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/Match_Wrap_style"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="黄金投资，毫克买起"
+        android:textColor="@color/gray_sq"
+        android:textSize="14sp" />
+
+</LinearLayout>

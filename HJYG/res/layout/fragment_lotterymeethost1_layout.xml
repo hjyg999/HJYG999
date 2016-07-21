@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_view"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_showdialog"
+        style="@style/Match_Wrap_style"
+        android:layout_marginBottom="@dimen/marg_35px"
+        android:layout_marginLeft="@dimen/marg_30px"
+        android:layout_marginRight="@dimen/marg_30px"
+        android:layout_marginTop="@dimen/marg_35px"
+        android:background="@drawable/bg_ra_whitesold_graystrok"
+        android:drawableEnd="@drawable/arrow_right"
+        android:gravity="center_vertical"
+        android:hint="选择活动"
+        android:padding="@dimen/marg_20px"
+        android:text=""
+        android:textColor="@color/gray_gold"
+        android:textColorHint="@color/gray_sq"
+        android:textSize="@dimen/size_28pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/line_mbg"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/meeting_host_mc"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_timehit"
+                    style="@style/Both_Wrap_style"
+                    android:text="倒计时"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/size_36pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/Both_Wrap_style"
+                    android:text="10"
+                    android:textColor="@color/gray_gold"
+                    android:textSize="@dimen/size_120pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_time"
+                    style="@style/Both_Wrap_style"
+                    android:src="@drawable/meeting_djs" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_btn"
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/marg_60px"
+            android:src="@drawable/meeting_djs_btn_yes" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Both_Wrap_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/marg_30px"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:text="向左滑动，查看记录"
+            android:textColor="@color/gray_sq"
+            android:textSize="@dimen/size_22pt" />
+        <ImageView 
+            android:layout_height="14dp"
+            android:layout_width="14dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/arrow_right_exhlot"/>
+    </LinearLayout>
+
+</LinearLayout>

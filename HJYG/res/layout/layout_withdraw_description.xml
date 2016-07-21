@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style" 
+    android:orientation="vertical"
+    android:background="@color/bg_list">
+
+    <include
+        style="@style/headerWeight"
+        android:id="@+id/include_header"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_withdrawal_fess_legend"
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="@string/withdrawal_fees"
+            android:textColor="@color/text_color_title" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_fess_legend_value"
+            style="@style/Both_Wrap_style"
+            android:padding="5dp"
+            android:text="*****************************************"
+            android:textColor="@color/text_color_title" />
+
+        <TextView
+            android:id="@+id/tv_cash_withdrawal"
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="@string/cash_withdrawal"
+            android:textColor="@color/text_color_title" />
+
+        <TextView
+            android:id="@+id/tv_cash_withdrawal_value"
+            style="@style/Both_Wrap_style"
+            android:padding="5dp"
+            android:text="*****************************************"
+            android:textColor="@color/text_color_title" />
+        <TextView
+            android:id="@+id/tv_cash_withdrawal_2"
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="@string/cash_withdrawal_2"
+            android:textColor="@color/text_color_title" />
+
+        <TextView
+            android:id="@+id/tv_cash_withdrawal_value_2"
+            style="@style/Both_Wrap_style"
+            android:padding="5dp"
+            android:text="*****************************************"
+            android:textColor="@color/text_color_title" />
+
+        <TextView
+            android:id="@+id/tv_arraival_time"
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="@string/arrival_time"
+            android:textColor="@color/text_color_title" />
+
+        <TextView
+            android:id="@+id/tv_arraival_time_value"
+            style="@style/Both_Wrap_style"
+            android:padding="5dp"
+            android:text="*****************************************"
+            android:textColor="@color/text_color_title" />
+
+        <TextView
+            android:id="@+id/tv_weekend"
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="@string/weekends_holidays"
+            android:textColor="@color/text_color_title" />
+
+        <TextView
+            android:id="@+id/tv_weekend_value"
+            style="@style/Both_Wrap_style"
+            android:padding="5dp"
+            android:text="*****************************************"
+            android:textColor="@color/text_color_title" />
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:paddingTop="10dp"
+            android:text="@string/weekends_tixian"
+            android:textColor="@color/text_color_title" />
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:padding="5dp"
+            android:text="*****************************************"
+            android:textColor="@color/text_color_title" />
+    </LinearLayout>
+
+</LinearLayout>

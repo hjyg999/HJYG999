@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dotted_rectangular_box"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_tips"
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="center"
+            android:text="@string/tips"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tip1"
+            style="@style/Both_Wrap_style"
+            android:layout_below="@+id/tv_tips"
+            android:padding="10dp"
+            android:text="@string/tip1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tip2"
+            style="@style/Both_Wrap_style"
+            android:layout_below="@+id/tip1"
+            android:padding="10dp"
+            android:text="@string/tip2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tip3"
+            style="@style/Both_Wrap_style"
+            android:layout_below="@+id/tip2"
+            android:padding="10dp"
+            android:text="@string/tip2_1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tip4"
+            style="@style/Both_Wrap_style"
+            android:layout_below="@+id/tip3"
+            android:padding="10dp"
+            android:text="@string/tip3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tip5"
+            style="@style/Both_Wrap_style"
+            android:layout_below="@+id/tip4"
+            android:padding="10dp"
+            android:text="@string/tip4"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

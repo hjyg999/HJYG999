@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.md.hjyg.layoutEntities.HeaderView
+        android:id="@+id/mheadView"
+        style="@style/headerWeight" />
+
+    <ScrollView
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/Both_Match_style"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_bgsum"
+                style="@style/Both_Wrap_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marg_20px"
+                android:text=""
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+
+            <TextView
+                android:id="@+id/tv_ConsumeGoldBean"
+                style="@style/Both_Wrap_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marg_2px"
+                android:text=""
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/size_28pt" />
+
+            <LinearLayout
+                android:id="@+id/line_lotterysum"
+                android:layout_width="320dp"
+                android:layout_height="352dp"
+                android:layout_marginTop="@dimen/marg_30px"
+                android:background="@drawable/gb_lottery_bg"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.064" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.625"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.18" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.675" >
+
+                        <com.md.hjyg.layoutEntities.LotteryGoldbeanDiskView
+                            android:id="@+id/mDiskView"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerInParent="true" />
+
+                        <ImageView
+                            android:id="@+id/img_btn"
+                            android:layout_width="98dp"
+                            android:layout_height="121dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/gb_lottery_btn" />
+
+                        <ImageView
+                            android:id="@+id/img_load"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerInParent="true" />
+
+                        <com.md.hjyg.layoutEntities.RippleView
+                            android:id="@+id/mRippleView"
+                            style="@style/Both_Wrap_style"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.145" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.311" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_listView"
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/marg_30px"
+                android:visibility="visible" >
+
+                <ListView
+                    android:id="@+id/mlistView"
+                    style="@style/Match_Wrap_style"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none"
+                    android:smoothScrollbar="true"
+                    android:visibility="gone" >
+                </ListView>
+
+                <ImageView
+                    android:id="@+id/img_nodate"
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/marg_20px"
+                    android:src="@drawable/gb_zanwujilu"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

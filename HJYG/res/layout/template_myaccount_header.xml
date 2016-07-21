@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:background="#FFC46C" >
+
+    <LinearLayout
+        android:id="@+id/lay_back_account"
+        android:layout_width="wrap_content"
+        android:background="#FFC46C"
+        android:paddingLeft="5dp" >
+
+        <!-- android:layout_height="?android:attr/actionBarSize" -->
+
+        <ImageView
+            android:id="@+id/btn_back_select_city"
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="center"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="5dp"
+            android:text="My account"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_account_title"
+        style="@style/Both_Wrap_style"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/lay_back_account"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

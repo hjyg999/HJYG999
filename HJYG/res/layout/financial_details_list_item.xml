@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/Match_Wrap_style"
+            android:background="@drawable/homescreen_border" >
+
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                style="@style/Match_Wrap_style"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/Both_Wrap_style"
+                    android:text=""
+                    android:textColor="@color/gray_s"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_bonus_date"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rl_1"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_bonus"
+                style="@style/Match_Wrap_style"
+                android:layout_below="@+id/rl_1"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_bonus"
+                    style="@style/Match_Wrap_style"
+                    android:background="@color/gray_line"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_income"
+                            style="@style/Both_Wrap_style"
+                            android:text="@string/income"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_income_value"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_bonus_expenditure"
+                            style="@style/Both_Wrap_style"
+                            android:text="@string/expenditure"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_bonus_expenditure_value"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_bonus_balance"
+                            style="@style/Both_Wrap_style"
+                            android:text="@string/balance"
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_bonus_balance_value"
+                            style="@style/Both_Wrap_style"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/ll_bonus"
+                    android:background="@color/gray_line" />
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    style="@style/Both_Wrap_style"
+                    android:layout_below="@+id/ll_bonus"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/remark"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_remark_note"
+                    style="@style/Both_Wrap_style"
+                    android:layout_below="@+id/ll_bonus"
+                    android:layout_toRightOf="@+id/tv_remark"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="10dp"
+                    android:text=""
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--
+        <RelativeLayout style="@style/Match_Wrap_style" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
+        </RelativeLayout>
+        -->
+    </LinearLayout>
+
+</RelativeLayout>

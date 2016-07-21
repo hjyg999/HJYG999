@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/Match_Wrap_style"
+        android:background="@color/red" >
+
+        <TextView
+            style="@style/Match_Wrap_style"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:text="选择证件类型"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            style="@style/Both_Wrap_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/close_dialog" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red_q" />
+
+    <RelativeLayout
+        android:id="@+id/rel_type0"
+        style="@style/Match_Wrap_style"
+        android:background="@drawable/bg_white_selector" >
+
+        <TextView
+            style="@style/Match_Wrap_style"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="身份证"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+     
+        <CheckBox
+            android:id="@+id/checkBox0"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:button="@drawable/img_selector_type" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/rel_type1"
+        style="@style/Match_Wrap_style"
+        android:background="@drawable/bg_white_selector" >
+
+        <TextView
+            style="@style/Match_Wrap_style"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="回乡证"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:button="@drawable/img_selector_type" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/rel_type2"
+        style="@style/Match_Wrap_style"
+        android:background="@drawable/bg_white_selector" >
+
+        <TextView
+            style="@style/Match_Wrap_style"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="台胞证"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:button="@drawable/img_selector_type" />
+    </RelativeLayout>
+
+</LinearLayout>

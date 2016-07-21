@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/marg_10px"
+    android:paddingLeft="@dimen/marg_80px"
+    android:paddingRight="@dimen/marg_80px"
+    android:paddingTop="@dimen/marg_10px" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="15197250516"
+        android:id="@+id/tv_Phone"
+        android:textColor="@color/glod"
+        android:textSize="@dimen/size_28pt" />
+
+    <TextView
+        android:id="@+id/tv_PrizeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="投资红包30元"
+        android:textColor="@color/glod"
+        android:textSize="@dimen/size_28pt" />
+
+</LinearLayout>

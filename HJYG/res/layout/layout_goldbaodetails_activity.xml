@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rel_top"
+                    style="@style/Match_Wrap_style" >
+
+                    <ImageView
+                        android:id="@+id/img_top"
+                        style="@style/Both_Wrap_style"
+                        android:contentDescription="@string/description" />
+
+                    <LinearLayout
+                        style="@style/Both_Match_style"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="15dp"
+                                android:paddingRight="15dp"
+                                android:text="1元起购"
+                                android:textColor="@color/gray_gold"
+                                android:textSize="@dimen/gold_mianSize" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    style="@style/Match_Wrap_style"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="15dp" >
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="2.50%"
+                                        android:textColor="@color/gray_gold"
+                                        android:textSize="@dimen/gold_mianSize" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="229.29"
+                                        android:textColor="@color/orange"
+                                        android:textSize="25sp" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:text="50"
+                                        android:textColor="@color/gray_gold"
+                                        android:textSize="@dimen/gold_mianSize" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    style="@style/Match_Wrap_style"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="15dp" >
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="预期送金豆年化"
+                                        android:textColor="@color/gray_sq"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="当前金价(元/克)"
+                                        android:textColor="@color/gray_sq"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:text="百克送金豆(个)"
+                                        android:textColor="@color/gray_sq"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp" >
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:text="每克低于银行和金店价格：30~100元/克"
+                                android:textColor="@color/gray_gold"
+                                android:textSize="@dimen/gold_mianSize" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_explain"
+                        style="@style/Match_Wrap_style"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:text="1、"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <ExpandableListView
+                        android:id="@+id/expandableListView"
+                        style="@style/Match_Wrap_style"
+                        android:childDivider="@color/white"
+                        android:divider="@color/white"
+                        android:listSelector="@drawable/bg_white_selector"
+                        android:scrollbars="none" />
+
+                    <View
+                        style="@style/view_line_ma" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginTop="25dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/tips"
+                        android:textColor="@color/gray_gold"
+                        android:textSize="@dimen/gold_mianSize" />
+
+                    <TextView
+                        style="@style/Both_Wrap_style"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="价格有波动投资需谨慎"
+                        android:textColor="@color/gray_sq"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line" />
+
+        <Button
+            android:id="@+id/btn_buy"
+            style="@style/Match_Wrap_style"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_selector"
+            android:padding="10dp"
+            android:text="购  买"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

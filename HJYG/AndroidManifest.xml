@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.md.hjyg"
+    android:versionCode="1"
+    android:versionName="1.0.0.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/> 
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.md.hjyg.utility.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+        <!-- android:theme="@style/tabwidget LeadActivity-->
+        <activity
+            android:name="com.md.hjyg.activities.HomeFragmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <!-- <action android:name="com.md.hjyg.Activities.HomeActivity"/> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+            <!-- <action android:name="com.md.hjyg.Activities.HomeActivity"/> -->
+       <!--  <activity
+            android:name="com.md.hjyg.activities.HomeFragmentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> -->
+        <!-- android:theme="@style/tabwidget" -->
+        <activity
+            android:name="com.md.hjyg.activities.InvestmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.AccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.TransactionRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.ProjectDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.TotalAssetsAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- android:theme="@style/tabwidget -->
+        <activity
+            android:name="com.md.hjyg.activities.RecommendedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.MyInvestmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.FinancialDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.WithdrawApplicationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.NewsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.LatestProjectsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.AddBankAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.BankAccountDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.RecommendedDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.HoldInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.BiddingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RepaidActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.WholeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.WithdrawalsRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.RechargeRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.NewsDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.WithdrawDescriptionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.md.hjyg.activities.AboutXintouActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.CustomerServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RegisterServerItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.AccountVerify"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.GestureEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.GestureVerifyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.md.hjyg.activities.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.DingtoubaoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.NewsNoticeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.NewsNoticeDetailsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.BankBranchDetailsEditActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.PersonalInformationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.ChangeDealPasswordActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.SetDealPasswordActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.ShareWeixinRedPacketActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.VerifyRealNameActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RegisterSucceedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.SafetyGuaranteeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 抽奖有关Activity -->
+        <activity
+            android:name="com.md.hjyg.activities.LotteryMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.md.hjyg.activities.LotteryObtainedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.md.hjyg.activities.LotteryRecordsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.md.hjyg.activities.LotteryRulesActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.LotteryStrategyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.md.hjyg.activities.LotteryNoLoginObtainedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.BankQuotaActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!-- 活期宝相关Activity -->
+        <activity
+            android:name="com.md.hjyg.activities.HuoQibaoDetailsActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.MyHuoQibaoActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.ExtractHuoQibaoActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.CommanProblemActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.PurchaseHistoryActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.BuyHistoryActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.WithdrawHistoryActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.FinancialrecordsActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.HuoQibaoProjectDetailActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.HuoqiBaoTransactionRecordActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RecommendedRewardActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RecommendedLevelOneActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RecommendedLevelTwoActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RecommendMemberStatisticsActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RecommendedTwoDimensionalActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RecommendedRuleActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RecommendedShareActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RecommendedApplyActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.HuoQibaoExperiencegoldActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.HuoQibaoExperienceMoneyRecordActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.HuoQibaoExperiencePurchaseActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.MemberPrerogativeActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.RegisterTopicActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.HuoQiExperiencegoldShareActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoDetailsActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoBuyActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoMainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoExtractActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoExtractExpressActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GlodBaoSelloutActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoExtractMyselfActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoAddAddressActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoReceiptAddressActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoBeanIncomeActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoBeanSearchActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoTransactionActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoExtractDetailsActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.md.hjyg.activities.GoldBaoChoiceShopActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.md.hjyg.activities.LotteryMeetingActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.LotteryMeetingHostActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.NoviceExclusiveActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.NoviceExclusiveNewActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.NoviceBuyActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustPan"/> 
+         <activity
+            android:name="com.md.hjyg.activities.NoviceBuyNewActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustPan"/> 
+         <activity
+            android:name="com.md.hjyg.activities.NoviceAwardExtractTypeActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.InvestListActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.InvestmentDetailsNewActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.InvestBuyNowActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.NoviceGuideActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.FinancialFragmentActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.HuoQibaoDetailsNewActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.HuoQibaoBuyActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.TaiPingYangCPICActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.MyInvestmentFragmentActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.MyInvestmentCalendarActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.ForgotPasswordActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.MyRedPacketFragmentActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.ChangePasswordNewActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.InformationActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.InformationDetailsActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.GoldBeanMainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.GoldBeanRuleActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.GoldBeanQiandaoActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.GoldBeanRecordActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.GoldBeanLotteryActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.ConsumptionFragmentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> 
+            <!-- 快乐微文 -->
+         <activity
+            android:name="com.md.hjyg.activities.HappySmallWritingMainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> 
+         <activity
+            android:name="com.md.hjyg.activities.HappySmallWritingSubmitActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> 
+        
+        <!-- 友盟AppKey， 需要替换成你自己的 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55efe833e0f55adbe300147b" >
+        </meta-data>
+        <meta-data 
+            android:value="Yingyongbao" android:name="UMENG_CHANNEL"/>
+
+        <!-- LLYT SDK START -->
+        <activity
+            android:name="com.yintong.secure.activity.BaseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service android:name="com.yintong.secure.service.PayService" >
+        </service>
+        <!-- LLYT SDK END -->
+        
+        <service android:name="com.tencent.tmassistantsdk.downloadservice.TMAssistantDownloadSDKService"
+            android:exported="false"
+            android:process=":TMAssistantDownloadSDKService" />
+
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104834619" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.md.hjyg.activities.HJBChartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.md.hjyg.activities.LoginVerifyUserActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.md.hjyg.activities.HappySmallWritingRuleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

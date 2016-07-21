@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="#393D46"
+    android:orientation="vertical" >
+
+    <include layout="@layout/umeng_socialize_titile_bar" />
+
+    <ViewSwitcher
+        android:id="@+id/umeng_socialize_switcher"
+        style="@style/Both_Match_style" >
+
+        <RelativeLayout
+            android:id="@+id/umeng_socialize_list_recently_fds_root"
+            style="@style/Both_Match_style" >
+
+            <ListView
+                android:id="@+id/umeng_socialize_list_fds"
+                style="@style/Both_Match_style"
+                android:divider="#464D55"
+                android:dividerHeight="1.0dip"
+                android:fadingEdgeLength="0.0sp"
+                android:fastScrollEnabled="false"
+                android:scrollingCache="true"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/umeng_socialize_list_progress"
+                style="@style/Both_Match_style"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/umeng_socialize_list_fds_root"
+            style="@style/Both_Match_style" >
+
+            <ListView
+                android:id="@id/umeng_socialize_list_fds"
+                style="@style/Both_Match_style"
+                android:divider="#464D55"
+                android:dividerHeight="1.0dip"
+                android:fadingEdgeLength="0.0sp"
+                android:fastScrollEnabled="false"
+                android:scrollingCache="true"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@id/umeng_socialize_list_progress"
+                style="@style/Both_Match_style"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ViewSwitcher>
+
+</LinearLayout>

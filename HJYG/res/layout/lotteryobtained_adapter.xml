@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dash="http://schemas.android.com/apk/res/com.md.hjyg"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lottery_obtained_ll1"
+        style="@style/Match_Wrap_style"
+        android:background="@drawable/homescreen_border"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/Both_Wrap_style"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/prize_name_tv1"
+                style="@style/Both_Wrap_style"
+                android:text="30元红包"
+                android:textColor="@color/gray_s"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/prize_time_tv1"
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="2015.10.31 14:25:12"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <com.md.hjyg.layoutEntities.DashedLine
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            dash:lineColor="@color/gray_line" />
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/prize_type_tv1"
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:text="投资红包"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:text="奖品类型"
+                    android:textColor="@color/gray_q"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/prize_validtime_tv1"
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:text="2015.11.01-2015.12.31"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:text="活动有效期"
+                    android:textColor="@color/gray_q"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/prize_checkstatus_tv1"
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:text="初审通过"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:layout_gravity="center_horizontal"
+                    android:text="状态"
+                    android:textColor="@color/gray_q"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/remark"
+        style="@style/Match_Wrap_style"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/bg_list"
+        android:text="备注："
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+</LinearLayout>

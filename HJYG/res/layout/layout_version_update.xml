@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Wrap_style" 
+    android:background="@color/white">
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dotted_rectangular_box"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_tips"
+            style="@style/Both_Wrap_style"
+            android:layout_gravity="center"
+            android:text="温馨提示"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tip1"
+            style="@style/Both_Wrap_style"
+            android:layout_below="@+id/tv_tips"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

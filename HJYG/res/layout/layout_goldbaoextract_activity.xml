@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        style="@style/relativeLayoutWeight"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel_express"
+            style="@style/Match_Wrap_style"
+            android:background="@drawable/bg_white_selector"
+            android:padding="15dp" >
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_centerVertical="true"
+                android:text="快递接收"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/gold_mianSize" />
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/description"
+                android:src="@drawable/gold_arow_right" />
+        </RelativeLayout>
+
+        <View style="@style/view_line_ma" />
+
+        <RelativeLayout
+            android:id="@+id/rel_myself"
+            style="@style/Match_Wrap_style"
+            android:background="@drawable/bg_white_selector"
+            android:padding="15dp" >
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:layout_centerVertical="true"
+                android:text="门店自取"
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/gold_mianSize" />
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/description"
+                android:src="@drawable/gold_arow_right" />
+        </RelativeLayout>
+
+        <View style="@style/view_line_ma" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/marg_20px"
+    android:paddingRight="@dimen/marg_20px" >
+
+    <View
+        android:id="@+id/v_line1" 
+        style="@style/view_line" />
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/marg_20px"
+        android:paddingLeft="@dimen/marg_5px"
+        android:paddingRight="@dimen/marg_5px"
+        android:paddingTop="@dimen/marg_20px" >
+
+        <ImageView
+            android:id="@+id/img_title"
+            android:layout_width="@dimen/marg_110px" 
+            android:layout_height="@dimen/marg_110px" 
+            android:src="@drawable/aboutus_welcome"/>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/marg_10px"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Both_Wrap_style"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/gray_gold"
+                android:textSize="@dimen/size_28pt" />
+
+            <RelativeLayout
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="@dimen/marg_10px" >
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/Both_Wrap_style"
+                    android:layout_centerVertical="true"
+                    android:text="11/12/02"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_24pt" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/Both_Wrap_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_mra_graysqstrok_whorgra_selector"
+                    android:paddingBottom="@dimen/marg_5px"
+                    android:paddingLeft="@dimen/marg_20px"
+                    android:paddingRight="@dimen/marg_20px"
+                    android:paddingTop="@dimen/marg_5px"
+                    android:text="集团资讯"
+                    android:textColor="@color/gray_sq"
+                    android:textSize="@dimen/size_24pt" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/view_line" 
+        android:id="@+id/v_line2" />
+
+</LinearLayout>

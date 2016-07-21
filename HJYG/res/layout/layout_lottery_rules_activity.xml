@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <ScrollView style="@style/relativeLayoutWeight"
+        android:background="@drawable/lottery_common_bg" >
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:text="1、活动时间"
+                android:textColor="@color/yellow"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="2015年11月1日-2015年11月30日"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="1、活动礼品"
+                android:textColor="@color/yellow"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="Iphone6s、钻石、金镶玉吊坠、水晶包金吊坠、红包"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="3、规则说明"
+                android:textColor="@color/yellow"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="1、信投宝幸运大转盘中奖率100%，内部员工不参与此活动；"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="2、活动截止时间至11月30日，红包奖励以现金的形式发放至信投宝平台账户，5个工作日内到账，实物类奖励包括：Phone6s5台，钻石20颗，金镶玉吊坠30、琥珀包金吊坠50个、红包1000份，图片仅供参考，以奖励实物为准；"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="3、信投宝客服人员会在活动结束3个工作日内拨打中奖用户的注册认证手机号码联系发奖事宜，长沙、常德、湘潭地区中奖用户请到玛丽莱门店领取奖品，其他地区的中奖用户可选择邮寄。"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="4、抽奖红包直接发送到信投宝用户账号，有效期为30天；"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="5、信投宝拥有本次活动的最终解释权，如用任何问题请联系信投宝官方电话：400-078-1901"
+                android:textColor="@color/gray"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Match_Wrap_style"
+                android:layout_marginTop="2dp"
+                android:text="6、针对恶意刷奖用户，信投宝有权取消其活动资格，细节请遵循活动细则"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

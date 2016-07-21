@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_white_selector"
+    style="@style/Both_Wrap_style" >
+
+    <ImageView
+        android:id="@+id/img"
+        style="@style/Both_Wrap_style"
+        android:src="@drawable/gift_fq" />
+
+    <LinearLayout
+        style="@style/Both_Wrap_style"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Both_Wrap_style"
+            android:text="婚庆"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_44pt" />
+        <TextView
+            android:id="@+id/tv_hit"
+            style="@style/Both_Wrap_style"
+            android:text="定制礼服"
+            android:alpha="0.7"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_28pt" />
+    </LinearLayout>
+
+</FrameLayout>

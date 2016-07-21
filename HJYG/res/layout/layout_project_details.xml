@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header"
+        style="@style/headerWeight"
+        layout="@layout/template_header" />
+
+    <com.md.hjyg.utility.LoadMoreListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="0dp"
+        android:layout_weight="0.92" />
+
+    <!--
+    <RelativeLayout style="@style/relativeLayoutWeight" >
+
+        <TextView
+            android:id="@+id/tv_project_description"
+            style="@style/Both_Wrap_style"
+            android:layout_margin="10dp"
+            android:text="项目简介"
+            android:textColor="@color/text_color_title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_do_login"
+            style="@style/Match_Wrap_style"
+            android:layout_below="@+id/tv_project_description"
+            android:layout_margin="5dp"
+            android:text=""
+            android:visibility="gone" />
+
+        <WebView
+            android:id="@+id/webview_project_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_do_login"
+            android:visibility="visible" >
+        </WebView>
+    </RelativeLayout>
+    -->
+
+</LinearLayout>

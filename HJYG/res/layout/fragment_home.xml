@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/bg_list"
+    android:orientation="vertical" >
+
+    <com.md.hjyg.layoutEntities.RefreshableScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refreshableScrollView"
+        style="@style/Both_Match_style"
+        android:orientation="vertical" >
+
+        <com.md.hjyg.layoutEntities.ScrollViewExtend
+            android:id="@+id/mScroll"
+            style="@style/Both_Match_style"
+            android:fillViewport="true"
+            android:isScrollContainer="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/Match_Wrap_style"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/ll_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/view_pager"
+                        style="@style/Both_Match_style" />
+
+                    <LinearLayout
+                        android:id="@+id/dotLayout"
+                        style="@style/Both_Wrap_style"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:orientation="horizontal" />
+                </FrameLayout>
+
+                <LinearLayout
+                    style="@style/Match_Wrap_style"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/Match_Wrap_style"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="3dp" >
+
+                        <TextView
+                            android:id="@+id/home_safety"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="2dp"
+                            android:drawableTop="@drawable/home_saft"
+                            android:gravity="center"
+                            android:text="@string/home_safety"
+                            android:textColor="@color/gray" />
+
+                        <RelativeLayout
+                            android:id="@+id/home_rel_news"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <ImageView
+                                android:id="@+id/home_news"
+                                style="@style/Both_Wrap_style"
+                                android:layout_centerHorizontal="true"
+                                android:contentDescription="@string/description"
+                                android:src="@drawable/home_news" />
+
+                            <TextView
+                                style="@style/Both_Wrap_style"
+                                android:layout_below="@+id/home_news"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/home_news"
+                                android:textColor="@color/gray" />
+
+                            <FrameLayout
+                                android:id="@+id/home_news_fl"
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginLeft="-6dp"
+                                android:layout_toRightOf="@+id/home_news" >
+
+                                <ImageView
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="top"
+                                    android:contentDescription="@string/description"
+                                    android:src="@drawable/new_count_bg" />
+
+                                <TextView
+                                    android:id="@+id/home_news_mark"
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/home_TextSize_10" />
+                            </FrameLayout>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/home_invite_friend"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="2dp"
+                            android:drawableTop="@drawable/home_invite_friend"
+                            android:gravity="center"
+                            android:text="@string/home_invite_friend"
+                            android:textColor="@color/gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_line" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/gray_line"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/rel_novic"
+                        style="@style/Match_Wrap_style"
+                        android:background="@color/white"
+                        android:visibility="visible" >
+
+                        <LinearLayout
+                            style="@style/Both_Wrap_style"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <!--
+                                 <TextView
+                                style="@style/Both_Wrap_style"
+                                android:layout_marginTop="@dimen/marg_10px"
+                                android:background="@color/glod"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/marg_10px"
+                                android:text="新手专享"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size_24pt" />                            -->
+
+                            <ImageView
+                                android:id="@+id/novice_img_titile"
+                                style="@style/Both_Wrap_style"
+                                android:src="@drawable/novice_img_titile" />
+
+                            <TextView
+                                android:id="@+id/tv_titlehit"
+                                style="@style/Both_Wrap_style"
+                                android:gravity="center_vertical"
+                                android:text="投资即送"
+                                android:textColor="@color/glod"
+                                android:textSize="@dimen/size_20pt" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rel_smlimg"
+                            style="@style/Match_Wrap_style"
+                            android:layout_marginTop="@dimen/marg_30px" >
+
+                            <TextView
+                                android:id="@+id/tv_imgTitle"
+                                style="@style/Both_Wrap_style"
+                                android:layout_centerInParent="true"
+                                android:text=""
+                                android:textColor="@color/gray_gold"
+                                android:textSize="@dimen/size_28pt" />
+
+                            <LinearLayout
+                                android:id="@+id/lin_smlimg"
+                                style="@style/Both_Wrap_style"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/marg_30px"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rel_smlimg"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/novic_arrow_left"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/novic_arrow_left" />
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/viewpager_prize"
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="2" />
+
+                            <ImageView
+                                android:id="@+id/novic_arrow_right"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/novic_arrow_right" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            style="@style/Match_Wrap_style"
+                            android:layout_below="@+id/lin_viewpager"
+                            android:paddingBottom="@dimen/marg_20px"
+                            android:paddingLeft="@dimen/marg_30px"
+                            android:paddingRight="@dimen/marg_30px" >
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    style="@style/Both_Wrap_style"
+                                    android:text="投资"
+                                    android:textColor="@color/gray_sq"
+                                    android:textSize="@dimen/size_24pt" />
+
+                                <TextView
+                                    android:id="@+id/tv_invest_vale"
+                                    style="@style/Both_Wrap_style"
+                                    android:text=""
+                                    android:textColor="@color/glod"
+                                    android:textSize="@dimen/size_24pt" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:layout_centerHorizontal="true"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    style="@style/Both_Wrap_style"
+                                    android:text="期限"
+                                    android:textColor="@color/gray_sq"
+                                    android:textSize="@dimen/size_24pt" />
+
+                                <TextView
+                                    android:id="@+id/tv_invest_term"
+                                    style="@style/Both_Wrap_style"
+                                    android:text=""
+                                    android:textColor="@color/glod"
+                                    android:textSize="@dimen/size_24pt" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    style="@style/Both_Wrap_style"
+                                    android:text="预期收益"
+                                    android:textColor="@color/gray_sq"
+                                    android:textSize="@dimen/size_24pt" />
+
+                                <TextView
+                                    android:id="@+id/tv_invest_income"
+                                    style="@style/Both_Wrap_style"
+                                    android:text=""
+                                    android:textColor="@color/glod"
+                                    android:textSize="@dimen/size_24pt" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_line"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/rl_home_wraper"
+                        style="@style/Match_Wrap_style"
+                        android:background="@color/bg_list"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/huoqibao_ll"
+                            style="@style/Match_Wrap_style"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/home_item_bg_selector"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="10dp" >
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="center_vertical"
+                                    android:contentDescription="@string/description"
+                                    android:src="@drawable/huoqibao" />
+
+                                <LinearLayout
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="2dp"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        style="@style/Both_Wrap_style"
+                                        android:text="@string/huoqibao"
+                                        android:textColor="@color/red"
+                                        android:textSize="@dimen/home_TextSize_18" />
+
+                                    <TextView
+                                        android:id="@+id/huoqibao_hit"
+                                        style="@style/Both_Wrap_style"
+                                        android:text=""
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/home_TextSize_10" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical" >
+
+                                <RelativeLayout
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="center_horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/huoqibao_rate"
+                                        style="@style/Both_Wrap_style"
+                                        android:text=""
+                                        android:textColor="@color/red"
+                                        android:textSize="@dimen/home_TextSize_18" />
+
+                                    <TextView
+                                        style="@style/Both_Wrap_style"
+                                        android:layout_alignBottom="@+id/huoqibao_rate"
+                                        android:layout_toRightOf="@+id/huoqibao_rate"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/per_cent"
+                                        android:textColor="@color/red"
+                                        android:textSize="@dimen/home_TextSize_10" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/year_rate"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/home_TextSize_10" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                style="@style/wrap_match_style"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/tv_huoqibao"
+                                    style="@style/Match_Wrap_style"
+                                    android:gravity="right"
+                                    android:text=""
+                                    android:textColor="@color/red"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    style="@style/Match_Wrap_style"
+                                    android:gravity="right"
+                                    android:paddingTop="2dp"
+                                    android:text="@string/balance_dw"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/home_TextSize_10" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/glodbao_ll"
+                            style="@style/Match_Wrap_style"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/home_item_bg_selector"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="10dp"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="center_vertical"
+                                    android:contentDescription="@string/description"
+                                    android:src="@drawable/glodbao" />
+
+                                <LinearLayout
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="2dp"
+                                    android:orientation="vertical" >
+
+                                    <RelativeLayout style="@style/Both_Wrap_style" >
+
+                                        <TextView
+                                            android:id="@+id/tv_glodbao"
+                                            style="@style/Both_Wrap_style"
+                                            android:text="@string/glodbao"
+                                            android:textColor="@color/orange"
+                                            android:textSize="@dimen/home_TextSize_18" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/home_width_35"
+                                            android:layout_height="@dimen/home_width_10"
+                                            android:layout_marginLeft="@dimen/home_marginLeft_5"
+                                            android:layout_marginTop="@dimen/home_marginLeft_8"
+                                            android:layout_toRightOf="@+id/tv_glodbao"
+                                            android:background="@drawable/glodbao_qitao" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/glodbao_hit"
+                                        style="@style/Both_Wrap_style"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/home_TextSize_10" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/bg_ra_orange"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="3dp" >
+
+                                <TextView
+                                    style="@style/Both_Wrap_style"
+                                    android:text="@string/expect"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rl_dingtoubao"
+                            style="@style/Match_Wrap_style"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/home_item_bg_selector"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="10dp" >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="center_vertical"
+                                    android:contentDescription="@string/description"
+                                    android:src="@drawable/dingtoubao" />
+
+                                <LinearLayout
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="2dp"
+                                    android:orientation="vertical" >
+
+                                    <RelativeLayout style="@style/Both_Wrap_style" >
+
+                                        <TextView
+                                            android:id="@+id/tv_dingtoubao"
+                                            style="@style/Both_Wrap_style"
+                                            android:text="@string/dingtoubao"
+                                            android:textColor="@color/yellow"
+                                            android:textSize="@dimen/home_TextSize_18" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/home_width_35"
+                                            android:layout_height="@dimen/home_width_10"
+                                            android:layout_marginLeft="@dimen/home_marginLeft_5"
+                                            android:layout_marginTop="@dimen/home_marginLeft_8"
+                                            android:layout_toRightOf="@+id/tv_dingtoubao"
+                                            android:background="@drawable/dingtoubao_qitou" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/dingtoubao_hit"
+                                        style="@style/Both_Wrap_style"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/home_TextSize_10" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tv_dingtoubaoloancount"
+                                    style="@style/Both_Wrap_style"
+                                    android:background="@drawable/orange_circle"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/yellow"
+                                    android:textSize="@dimen/home_TextSize_18" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rl_latest_projects"
+                            style="@style/Match_Wrap_style"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/home_item_bg_selector"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="10dp" >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="center_vertical"
+                                    android:contentDescription="@string/description"
+                                    android:src="@drawable/latestproject" />
+
+                                <LinearLayout
+                                    style="@style/Both_Wrap_style"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="2dp"
+                                    android:orientation="vertical" >
+
+                                    <RelativeLayout style="@style/Both_Wrap_style" >
+
+                                        <TextView
+                                            android:id="@+id/tv_latest_projects"
+                                            style="@style/Both_Wrap_style"
+                                            android:text="@string/latest_projects"
+                                            android:textColor="@color/green"
+                                            android:textSize="@dimen/home_TextSize_18" />
+
+                                        <TextView
+                                            android:layout_width="@dimen/home_width_35"
+                                            android:layout_height="@dimen/home_width_10"
+                                            android:layout_marginLeft="@dimen/home_marginLeft_5"
+                                            android:layout_marginTop="@dimen/home_marginLeft_8"
+                                            android:layout_toRightOf="@+id/tv_latest_projects"
+                                            android:background="@drawable/latestproject_qitao" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/latestproject_hit"
+                                        style="@style/Both_Wrap_style"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/home_TextSize_10" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/Both_Wrap_style"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tv_latestloancount"
+                                    style="@style/Both_Wrap_style"
+                                    android:background="@drawable/blue_circle"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/home_TextSize_18" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            style="@style/Both_Wrap_style"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/description"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/home_buttom_text" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.md.hjyg.layoutEntities.ScrollViewExtend>
+    </com.md.hjyg.layoutEntities.RefreshableScrollView>
+
+</LinearLayout>

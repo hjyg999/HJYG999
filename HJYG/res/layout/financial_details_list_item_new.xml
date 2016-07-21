@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Match_style"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:background="@drawable/homescreen_border"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/type_or_amount"
+                style="@style/Both_Wrap_style"
+                android:text="111111"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/type_or_time"
+                style="@style/Both_Wrap_style"
+                android:text="2015/08/23/13:45:32"
+                android:textColor="@color/gray_sq"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/status_or_amount"
+                style="@style/Both_Wrap_style"
+                android:textColor="@color/gray"
+                android:text="111111"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/status_or_type"
+                style="@style/Both_Wrap_style"
+                android:text="充值收入"
+                android:textColor="@color/gray_sq"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/amount_or_time"
+                style="@style/Both_Wrap_style"
+                android:text="111111"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/type"
+                style="@style/Both_Wrap_style"
+                android:text="剩余金额"
+                android:textColor="@color/gray_sq"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_bot"
+        style="@style/Match_Wrap_style"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/Both_Wrap_style"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/remark"
+            style="@style/Both_Wrap_style"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/status"
+            android:text="备注"
+            android:textColor="@color/gray_sq"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/remark"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray_line" />
+    </RelativeLayout>
+
+</LinearLayout>

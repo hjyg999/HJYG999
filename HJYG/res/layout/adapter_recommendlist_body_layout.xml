@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match_Wrap_style"
+    android:orientation="vertical" 
+    android:descendantFocusability="afterDescendants">
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:orientation="horizontal"
+        android:padding="@dimen/marg_30px" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/Both_Wrap_style"
+                android:text="*名"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_28pt" />
+
+            <TextView
+                android:id="@+id/member_phone"
+                style="@style/Both_Wrap_style"
+                android:text="151****0516"
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/size_24pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_no"
+                style="@style/Both_Wrap_style"
+                android:text="5"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_28pt" />
+
+            <TextView
+                style="@style/Both_Wrap_style"
+                android:text="推荐投资人数"
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/size_24pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/member_state"
+                style="@style/Both_Wrap_style"
+                android:text="已领取"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_28pt" />
+
+            <TextView
+                android:id="@+id/member_time"
+                style="@style/Both_Wrap_style"
+                android:text="11/21 19:50"
+                android:textColor="@color/gray_sq"
+                android:textSize="@dimen/size_24pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+</LinearLayout>

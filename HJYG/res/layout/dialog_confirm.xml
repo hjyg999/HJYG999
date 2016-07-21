@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Both_Wrap_style" >
+
+    <RelativeLayout
+        style="@style/Both_Wrap_style" >
+
+        <TextView
+            style="@style/Both_Wrap_style"
+            android:id="@+id/tv_title"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:text="温馨提示"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/dl_line"
+            style="@style/Match_Wrap_style"
+            android:layout_below="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/dl_tv_content"
+            style="@style/Match_Wrap_style"
+            android:layout_below="@+id/dl_line"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            style="@style/Match_Wrap_style"
+            android:layout_below="@+id/dl_tv_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/dl_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="取消"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/dl_btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="确定"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
