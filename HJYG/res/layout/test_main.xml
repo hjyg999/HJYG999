@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_q"
+    android:orientation="vertical" >
+
+    <include layout="@layout/test" />
+
+    <LinearLayout
+        style="@style/Match_Wrap_style"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="288.04"
+                    android:textSize="@dimen/size_44pt" />
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="元/克" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Both_Wrap_style"
+                    android:text="市场价：320.04元/克" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/Both_Wrap_style"
+                android:src="@drawable/umeng_socialize_wechat_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
